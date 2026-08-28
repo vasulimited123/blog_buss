@@ -1,0 +1,792 @@
+
+================================================================================
+     STARTING PROCESS — Complete Registration & Setup Guide
+     (Every place you need bank account, website name, business details)
+================================================================================
+
+
+
+================================================================================
+BEFORE ANYTHING ELSE — WHAT YOU NEED READY
+================================================================================
+
+    Before registering anywhere, have these ready:
+
+    ┌────────────────────────────────────────────────────────────────────┐
+    │                                                                    │
+    │  PERSONAL DOCUMENTS NEEDED:                                        │
+    │                                                                    │
+    │  □ PAN Card (mandatory for all money-earning registrations)        │
+    │  □ Aadhaar Card                                                    │
+    │  □ Bank Account (savings or current — details below)               │
+    │  □ Mobile number linked to Aadhaar                                 │
+    │  □ Email ID (create a separate business email)                     │
+    │  □ Passport-size photo (some registrations need it)                │
+    │  □ Address proof                                                   │
+    │                                                                    │
+    │  BUSINESS DECISIONS NEEDED:                                        │
+    │                                                                    │
+    │  □ Blog Name / Brand Name (e.g., "IntimateWellness",              │
+    │    "CoupleHealth", "MindBodyBond" — pick something)                │
+    │  □ Domain Name (e.g., intimatewellness.com)                        │
+    │  □ Business Email (e.g., contact@intimatewellness.com)             │
+    │  □ Your role: Sole Proprietor (simplest to start)                  │
+    │                                                                    │
+    └────────────────────────────────────────────────────────────────────┘
+
+
+
+================================================================================
+BANK ACCOUNT — WHICH TYPE & WHERE NEEDED
+================================================================================
+
+
+OPTION A: Use Your Personal Savings Account (Simplest to start)
+───────────────────────────────────────────────────────────────
+    • You CAN use your existing savings account for receiving payments
+    • Google AdSense, affiliates, etc. will pay into it
+    • Works fine until you cross ₹20 lakh/year revenue
+    • Downside: Business and personal money gets mixed
+
+
+OPTION B: Open a Current Account in Business Name (Recommended)
+───────────────────────────────────────────────────────────────
+    • Open after getting GST registration or Udyam registration
+    • Keeps business money separate from personal
+    • Needed for: Professional image, GST filing, scaling up
+    • Banks: HDFC, ICICI, Kotak, RazorpayX (zero balance options available)
+
+    Documents needed to open current account:
+    • PAN Card
+    • Aadhaar
+    • GST Certificate OR Udyam Registration Certificate
+    • Business address proof
+    • 2 passport photos
+
+
+WHERE YOUR BANK ACCOUNT DETAILS ARE NEEDED:
+───────────────────────────────────────────
+    You'll enter bank details (Account No, IFSC, Account holder name) at:
+
+    1. Google AdSense (ad revenue payment)
+    2. Affiliate programs (commission payment)
+    3. Hosting providers (for any refunds)
+    4. Payment gateways like Razorpay/Stripe (if selling anything later)
+    5. GST portal (for refunds if applicable)
+    6. Sponsored content payments (brands pay via bank transfer)
+
+    Payment methods from foreign companies:
+    • Google AdSense → Direct bank transfer (INR) via EFT
+    • Amazon Associates (US) → Direct deposit or cheque
+    • BetterHelp affiliates → PayPal or bank wire (USD)
+    • Other affiliates → PayPal, Payoneer, or direct bank transfer
+
+
+
+================================================================================
+STEP-BY-STEP: REGISTER EVERYWHERE (In order)
+================================================================================
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 1: CHOOSE & BUY YOUR DOMAIN NAME
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Your website address (e.g., www.yourbrand.com)
+    WHERE:  Domain registrars
+
+    Recommended registrars:
+    ┌──────────────────────────────────────────────────────────────┐
+    │  Namecheap     — www.namecheap.com     — ₹700–900/year      │
+    │  GoDaddy       — www.godaddy.com       — ₹500–1200/year     │
+    │  Cloudflare    — www.cloudflare.com    — ₹700–800/year      │
+    │  Google Domains— domains.google        — ₹900–1000/year     │
+    │  (now Squarespace Domains)                                   │
+    └──────────────────────────────────────────────────────────────┘
+
+    Information needed to register:
+    • Your desired domain name (e.g., intimatewellness.com)
+    • Your name
+    • Email address
+    • Phone number
+    • Address (for WHOIS — use privacy protection to hide it)
+    • Payment method (credit/debit card or UPI)
+
+    Tips:
+    • Always buy .com (most trusted)
+    • Keep it short, easy to spell, memorable
+    • Enable WHOIS privacy (hides your personal address from public)
+    • Buy for 2-3 years upfront (slightly signals commitment to Google)
+    • Check the name isn't trademarked by someone else
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 2: SET UP BUSINESS EMAIL
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Professional email like contact@yourdomain.com
+    WHY:    Needed for all registrations, looks professional
+
+    Options:
+    ┌──────────────────────────────────────────────────────────────┐
+    │  Google Workspace  — ₹125/month  — best, most trusted       │
+    │  Zoho Mail         — FREE        — good free option          │
+    │  Titan Email       — ₹99/month   — simple, works well       │
+    │  Your hosting      — FREE        — usually included          │
+    └──────────────────────────────────────────────────────────────┘
+
+    Information needed:
+    • Your domain name (already bought in Step 1)
+    • Desired email addresses:
+      - contact@yourdomain.com (public)
+      - admin@yourdomain.com (for registrations)
+      - editor@yourdomain.com (for content team later)
+
+    Setup: Connect domain DNS records to email provider (they guide you)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 3: BUY HOSTING (Where your website lives)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   A server that runs your website 24/7
+    WHERE:  Cloud hosting providers
+
+    Recommended for Django backend:
+    ┌──────────────────────────────────────────────────────────────┐
+    │  DigitalOcean    — www.digitalocean.com  — $6–24/month      │
+    │  Railway         — railway.app           — $5–20/month      │
+    │  Render          — render.com            — $7–25/month      │
+    │  AWS Lightsail   — aws.amazon.com        — $5–20/month      │
+    │  Hetzner         — hetzner.com           — $4–15/month      │
+    └──────────────────────────────────────────────────────────────┘
+
+    For Next.js frontend:
+    ┌──────────────────────────────────────────────────────────────┐
+    │  Vercel          — vercel.com            — FREE (hobby)     │
+    │                                          — $20/month (pro)  │
+    └──────────────────────────────────────────────────────────────┘
+
+    Information needed to register:
+    • Email address
+    • Name
+    • Payment method (international credit/debit card)
+    • Some need phone verification
+
+    Note: Most pay in USD. Use a card that supports international payments.
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 4: SET UP CDN & SSL (Cloudflare — FREE)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Makes your site fast globally + gives free security (HTTPS)
+    WHERE:  www.cloudflare.com
+
+    Information needed:
+    • Email
+    • Your domain name
+    • Change nameservers at your domain registrar (Cloudflare tells you how)
+
+    Cost: FREE (free plan is enough for years)
+    Gives you: SSL certificate, CDN caching, DDoS protection, analytics
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 5: SET UP IMAGE STORAGE (AWS S3)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Where all your blog images are stored
+    WHERE:  Amazon Web Services (AWS)
+
+    Register at: aws.amazon.com
+
+    Information needed:
+    • Email
+    • Name
+    • Phone number (verification call)
+    • Credit/Debit card (international)
+    • Address
+    • PAN (for Indian billing)
+
+    Cost: Nearly free for first year (free tier), then ₹200–1000/month
+    Alternative: Cloudflare R2 (cheaper, no egress fees)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 6: GOOGLE SEARCH CONSOLE (Get found on Google)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Tells Google your website exists, shows your search performance
+    WHERE:  search.google.com/search-console
+    COST:   FREE
+
+    Information needed:
+    • Google account (Gmail)
+    • Your domain name
+    • Verify ownership (add a DNS record — Cloudflare makes this easy)
+
+    What it does:
+    • Submit your sitemap (so Google knows all your blog URLs)
+    • Shows which keywords bring traffic
+    • Alerts you to errors on your site
+    • Shows how many pages Google has indexed
+
+    DO THIS on Day 1 — it takes 2-4 weeks for Google to start showing results.
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 7: GOOGLE ANALYTICS (Track your visitors)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Shows how many people visit, which pages, from where
+    WHERE:  analytics.google.com
+    COST:   FREE
+
+    Information needed:
+    • Google account
+    • Your website URL
+    • Add tracking code to your website (developer does this)
+
+    What you see:
+    • Daily/monthly visitors
+    • Which blogs are most popular
+    • Where visitors come from (Google, social, direct)
+    • How long they stay
+    • Which country they're from (important for ad revenue)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 8: GOOGLE ADSENSE (Start earning from ads)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Google places ads on your site, pays you
+    WHERE:  www.google.com/adsense
+    COST:   FREE to join
+
+    ⚠️  APPLY ONLY AFTER: You have 15-25 quality blog posts published
+
+    Information needed to register:
+    • Google account
+    • Your website URL
+    • Your name (as on bank account)
+    • Address (for PIN verification — they mail a physical letter!)
+    • Phone number
+
+    Information needed for PAYMENT setup (after approval):
+    • Bank account holder name (EXACTLY as on bank)
+    • Bank account number
+    • IFSC code
+    • Bank name and branch
+
+    Approval process:
+    1. Apply with your website
+    2. Google reviews (takes 2-14 days)
+    3. If approved: Add ad code to website
+    4. If rejected: They tell you why (fix issues, reapply in 2 weeks)
+    5. After earning $10: Google mails a PIN to your physical address
+    6. Enter the PIN to verify address
+    7. Payments start once balance crosses $100 (₹~8,000)
+
+    Payment cycle: Earnings by Month end → Paid by 21st of next month
+    Payment method: Direct bank transfer (EFT to Indian bank account)
+
+    Common rejection reasons:
+    • Not enough content (need 15-20 quality posts minimum)
+    • Content too thin (short articles)
+    • Site looks unfinished (no about page, privacy policy, contact page)
+    • Navigation issues
+    • Policy violation (explicit content — keep it educational!)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 9: AFFILIATE PROGRAM REGISTRATIONS
+────────────────────────────────────────────────────────────────────────────────
+
+
+A) AMAZON ASSOCIATES (India)
+─────────────────────────────
+    WHERE:  affiliate-program.amazon.in
+    COST:   FREE
+
+    Information needed:
+    • Name
+    • Address
+    • Phone number
+    • Your website URL (must be live with content)
+    • How you plan to drive traffic (describe briefly)
+    • Bank account details:
+      - Account holder name
+      - Account number
+      - IFSC code
+    • PAN number (for TDS)
+
+    Approval: Usually instant, but they review after 3 qualifying sales
+    Payment: Monthly, minimum ₹1,000 threshold, direct bank transfer
+    Commission: 1-10% depending on product category
+
+
+B) AMAZON ASSOCIATES (US — for international readers)
+──────────────────────────────────────────────────────
+    WHERE:  affiliate-program.amazon.com
+    COST:   FREE
+
+    Information needed:
+    • Name, address
+    • Website URL
+    • Tax information (W-8BEN form — declares you're non-US)
+    • Payment method: Gift card, cheque, or direct deposit
+      (Direct deposit needs US bank — use Payoneer for this)
+
+    For receiving USD payments:
+    • Sign up on Payoneer (www.payoneer.com)
+    • Payoneer gives you a US bank account number
+    • Use that in Amazon US affiliate settings
+    • Payoneer converts USD → INR and sends to your Indian bank
+
+
+C) BETTERHELP AFFILIATE (High payout — therapy platform)
+─────────────────────────────────────────────────────────
+    WHERE:  www.betterhelp.com/affiliate (or via Impact.com network)
+    COST:   FREE
+
+    Information needed:
+    • Name
+    • Email
+    • Website URL
+    • Description of how you'll promote
+    • Traffic details (approximate monthly visitors)
+    • Payment: via Impact.com platform → PayPal or bank wire
+
+    Payout: $100-200 per qualified referral
+    Minimum to withdraw: $50
+
+
+D) OTHER AFFILIATE NETWORKS (One registration, access to 100s of brands)
+──────────────────────────────────────────────────────────────────────────
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │  Network         Website              What's on it               │
+    ├──────────────────────────────────────────────────────────────────┤
+    │  Impact.com      impact.com           BetterHelp, Headspace,    │
+    │                                       wellness brands            │
+    │  ShareASale      shareasale.com       Hundreds of health brands  │
+    │  CJ Affiliate    cj.com              Big international brands    │
+    │  Awin            awin.com            European + global brands    │
+    │  vCommission     vcommission.com     India-focused brands        │
+    │  Cuelinks        cuelinks.com        Indian affiliate network    │
+    └──────────────────────────────────────────────────────────────────┘
+
+    Information needed (similar for all):
+    • Name, email, phone
+    • Website URL (must be live)
+    • Website category/niche
+    • Monthly traffic (approximate is fine)
+    • How you drive traffic
+    • Payment details: PayPal / bank transfer / Payoneer
+    • Tax info: PAN (India) or W-8BEN (international)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 10: PAYPAL ACCOUNT (For international payments)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Many international affiliate programs pay via PayPal
+    WHERE:  www.paypal.com/in
+    COST:   FREE to sign up (they charge ~4% on receiving international money)
+
+    Information needed:
+    • Email
+    • Phone number
+    • PAN card
+    • Bank account (to withdraw PayPal balance to Indian bank)
+    • Address
+
+    Link your bank account for withdrawals (PayPal → your savings/current account)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 11: PAYONEER ACCOUNT (For USD receiving)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Gives you a US/EU bank account to receive foreign payments
+    WHERE:  www.payoneer.com
+    COST:   FREE (charges on currency conversion ~2%)
+
+    Information needed:
+    • Name (as on passport/PAN)
+    • Email
+    • Date of birth
+    • Address + proof
+    • PAN card
+    • Bank account details (Indian bank for withdrawals)
+    • ID proof (Aadhaar/Passport)
+
+    WHY needed:
+    • Amazon US Associates pays to US bank (Payoneer gives you one)
+    • Some affiliate networks only pay via Payoneer
+    • Better conversion rates than PayPal
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 12: EMAIL MARKETING PLATFORM (Newsletter)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Collect emails, send newsletters, automate emails
+    WHERE:  Multiple options
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │  Mailchimp       — FREE up to 500 subscribers                    │
+    │  ConvertKit      — FREE up to 1000 subscribers                   │
+    │  Brevo (Sendinblue) — FREE up to 300 emails/day                 │
+    │  MailerLite      — FREE up to 1000 subscribers                   │
+    │  Beehiiv         — FREE up to 2500 subscribers (recommended)     │
+    └──────────────────────────────────────────────────────────────────┘
+
+    Information needed:
+    • Name
+    • Email
+    • Website URL
+    • Physical address (required by anti-spam laws — use business address)
+    • What you'll email about (brief description)
+
+    Setup:
+    • Create signup form
+    • Embed form on your website (developer does this)
+    • Create welcome email (auto-sent when someone subscribes)
+    • Plan weekly/bi-weekly newsletter schedule
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 13: SOCIAL MEDIA ACCOUNTS (Brand presence)
+────────────────────────────────────────────────────────────────────────────────
+
+    Create accounts on these platforms WITH YOUR BRAND NAME:
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │  Platform        Why it matters for your niche                    │
+    ├──────────────────────────────────────────────────────────────────┤
+    │  Pinterest       #1 traffic source after Google for wellness     │
+    │  Instagram       Visual content, reels, build community          │
+    │  Twitter/X       Quick tips, threads, drive clicks               │
+    │  Facebook Page   Required for some ad networks, community group  │
+    │  Quora           Answer questions → link to your blogs           │
+    │  Reddit          Participate in relevant subreddits              │
+    │  YouTube         (Future) Video content                          │
+    └──────────────────────────────────────────────────────────────────┘
+
+    Register all with your brand email (admin@yourdomain.com)
+    Use consistent brand name, logo, and bio across all.
+
+    PINTEREST specifically — set up a BUSINESS account (free):
+    • business.pinterest.com
+    • Verify your website
+    • Enable rich pins (shows blog title/description automatically)
+    • Create boards matching your blog categories
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 14: LEGAL PAGES ON YOUR WEBSITE (Required before AdSense)
+────────────────────────────────────────────────────────────────────────────────
+
+    These pages MUST exist on your website before applying to ad networks:
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │                                                                  │
+    │  1. PRIVACY POLICY                                               │
+    │     What data you collect, how you use it                        │
+    │     Mention: cookies, analytics, ad networks, email collection   │
+    │     Generator: privacypolicygenerator.info (free)                │
+    │                                                                  │
+    │  2. TERMS & CONDITIONS                                           │
+    │     Rules for using your website                                 │
+    │     Generator: termsandconditionsgenerator.com (free)            │
+    │                                                                  │
+    │  3. MEDICAL DISCLAIMER                                           │
+    │     "Content is for educational purposes only"                   │
+    │     "Not a substitute for professional medical advice"           │
+    │     "Consult your doctor/therapist before acting on anything"    │
+    │     ⚠️ CRITICAL for your health/wellness niche                   │
+    │                                                                  │
+    │  4. AFFILIATE DISCLOSURE                                         │
+    │     "Some links are affiliate links. We earn commission          │
+    │      at no extra cost to you."                                   │
+    │     Required by FTC (US) and Indian law                          │
+    │                                                                  │
+    │  5. ABOUT US PAGE                                                │
+    │     Who you are, your mission, why readers should trust you      │
+    │     Include author credentials, editorial process                │
+    │     Boosts E-E-A-T (Google trust signals)                        │
+    │                                                                  │
+    │  6. CONTACT US PAGE                                              │
+    │     Email address, contact form                                  │
+    │     Physical address (business address)                          │
+    │     Builds trust with Google and readers                         │
+    │                                                                  │
+    └──────────────────────────────────────────────────────────────────┘
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 15: GOVERNMENT/TAX REGISTRATIONS (India)
+────────────────────────────────────────────────────────────────────────────────
+
+
+A) UDYAM REGISTRATION (MSME — Micro, Small & Medium Enterprise)
+─────────────────────────────────────────────────────────────────
+    WHERE:  udyamregistration.gov.in
+    COST:   FREE
+    TIME:   Instant (online, Aadhaar-based)
+
+    Information needed:
+    • Aadhaar number (linked to mobile)
+    • PAN number
+    • Business name (your blog/brand name)
+    • Type of enterprise: Service
+    • Business activity: "Online media publishing" or "Digital content services"
+    • Bank account details
+    • Business address
+    • Investment in equipment (your computer, ₹30,000-1,00,000)
+    • Number of employees
+
+    WHY: Gives you MSME certificate → helps open current account,
+         get government schemes, looks professional.
+
+
+B) GST REGISTRATION
+────────────────────
+    WHERE:  www.gst.gov.in
+    COST:   FREE
+    WHEN:   Mandatory when revenue crosses ₹20 lakh/year
+             (Recommended earlier for professionalism)
+
+    Information needed:
+    • PAN card
+    • Aadhaar card
+    • Business address proof (electricity bill/rent agreement)
+    • Bank account statement or cancelled cheque
+    • Photograph
+    • Digital signature (Class 2 DSC) — costs ₹500–1000
+    • Constitution of business: Proprietorship
+    • Business name
+    • Nature of business: "Information Technology and Computer Services"
+      or "Other service activities" → "Web portal operations"
+
+    What it gives you:
+    • GSTIN number (needed for professional invoices)
+    • Ability to claim input tax credit on expenses
+    • Required for current account in some banks
+    • Shows legitimacy to sponsors/advertisers
+
+    Note on GST for blog income:
+    • Ad income from Google (foreign company) = Export of services = 0% GST
+    • But you still file NIL returns monthly/quarterly
+    • Indian affiliate income = 18% GST applicable
+    • Get a CA to handle this — don't DIY GST
+
+
+C) PAN (Permanent Account Number) — You likely already have this
+──────────────────────────────────────────────────────────────────
+    If not:
+    WHERE:  www.onlineservices.nsdl.com/paam/endUserRegisterContact.html
+    COST:   ₹107
+    
+    Needed for: Everything (AdSense, affiliates, GST, bank, tax filing)
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 16: SEO TOOLS REGISTRATION
+────────────────────────────────────────────────────────────────────────────────
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │  Tool                 Cost            What for                    │
+    ├──────────────────────────────────────────────────────────────────┤
+    │  Ubersuggest          FREE/₹2000/mo   Keyword research (start)   │
+    │  Google Keyword       FREE            Keyword volume data         │
+    │  Planner                                                         │
+    │  Ahrefs              ₹7,000/month     Full SEO suite (later)     │
+    │  SEMrush             ₹8,000/month     Alternative to Ahrefs      │
+    │  Surfer SEO          ₹3,000/month     Content optimization       │
+    │  Grammarly           FREE/₹1000/mo   Grammar + readability       │
+    │  Copyscape           ₹500/month       Plagiarism checking        │
+    │  Canva               FREE/₹500/mo    Graphics & featured images  │
+    └──────────────────────────────────────────────────────────────────┘
+
+    Information needed: Email, payment card
+    Start with FREE tools, upgrade as revenue grows.
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+STEP 17: HIRE A CA (Chartered Accountant)
+────────────────────────────────────────────────────────────────────────────────
+
+    WHAT:   Handles your taxes, GST, compliance
+    WHEN:   Month 1 (part-time is fine)
+    COST:   ₹1,000–3,000/month or ₹15,000–30,000/year
+
+    What they'll do:
+    • Register GST when needed
+    • File quarterly GST returns
+    • File annual Income Tax Return (ITR-3 or ITR-4)
+    • Advise on tax-saving (80C, business expenses deduction)
+    • Handle TDS on freelancer payments
+    • Calculate advance tax quarterly
+
+    Find: Local CA, or online services (ClearTax, Zoho Books + CA)
+
+
+
+================================================================================
+COMPLETE CHECKLIST — ORDER OF OPERATIONS
+================================================================================
+
+    ┌────────────────────────────────────────────────────────────────────┐
+    │                                                                    │
+    │  WEEK 1:                                                           │
+    │  ────────                                                          │
+    │  □ Decide brand name                                               │
+    │  □ Check domain availability                                       │
+    │  □ Buy domain                                                      │
+    │  □ Set up business email                                           │
+    │  □ Create all social media accounts (reserve the name)             │
+    │  □ Sign up for Cloudflare (free CDN + SSL)                         │
+    │  □ Sign up for hosting (server for backend)                        │
+    │  □ Sign up for Vercel (frontend hosting)                           │
+    │  □ Sign up for AWS (S3 for images)                                 │
+    │  □ Register Udyam (MSME — free, instant)                           │
+    │                                                                    │
+    │  WEEK 2:                                                           │
+    │  ────────                                                          │
+    │  □ Website development starts (or hire developer)                  │
+    │  □ Set up Google Search Console                                    │
+    │  □ Set up Google Analytics                                         │
+    │  □ Create legal pages (privacy, terms, disclaimer)                 │
+    │  □ Sign up for email marketing platform                            │
+    │  □ Sign up for Canva (graphics)                                    │
+    │  □ Sign up for Grammarly (writing quality)                         │
+    │  □ Find and hire first content writer(s)                           │
+    │  □ Find a CA (accountant)                                          │
+    │                                                                    │
+    │  WEEK 3-4:                                                         │
+    │  ──────────                                                        │
+    │  □ Website goes live                                               │
+    │  □ Publish first 10-15 blog posts                                  │
+    │  □ Submit sitemap to Google Search Console                         │
+    │  □ Create Pinterest business account + first pins                  │
+    │  □ Sign up for keyword research tool                               │
+    │  □ Open PayPal account                                             │
+    │  □ Open Payoneer account                                           │
+    │  □ Register on 2-3 affiliate networks                              │
+    │  □ Set up Pinterest with rich pins                                 │
+    │                                                                    │
+    │  WEEK 5-6 (After 15-20 posts are live):                            │
+    │  ─────────────────────────────────────                             │
+    │  □ Apply for Google AdSense                                        │
+    │  □ Apply for Amazon Associates (India)                             │
+    │  □ Apply for Amazon Associates (US)                                │
+    │  □ Apply for BetterHelp / Impact.com affiliate                     │
+    │  □ Apply for other relevant affiliate programs                     │
+    │  □ Set up bank details in AdSense (after approval)                 │
+    │  □ Verify AdSense PIN (arrives by post in 2-4 weeks)               │
+    │                                                                    │
+    │  MONTH 3-4 (When earning starts):                                  │
+    │  ──────────────────────────────────                                │
+    │  □ Register GST (if approaching ₹20L/year or want current acct)   │
+    │  □ Open current account in business name                           │
+    │  □ Start paying advance tax (if earnings are significant)          │
+    │  □ Consider upgrading to Ezoic (if 10k+ monthly visitors)          │
+    │                                                                    │
+    └────────────────────────────────────────────────────────────────────┘
+
+
+
+================================================================================
+SUMMARY — EVERYWHERE YOUR DETAILS ARE REGISTERED
+================================================================================
+
+    ┌────────────────────────────────────────────────────────────────────┐
+    │                                                                    │
+    │  YOUR WEBSITE/BRAND NAME needed at:                                │
+    │  • Domain registrar                                                │
+    │  • All hosting platforms                                           │
+    │  • Google Search Console                                           │
+    │  • Google Analytics                                                │
+    │  • Google AdSense                                                  │
+    │  • All affiliate networks                                          │
+    │  • All social media platforms                                      │
+    │  • Email marketing platform                                        │
+    │  • Udyam / GST registration                                        │
+    │                                                                    │
+    │  YOUR BANK ACCOUNT needed at:                                      │
+    │  • Google AdSense (primary earning source)                         │
+    │  • Amazon Associates India                                         │
+    │  • PayPal (for international affiliate payouts)                    │
+    │  • Payoneer (for USD payouts)                                      │
+    │  • GST portal                                                      │
+    │  • Sponsor payments (direct bank transfer)                         │
+    │                                                                    │
+    │  YOUR PAN needed at:                                               │
+    │  • Google AdSense                                                  │
+    │  • Amazon Associates                                               │
+    │  • GST registration                                                │
+    │  • Bank (current account)                                          │
+    │  • PayPal                                                          │
+    │  • Payoneer                                                        │
+    │  • Income Tax filing                                               │
+    │                                                                    │
+    │  TOTAL ACCOUNTS YOU'LL CREATE: ~25-30                              │
+    │  TOTAL MONTHLY COST (just tools/infra): ₹2,000–8,000 at start     │
+    │                                                                    │
+    └────────────────────────────────────────────────────────────────────┘
+
+
+
+================================================================================
+THINGS PEOPLE OFTEN FORGET
+================================================================================
+
+    1. AdSense PIN VERIFICATION — Google sends a physical letter to your
+       home address with a PIN. If you don't enter it, you don't get paid.
+       Arrives in 2-4 weeks. Keep your correct address in AdSense.
+
+    2. TAX on foreign income — Google pays you from Ireland/Singapore.
+       This is foreign income. You must declare it in ITR. No TDS is cut
+       by Google, so YOU must pay advance tax quarterly or face interest.
+
+    3. KEEP RECORDS — Save every invoice, receipt, payment screenshot.
+       All business expenses are tax-deductible (hosting, tools, writer
+       payments, laptop, internet bill — everything used for the blog).
+
+    4. DOMAIN AUTO-RENEWAL — Turn it ON. If your domain expires and
+       someone else buys it, you lose everything. Set auto-renew.
+
+    5. TWO-FACTOR AUTH (2FA) — Enable 2FA on EVERY account, especially:
+       AdSense, bank, email, hosting, domain registrar.
+       One hacked account = entire business at risk.
+
+    6. BACKUP EMAIL — Keep a backup recovery email. If you lose access
+       to your primary email, you lose access to everything.
+
+    7. DOCUMENT EVERYTHING — Keep a master spreadsheet with:
+       - All account usernames/emails
+       - What payment method is linked where
+       - Renewal dates for domain, hosting, tools
+       - Login details (use a password manager like Bitwarden — free)
+
+================================================================================

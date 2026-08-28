@@ -1,0 +1,138 @@
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              CONTENT CREATION LAYER                              │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐      │
+│   │   Admin Panel     │     │   Content Writer  │     │  Medical Reviewer │      │
+│   │   (Django Admin)  │     │   (Author Role)   │     │  (Reviewer Role)  │      │
+│   └────────┬─────────┘     └────────┬─────────┘     └────────┬─────────┘      │
+│            │                         │                         │                 │
+│            ▼                         ▼                         ▼                 │
+│   ┌─────────────────────────────────────────────────────────────────────┐      │
+│   │                    EDITORIAL WORKFLOW ENGINE                          │      │
+│   │                                                                       │      │
+│   │   [Draft] → [In Review] → [Medical Review] → [Approved] → [Schedule]│      │
+│   │      │            │              │                │            │      │      │
+│   │      ▼            ▼              ▼                ▼            ▼      │      │
+│   │   Save as      Notify         Reviewer         SEO Check    Set      │      │
+│   │   draft        Reviewer       approves/        auto-runs    publish  │      │
+│   │                               rejects                       date     │      │
+│   └─────────────────────────────────────────────────────────────────────┘      │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              PROCESSING LAYER                                    │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐      │
+│   │   Image      │   │   SEO Auto   │   │  Sitemap     │   │  Cache       │      │
+│   │   Optimizer   │   │   Scorer     │   │  Generator   │   │  Invalidator │      │
+│   │   (Celery)    │   │   (Celery)   │   │  (Celery)    │   │  (Redis)     │      │
+│   └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘      │
+│                                                                                 │
+│   On Publish:                                                                   │
+│   1. Compress & resize images → upload to S3                                    │
+│   2. Generate SEO score (title, meta, keyword density)                          │
+│   3. Regenerate XML sitemap chunk                                               │
+│   4. Invalidate CDN cache for category/tag pages                                │
+│   5. Index post in Elasticsearch                                                │
+│   6. Send newsletter notification (if enabled)                                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              DATA STORAGE LAYER                                   │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐  │
+│   │  PostgreSQL   │   │    Redis      │   │  AWS S3       │   │Elasticsearch │  │
+│   │              │   │              │   │              │   │              │  │
+│   │  - Posts      │   │  - Page cache │   │  - Images     │   │  - Full text │  │
+│   │  - Users      │   │  - Sessions   │   │  - Media      │   │  - Search    │  │
+│   │  - Categories │   │  - Rate limit │   │  - Sitemaps   │   │  - Suggest   │  │
+│   │  - Analytics  │   │  - Popular    │   │  - Backups    │   │  - Related   │  │
+│   └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              API LAYER (Django REST)                              │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌────────────────────────────────────────────────────────────────────┐       │
+│   │                         Django REST API                             │       │
+│   │                                                                     │       │
+│   │  /api/posts/           → Paginated list (20/page)                  │       │
+│   │  /api/posts/{slug}/    → Single post + related posts               │       │
+│   │  /api/categories/      → Category tree                             │       │
+│   │  /api/search/          → Elasticsearch query                       │       │
+│   │  /api/popular/         → Redis-backed trending posts               │       │
+│   │  /api/newsletter/      → Email subscription                        │       │
+│   │  /api/sitemap/         → Programmatic sitemap                      │       │
+│   │                                                                     │       │
+│   │  Middleware: Rate Limiting, CORS, Auth, Caching Headers            │       │
+│   └────────────────────────────────────────────────────────────────────┘       │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              DELIVERY LAYER                                       │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────────────────────────────────────────────────────────────┐         │
+│   │                    Next.js (SSR / ISR)                             │         │
+│   │                                                                    │         │
+│   │   Request → Check ISR Cache → If stale, call Django API →         │         │
+│   │   Render HTML → Serve to User + Store in CDN                      │         │
+│   │                                                                    │         │
+│   │   Pages:                                                           │         │
+│   │   - Homepage (latest + trending + category highlights)             │         │
+│   │   - Post page (full article + ads + related)                       │         │
+│   │   - Category archive (paginated list)                              │         │
+│   │   - Search results                                                 │         │
+│   │   - Author profile                                                 │         │
+│   └──────────────────────────────────────────────────────────────────┘         │
+│                           │                                                      │
+│                           ▼                                                      │
+│   ┌──────────────────────────────────────────────────────────────────┐         │
+│   │                    CDN (CloudFront / Cloudflare)                   │         │
+│   │                                                                    │         │
+│   │   - Caches static pages at edge                                    │         │
+│   │   - Serves images from S3                                          │         │
+│   │   - SSL termination                                                │         │
+│   │   - DDoS protection                                                │         │
+│   └──────────────────────────────────────────────────────────────────┘         │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              END USER EXPERIENCE                                  │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐      │
+│   │  Google   │  │  Direct   │  │  Social   │  │  Email    │  │  Referral │      │
+│   │  Search   │  │  Traffic  │  │  Media    │  │  Newsletter│  │  Links   │      │
+│   └─────┬────┘  └─────┬────┘  └─────┬────┘  └─────┬────┘  └─────┬────┘      │
+│         │              │              │              │              │            │
+│         └──────────────┴──────────────┴──────────────┴──────────────┘            │
+│                                       │                                          │
+│                                       ▼                                          │
+│                          ┌─────────────────────────┐                            │
+│                          │      USER ON SITE        │                            │
+│                          │                          │                            │
+│                          │  Reads Article           │                            │
+│                          │  Sees Ads (Revenue)      │                            │
+│                          │  Clicks Affiliate Links  │                            │
+│                          │  Subscribes Newsletter   │                            │
+│                          │  Shares on Social        │                            │
+│                          │  Reads Related Posts     │                            │
+│                          │  Takes Quiz              │                            │
+│                          └─────────────────────────┘                            │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
