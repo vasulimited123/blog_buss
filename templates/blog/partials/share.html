@@ -1,0 +1,24 @@
+{% comment %}
+Social share buttons. Expects `post` in context.
+Builds an absolute URL to the current article and opens each network's share
+dialog. WhatsApp included (important for the Indian audience).
+{% endcomment %}
+{% with url=request.scheme|add:"://"|add:request.get_host|add:post.get_absolute_url %}
+<div class="share-bar" aria-label="Share this article">
+    <span class="share-label">Share:</span>
+    <a class="share-btn share-wa"
+       href="https://api.whatsapp.com/send?text={{ post.title|urlencode }}%20{{ url|urlencode }}"
+       target="_blank" rel="noopener" aria-label="Share on WhatsApp">WhatsApp</a>
+    <a class="share-btn share-fb"
+       href="https://www.facebook.com/sharer/sharer.php?u={{ url|urlencode }}"
+       target="_blank" rel="noopener" aria-label="Share on Facebook">Facebook</a>
+    <a class="share-btn share-tw"
+       href="https://twitter.com/intent/tweet?text={{ post.title|urlencode }}&url={{ url|urlencode }}"
+       target="_blank" rel="noopener" aria-label="Share on X">X</a>
+    <a class="share-btn share-in"
+       href="https://www.linkedin.com/sharing/share-offsite/?url={{ url|urlencode }}"
+       target="_blank" rel="noopener" aria-label="Share on LinkedIn">LinkedIn</a>
+    <button class="share-btn share-copy" type="button"
+            data-url="{{ url }}" aria-label="Copy link">Copy link</button>
+</div>
+{% endwith %}

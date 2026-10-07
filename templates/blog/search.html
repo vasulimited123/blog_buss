@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% if query %}: {{ query }}{% endif %} — Wellness Blog{% endblock %}
+{% block meta_robots %}<meta name="robots" content="noindex, follow">{% endblock %}
+
+{% block content %}
+<header class="archive-header">
+    <h1>Search</h1>
+    <form action="{% url 'blog:search' %}" method="get">
+        <input type="search" name="q" value="{{ query }}" placeholder="Search articles...">
+        <button type="submit">Search</button>
+    </form>
+</header>
+
+{% if query %}
+    <p>{{ result_count }} result{{ result_count|pluralize }} for &ldquo;{{ query }}&rdquo;</p>
+    {% if posts %}
+    <div class="post-grid">
+        {% for post in posts %}
+            {% include "blog/partials/post_card.html" with card_post=post %}
+        {% endfor %}
+    </div>
+    {% include "blog/partials/pagination.html" %}
+    {% else %}
+    <p>No articles matched your search. Try different keywords.</p>
+    {% endif %}
+{% else %}
+    <p>Type something above to search our articles.</p>
+{% endif %}
+{% endblock %}

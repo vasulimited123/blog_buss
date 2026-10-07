@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}All Categories{% endblock %}
+
+{% block content %}
+<header class="archive-header">
+    <h1>Browse all topics</h1>
+</header>
+
+<ul class="category-list">
+    {% for category in categories %}
+    <li>
+        <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+        {% if category.description %}<p>{{ category.description }}</p>{% endif %}
+        {% if category.children.all %}
+        <ul>
+            {% for child in category.children.all %}
+            <li><a href="{{ child.get_absolute_url }}">{{ child.name }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

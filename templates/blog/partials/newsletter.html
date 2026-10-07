@@ -1,0 +1,12 @@
+{% load static %}
+<section class="newsletter-box" aria-label="Newsletter signup">
+    <h3>Join the Elevate Life circle</h3>
+    <p>Thoughtful, judgment-free insights on intimacy and connection,
+       delivered gently to your inbox. No spam, ever.</p>
+    <form action="{% url 'blog:newsletter_subscribe' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="source" value="{{ request.path }}">
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>

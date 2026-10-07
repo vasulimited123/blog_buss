@@ -1,0 +1,9 @@
+{% extends "blog/post_types/standard.html" %}
+{# Listicle: standard layout with a styling hook so numbered lists / headings
+   in the body render with the listicle look (styled in CSS). #}
+
+{% block content %}
+<div class="post-type-listicle">
+    {{ block.super }}
+</div>
+{% endblock %}

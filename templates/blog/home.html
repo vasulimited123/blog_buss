@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Elevate Life — Relationships, Intimacy & Emotional Wellbeing{% endblock %}
+{% block meta_description %}Elevate Life offers honest, judgment-free, science-backed guidance on relationships, intimacy, and emotional wellbeing for couples and individuals.{% endblock %}
+{% block canonical %}<link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}/">{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Elevate every relationship, starting with the one you're in</h1>
+    <p>Honest, judgment-free guidance on intimacy, connection, and emotional
+       wellbeing — for couples and individuals who want more.</p>
+</section>
+
+{% if featured_posts %}
+<section>
+    <h2>Featured</h2>
+    <div class="post-grid">
+        {% for post in featured_posts %}
+            {% include "blog/partials/post_card.html" with card_post=post %}
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<section>
+    <h2>Latest articles</h2>
+    {% if latest_posts %}
+    <div class="post-grid">
+        {% for post in latest_posts %}
+            {% include "blog/partials/post_card.html" with card_post=post %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No articles published yet. Check back soon.</p>
+    {% endif %}
+</section>
+
+{% include "blog/partials/popular.html" %}
+
+<section>
+    <h2>Browse by topic</h2>
+    <ul class="category-list">
+        {% for category in categories %}
+        <li><a href="{{ category.get_absolute_url }}">{{ category.name }}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

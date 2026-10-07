@@ -1,0 +1,133 @@
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              CONTENT CREATION LAYER                              │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐      │
+│   │   Admin Panel     │     │   Content Writer  │     │  Medical Reviewer │      │
+│   │   (Django Admin)  │     │   (Author Role)   │     │  (Reviewer Role)  │      │
+│   └────────┬─────────┘     └────────┬─────────┘     └────────┬─────────┘      │
+│            │                         │                         │                 │
+│            ▼                         ▼                         ▼                 │
+│   ┌─────────────────────────────────────────────────────────────────────┐      │
+│   │                    EDITORIAL WORKFLOW ENGINE                          │      │
+│   │                                                                       │      │
+│   │   [Draft] → [In Review] → [Medical Review] → [Approved] → [Schedule]│      │
+│   │      │            │              │                │            │      │      │
+│   │      ▼            ▼              ▼                ▼            ▼      │      │
+│   │   Save as      Notify         Reviewer         SEO Check    Set      │      │
+│   │   draft        Reviewer       approves/        auto-runs    publish  │      │
+│   │                               rejects                       date     │      │
+│   └─────────────────────────────────────────────────────────────────────┘      │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              PROCESSING LAYER                                    │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐      │
+│   │   Image      │   │   SEO Auto   │   │  Sitemap     │   │  Cache       │      │
+│   │   Optimizer   │   │   Scorer     │   │  Generator   │   │  Invalidator │      │
+│   │   (Celery)    │   │   (Celery)   │   │  (Celery)    │   │  (Redis)     │      │
+│   └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘      │
+│                                                                                 │
+│   On Publish:                                                                   │
+│   1. Compress & resize images → upload to S3                                    │
+│   2. Generate SEO score (title, meta, keyword density)                          │
+│   3. Regenerate XML sitemap chunk                                               │
+│   4. Invalidate CDN cache for category/tag pages                                │
+│   5. Index post in Elasticsearch                                                │
+│   6. Send newsletter notification (if enabled)                                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              DATA STORAGE LAYER                                   │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐  │
+│   │  PostgreSQL   │   │    Redis      │   │  AWS S3       │   │Elasticsearch │  │
+│   │              │   │              │   │              │   │              │  │
+│   │  - Posts      │   │  - Page cache │   │  - Images     │   │  - Full text │  │
+│   │  - Users      │   │  - Sessions   │   │  - Media      │   │  - Search    │  │
+│   │  - Categories │   │  - Rate limit │   │  - Sitemaps   │   │  - Suggest   │  │
+│   │  - Analytics  │   │  - Popular    │   │  - Backups    │   │  - Related   │  │
+│   └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    RENDER & DELIVERY LAYER (Django Templates)                     │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────────────────────────────────────────────────────────────┐         │
+│   │             Django Views + Templates (Server-Side Rendering)       │         │
+│   │                                                                    │         │
+│   │   NO React. NO Next.js. NO separate frontend.                     │         │
+│   │   Django receives the request and renders the full HTML page       │         │
+│   │   directly using its own template engine.                          │         │
+│   │                                                                    │         │
+│   │   Request → Django URL router → View → Query DB (via ORM) →       │         │
+│   │   Render HTML template → Send finished HTML page to browser        │         │
+│   │                                                                    │         │
+│   │   URL routes (public site):                                        │         │
+│   │   /                      → Homepage (latest + trending + featured) │         │
+│   │   /<category>/<slug>/     → Single post page (article+ads+related) │         │
+│   │   /category/<slug>/       → Category archive (paginated list)      │         │
+│   │   /tag/<slug>/            → Tag archive                            │         │
+│   │   /search/?q=             → Search results (DB / Elasticsearch)    │         │
+│   │   /author/<slug>/         → Author profile                        │         │
+│   │   /sitemap.xml            → Auto-generated sitemap                 │         │
+│   │                                                                    │         │
+│   │   Templates use: base.html + blocks, {% include %} partials for   │         │
+│   │   header, footer, ad slots, subscribe box, related posts.          │         │
+│   │                                                                    │         │
+│   │   Page fragments cached in Redis ({% cache %} template tag).       │         │
+│   └──────────────────────────────────────────────────────────────────┘         │
+│                           │                                                      │
+│                           ▼                                                      │
+│   ┌──────────────────────────────────────────────────────────────────┐         │
+│   │                    CDN (CloudFront / Cloudflare)                   │         │
+│   │                                                                    │         │
+│   │   - Caches the HTML pages Django renders (edge caching)            │         │
+│   │   - Serves images from S3                                          │         │
+│   │   - Serves static CSS/JS (Django collectstatic output)             │         │
+│   │   - SSL termination                                                │         │
+│   │   - DDoS protection                                                │         │
+│   └──────────────────────────────────────────────────────────────────┘         │
+│                                                                                 │
+│   NOTE: A Django REST API is NOT built now. It can be added later ONLY if      │
+│   a mobile app or separate frontend is ever needed. For now, one Django app     │
+│   serves both the admin panel AND the public website.                           │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              END USER EXPERIENCE                                  │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐      │
+│   │  Google   │  │  Direct   │  │  Social   │  │  Email    │  │  Referral │      │
+│   │  Search   │  │  Traffic  │  │  Media    │  │  Newsletter│  │  Links   │      │
+│   └─────┬────┘  └─────┬────┘  └─────┬────┘  └─────┬────┘  └─────┬────┘      │
+│         │              │              │              │              │            │
+│         └──────────────┴──────────────┴──────────────┴──────────────┘            │
+│                                       │                                          │
+│                                       ▼                                          │
+│                          ┌─────────────────────────┐                            │
+│                          │      USER ON SITE        │                            │
+│                          │                          │                            │
+│                          │  Reads Article           │                            │
+│                          │  Sees Ads (Revenue)      │                            │
+│                          │  Clicks Affiliate Links  │                            │
+│                          │  Subscribes Newsletter   │                            │
+│                          │  Shares on Social        │                            │
+│                          │  Reads Related Posts     │                            │
+│                          │  Takes Quiz              │                            │
+│                          └─────────────────────────┘                            │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘

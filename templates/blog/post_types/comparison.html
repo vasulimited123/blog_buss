@@ -1,0 +1,9 @@
+{% extends "blog/post_types/standard.html" %}
+{# Comparison ("X vs Y"): standard layout with a styling hook so tables in the
+   body get comparison-table styling. #}
+
+{% block content %}
+<div class="post-type-comparison">
+    {{ block.super }}
+</div>
+{% endblock %}

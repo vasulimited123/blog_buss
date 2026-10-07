@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}About Us — Elevate Life{% endblock %}
+{% block meta_description %}Elevate Life is a space for honest, judgment-free guidance on relationships, intimacy, and emotional wellbeing. Learn about our mission and our founder, Dr. R.S. Agrawal.{% endblock %}
+
+{% block content %}
+<article class="page">
+    <h1>About Elevate Life</h1>
+
+    <p><strong>Elevate Life</strong> exists for a simple reason: the most human parts of
+    our lives — our relationships, our intimacy, our emotional wellbeing — are the ones
+    we are given the least honest guidance about. We are here to change that, gently and
+    without judgment.</p>
+
+    <p>Many people carry private questions about their marriages, their bodies, and their
+    connections that they feel unable to ask out loud. We answer those questions with
+    warmth, honesty, and respect — in plain language, so that no one has to feel alone or
+    ashamed.</p>
+
+    <h2>Our founder</h2>
+    <p>Elevate Life was founded by <strong>Dr. R.S. Agrawal</strong>, who believes that
+    everyone deserves access to compassionate, trustworthy guidance on the relationships
+    and intimacy that shape our happiness. His vision is to build a space where sensitive
+    topics are treated with the care, dignity, and honesty they deserve.</p>
+
+    <h2>What we cover</h2>
+    <p>Our writing spans men's health, women's health, relationships and intimacy,
+    sexual wellness, the psychology of connection, and navigating long-term partnerships
+    — always from an educational and wellbeing perspective.</p>
+
+    <h2>Our approach</h2>
+    <ul>
+        <li><strong>Honest and judgment-free.</strong> We write about sensitive topics the
+        way a trusted, wise friend would — never with shame or sensationalism.</li>
+        <li><strong>Grounded in real understanding.</strong> We draw on established
+        research and reputable sources, and we write for real people living real lives.</li>
+        <li><strong>Warm and human.</strong> Behind every article is the belief that the
+        person reading it deserves compassion.</li>
+        <li><strong>Inclusive.</strong> We write for people of all backgrounds,
+        relationships, and life stages.</li>
+    </ul>
+
+    <h2>What we are not</h2>
+    <p>Elevate Life is an educational resource, not a substitute for professional care.
+    Nothing here is medical advice, diagnosis, or treatment. For personal concerns, we
+    always encourage you to consult a qualified doctor, therapist, or counsellor. Please
+    see our <a href="{% url 'blog:disclaimer' %}">Medical Disclaimer</a>.</p>
+
+    <h2>Our mission</h2>
+    <p>To help individuals and couples build healthier, more connected, and more informed
+    lives — and to make honest guidance on the most intimate parts of life something no
+    one has to search for in shame.</p>
+
+    <p>We are glad you are here. To reach us, please visit our
+    <a href="{% url 'blog:contact' %}">Contact page</a>.</p>
+</article>
+{% endblock %}

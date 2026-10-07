@@ -1,0 +1,29 @@
+{% comment %}
+Reusable ad slot. Pass slot_name (top / in-article / sidebar).
+
+Behaviour:
+- If an AdSense client id is configured, render a real AdSense ad unit
+  (using a named slot id when available for this slot_name).
+- Otherwise, show the neutral gray "Advertisement" placeholder.
+
+The site looks clean before approval, and ads switch on automatically once
+the env vars are set — no template edits needed.
+{% endcomment %}
+{% load blog_extras %}
+{% if adsense_client_id %}
+    <div class="ad-slot ad-slot-{{ slot_name|default:'default' }}">
+        <span class="ad-label">Advertisement</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="{{ adsense_client_id }}"
+             {% with slot_id=adsense_slots|dict_get:slot_name %}{% if slot_id %}data-ad-slot="{{ slot_id }}"{% endif %}{% endwith %}
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+{% else %}
+    <div class="ad-slot ad-slot-{{ slot_name|default:'default' }}" aria-hidden="true">
+        <span class="ad-label">Advertisement</span>
+        {# Placeholder — real ads appear once AdSense is configured. #}
+    </div>
+{% endif %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Page not found — Wellness Blog{% endblock %}
+{% block meta_robots %}<meta name="robots" content="noindex, follow">{% endblock %}
+
+{% block content %}
+<section class="confirmation">
+    <h1>We couldn't find that page</h1>
+    <p>The page you're looking for may have moved or no longer exists.</p>
+    <p>
+        <a href="{% url 'blog:home' %}">← Back to home</a>
+        &nbsp;·&nbsp;
+        <a href="{% url 'blog:category_index' %}">Browse topics</a>
+    </p>
+    <form action="{% url 'blog:search' %}" method="get" style="margin-top:20px;">
+        <input type="search" name="q" placeholder="Search articles…" aria-label="Search">
+        <button type="submit">Search</button>
+    </form>
+</section>
+{% endblock %}

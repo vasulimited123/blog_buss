@@ -1,0 +1,23 @@
+{# Expects: card_post #}
+<article class="post-card">
+    {% if card_post.featured_image %}
+    <a class="post-card-image" href="{{ card_post.get_absolute_url }}">
+        <img src="{{ card_post.featured_image.url }}" alt="{{ card_post.featured_image_alt }}" loading="lazy">
+    </a>
+    {% else %}
+    {# No image yet: show a colored placeholder so cards still look polished. #}
+    <a class="post-card-image post-card-placeholder" href="{{ card_post.get_absolute_url }}"
+       aria-label="{{ card_post.title }}">
+        <span>{{ card_post.category.name }}</span>
+    </a>
+    {% endif %}
+    <div class="post-card-body">
+        <a class="post-card-category" href="{{ card_post.category.get_absolute_url }}">{{ card_post.category.name }}</a>
+        <h3 class="post-card-title"><a href="{{ card_post.get_absolute_url }}">{{ card_post.title }}</a></h3>
+        <p class="post-card-excerpt">{{ card_post.excerpt|truncatewords:20 }}</p>
+        <p class="post-card-meta">
+            <a href="{{ card_post.author.get_absolute_url }}">{{ card_post.author.name }}</a>
+            {% if card_post.published_at %}· {{ card_post.published_at|date:"M j, Y" }}{% endif %}
+        </p>
+    </div>
+</article>

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Privacy Policy — Wellness Blog{% endblock %}
+{% block meta_description %}How we collect, use, and protect your information, including our use of cookies, analytics, and advertising partners.{% endblock %}
+
+{% block content %}
+<article class="page">
+    <h1>Privacy Policy</h1>
+    <p><em>Last updated: {% now "F j, Y" %}</em></p>
+
+    <p>This Privacy Policy explains how we collect, use, and protect information when you
+    visit this website. By using the site, you agree to the practices described here.</p>
+
+    <h2>Information we collect</h2>
+    <ul>
+        <li><strong>Information you provide.</strong> If you subscribe to our newsletter
+        or contact us, we collect the email address and any details you choose to share.</li>
+        <li><strong>Automatically collected information.</strong> Like most websites, we
+        automatically receive standard technical information such as your browser type,
+        device, approximate location, and pages visited, through cookies and similar
+        technologies.</li>
+    </ul>
+
+    <h2>Cookies</h2>
+    <p>Cookies are small files stored on your device. We use them to understand how the
+    site is used, to remember preferences, and to support advertising. You can control
+    or disable cookies through your browser settings, though some features may not work
+    as intended if you do.</p>
+
+    <h2>Analytics</h2>
+    <p>We may use analytics services (such as Google Analytics) to understand how
+    visitors use the site in aggregate. These services may set their own cookies and
+    process data according to their own privacy policies.</p>
+
+    <h2>Advertising</h2>
+    <p>We may display advertising served by third-party networks, including Google. These
+    partners may use cookies and similar technologies to serve ads based on your prior
+    visits to this and other websites. Third-party vendors, including Google, use cookies
+    to serve ads based on a user's prior visits. You can learn about and opt out of
+    personalised advertising by visiting Google's Ads Settings and the relevant industry
+    opt-out pages.</p>
+
+    <h2>How we use information</h2>
+    <ul>
+        <li>To operate, maintain, and improve the website.</li>
+        <li>To send our newsletter, if you have subscribed.</li>
+        <li>To respond to your enquiries.</li>
+        <li>To understand site usage and support advertising.</li>
+    </ul>
+
+    <h2>Sharing of information</h2>
+    <p>We do not sell your personal information. We share data only with service
+    providers (such as analytics and advertising partners) that help us operate the
+    site, and only as needed for those purposes.</p>
+
+    <h2>Your choices</h2>
+    <p>You can unsubscribe from our newsletter at any time using the link in our emails.
+    You can manage cookies through your browser, and manage ad personalisation through
+    your ad settings with the relevant provider.</p>
+
+    <h2>Children's privacy</h2>
+    <p>This website is intended for adults and is not directed at children. We do not
+    knowingly collect information from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. The "last updated" date above
+    reflects the most recent revision.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, please reach us via our
+    <a href="{% url 'blog:contact' %}">Contact page</a>.</p>
+
+    <p><em>Note: this is a general template. Have it reviewed for your jurisdiction
+    (for example, GDPR or local requirements) before going live.</em></p>
+</article>
+{% endblock %}

@@ -1,0 +1,23 @@
+# Core framework (5.2 LTS — required for Python 3.14 support)
+Django>=5.2,<5.3
+
+# Image processing (featured images, uploads)
+Pillow>=11.0
+
+# Rich text editor for writing articles in the admin (CKEditor 5 - maintained)
+django-ckeditor-5>=0.2.18
+
+# Static file serving in production (also loaded in dev, harmless)
+whitenoise>=6.7
+
+# PostgreSQL driver (dev + production; configured via DJANGO_DB_* env vars)
+psycopg[binary]>=3.2
+
+# --- Production deployment (install on the server) ---
+# gunicorn>=23.0            # Production WSGI server (Linux hosts)
+
+# --- Added later as the project scales ---
+# celery>=5.4               # Background tasks (image processing, emails)
+# redis>=5.0                # Cache + Celery broker
+# django-redis>=5.4         # Redis cache backend
+psycopg2-binary==2.9.12

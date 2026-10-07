@@ -1,0 +1,9 @@
+{% extends "blog/post_types/standard.html" %}
+{# Quiz: standard layout with a styling hook. Interactive quiz behaviour
+   (scoring, JS) is a later enhancement; for now the body holds the questions. #}
+
+{% block content %}
+<div class="post-type-quiz">
+    {{ block.super }}
+</div>
+{% endblock %}

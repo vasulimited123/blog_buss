@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Subscribed{% endblock %}
+
+{% block content %}
+<section class="confirmation">
+    <h1>You're in!</h1>
+    <p>Thanks for subscribing. We'll send you practical, judgment-free wellness insights.</p>
+    <p><a href="{% url 'blog:home' %}">&larr; Back to home</a></p>
+</section>
+{% endblock %}

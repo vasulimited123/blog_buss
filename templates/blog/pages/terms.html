@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Terms &amp; Conditions — Wellness Blog{% endblock %}
+{% block meta_description %}The terms governing your use of this website, including acceptable use, intellectual property, and limitations of liability.{% endblock %}
+
+{% block content %}
+<article class="page">
+    <h1>Terms &amp; Conditions</h1>
+    <p><em>Last updated: {% now "F j, Y" %}</em></p>
+
+    <p>By accessing and using this website, you agree to these Terms &amp; Conditions. If
+    you do not agree, please do not use the site.</p>
+
+    <h2>Educational purpose only</h2>
+    <p>All content is provided for general educational and informational purposes. It is
+    not medical, psychological, or professional advice. Please read our
+    <a href="{% url 'blog:disclaimer' %}">Medical Disclaimer</a>.</p>
+
+    <h2>Acceptable use</h2>
+    <p>You agree to use this website lawfully and respectfully. You may not use it in any
+    way that could damage, disable, or impair the site, or interfere with anyone else's
+    use of it.</p>
+
+    <h2>Intellectual property</h2>
+    <p>The content on this website, including text and design, is owned by us or our
+    licensors and is protected by applicable laws. You may share links to our articles,
+    but you may not reproduce substantial portions without permission.</p>
+
+    <h2>Third-party links</h2>
+    <p>Our articles may link to external websites for reference. We are not responsible
+    for the content, accuracy, or practices of those third-party sites.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>We work to ensure our content is accurate and helpful, but we make no warranties
+    about its completeness or suitability for your specific circumstances. To the fullest
+    extent permitted by law, we are not liable for any loss or harm arising from reliance
+    on information provided here. Always consult a qualified professional for personal
+    concerns.</p>
+
+    <h2>Changes to these terms</h2>
+    <p>We may update these Terms from time to time. Continued use of the site after
+    changes constitutes acceptance of the revised Terms.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about these Terms can be sent via our
+    <a href="{% url 'blog:contact' %}">Contact page</a>.</p>
+
+    <p><em>Note: this is a general template. Have it reviewed for your jurisdiction
+    before going live.</em></p>
+</article>
+{% endblock %}

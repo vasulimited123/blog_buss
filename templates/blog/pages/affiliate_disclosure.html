@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Affiliate Disclosure — Wellness Blog{% endblock %}
+{% block meta_description %}How we use affiliate links and advertising, and our commitment to keeping recommendations honest and independent.{% endblock %}
+
+{% block content %}
+<article class="page">
+    <h1>Affiliate Disclosure</h1>
+    <p><em>Last updated: {% now "F j, Y" %}</em></p>
+
+    <p>To support the free educational content we provide, this website may earn revenue
+    through affiliate links and advertising. We believe in being transparent about how
+    this works.</p>
+
+    <h2>What affiliate links are</h2>
+    <p>Some links on this website are affiliate links. This means that if you click one
+    and make a purchase or sign up for a service, we may earn a small commission — at
+    <strong>no additional cost to you</strong>. The price you pay is exactly the same
+    whether or not you use our link.</p>
+
+    <h2>Our commitment to honesty</h2>
+    <p>We only mention products or services that we believe may genuinely be helpful to
+    our readers. Affiliate relationships never influence our editorial content, our
+    opinions, or the health information we provide. Our recommendations are made
+    independently, and your trust is more important to us than any commission.</p>
+
+    <h2>Advertising</h2>
+    <p>We also display advertising from third-party networks. These ads help keep our
+    content free. Please see our <a href="{% url 'blog:privacy' %}">Privacy Policy</a>
+    for details on how advertising cookies are used.</p>
+
+    <h2>Not professional advice</h2>
+    <p>Any product or service mentioned is shared for general educational purposes and is
+    not a recommendation for your specific situation. Always consult a qualified
+    professional before acting on health-related information. See our
+    <a href="{% url 'blog:disclaimer' %}">Medical Disclaimer</a>.</p>
+
+    <h2>Questions</h2>
+    <p>If you have any questions about our affiliate relationships or advertising, please
+    reach out via our <a href="{% url 'blog:contact' %}">Contact page</a>.</p>
+</article>
+{% endblock %}

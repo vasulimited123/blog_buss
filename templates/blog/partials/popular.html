@@ -1,0 +1,14 @@
+{% comment %}
+Popular posts widget. Uses `popular_posts` from the context processor
+(top posts by view count). Renders nothing if there are none.
+{% endcomment %}
+{% if popular_posts %}
+<aside class="popular-widget" aria-label="Popular articles">
+    <h3>Popular right now</h3>
+    <ol>
+        {% for p in popular_posts %}
+        <li><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></li>
+        {% endfor %}
+    </ol>
+</aside>
+{% endif %}

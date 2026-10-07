@@ -1,0 +1,1309 @@
+[
+{
+  "model": "blog.author",
+  "pk": 1,
+  "fields": {
+    "user": null,
+    "name": "Dr. Ananya Rao",
+    "slug": "dr-ananya-rao",
+    "credentials": "PhD, Clinical Psychologist",
+    "bio": "",
+    "photo": "",
+    "website": "",
+    "twitter": "",
+    "linkedin": "",
+    "created_at": "2026-09-01T09:29:36.275Z",
+    "updated_at": "2026-09-01T09:29:36.275Z"
+  }
+},
+{
+  "model": "blog.author",
+  "pk": 2,
+  "fields": {
+    "user": null,
+    "name": "Dr. Vikram Mehta",
+    "slug": "dr-vikram-mehta",
+    "credentials": "MD, Family Medicine",
+    "bio": "",
+    "photo": "",
+    "website": "",
+    "twitter": "",
+    "linkedin": "",
+    "created_at": "2026-09-01T09:29:36.280Z",
+    "updated_at": "2026-09-01T09:29:36.280Z"
+  }
+},
+{
+  "model": "blog.medicalreviewer",
+  "pk": 1,
+  "fields": {
+    "name": "Dr. Sunita Kapoor",
+    "credentials": "MD, Psychiatrist & Certified Sex Therapist",
+    "bio": "",
+    "photo": "",
+    "verification_url": "",
+    "created_at": "2026-09-01T09:29:36.283Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Men's Health",
+    "slug": "mens-health",
+    "description": "Physical and mental wellbeing topics relevant to men.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-09-01T09:29:36.244Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Women's Health",
+    "slug": "womens-health",
+    "description": "Physical and mental wellbeing topics relevant to women.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-09-01T09:29:36.258Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Relationship & Intimacy",
+    "slug": "relationship-intimacy",
+    "description": "Building and maintaining closeness in relationships.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-09-01T09:29:36.261Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Sexual Wellness",
+    "slug": "sexual-wellness",
+    "description": "Evidence-based education on sexual health and wellbeing.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-09-01T09:29:36.264Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 5,
+  "fields": {
+    "name": "Relationship Psychology",
+    "slug": "relationship-psychology",
+    "description": "The psychology behind attraction, desire, and connection.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-09-01T09:29:36.267Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 6,
+  "fields": {
+    "name": "Marriage & Long-term",
+    "slug": "marriage-long-term",
+    "description": "Navigating intimacy and connection in long-term partnerships.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-09-01T09:29:36.269Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 1,
+  "fields": {
+    "name": "anxiety",
+    "slug": "anxiety",
+    "created_at": "2026-09-01T09:29:36.309Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 2,
+  "fields": {
+    "name": "confidence",
+    "slug": "confidence",
+    "created_at": "2026-09-01T09:29:36.321Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 3,
+  "fields": {
+    "name": "stress",
+    "slug": "stress",
+    "created_at": "2026-09-01T09:29:36.323Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 4,
+  "fields": {
+    "name": "hormones",
+    "slug": "hormones",
+    "created_at": "2026-09-01T09:29:36.332Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 5,
+  "fields": {
+    "name": "aging",
+    "slug": "aging",
+    "created_at": "2026-09-01T09:29:36.335Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 6,
+  "fields": {
+    "name": "body image",
+    "slug": "body-image",
+    "created_at": "2026-09-01T09:49:00.703Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 7,
+  "fields": {
+    "name": "communication",
+    "slug": "communication",
+    "created_at": "2026-09-01T09:49:00.723Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 8,
+  "fields": {
+    "name": "couples",
+    "slug": "couples",
+    "created_at": "2026-09-01T09:49:00.729Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 9,
+  "fields": {
+    "name": "desire",
+    "slug": "desire",
+    "created_at": "2026-09-01T09:49:00.740Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 10,
+  "fields": {
+    "name": "postpartum",
+    "slug": "postpartum",
+    "created_at": "2026-09-01T09:49:00.750Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 11,
+  "fields": {
+    "name": "intimacy",
+    "slug": "intimacy",
+    "created_at": "2026-09-01T09:49:00.780Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 12,
+  "fields": {
+    "name": "psychology",
+    "slug": "psychology",
+    "created_at": "2026-09-01T09:49:00.817Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 13,
+  "fields": {
+    "name": "attachment",
+    "slug": "attachment",
+    "created_at": "2026-09-01T09:49:00.838Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Performance Anxiety in Men: Why It Happens and How to Manage It",
+    "slug": "performance-anxiety-in-men",
+    "excerpt": "Performance anxiety is common, treatable, and rarely about physical health. Here's what causes it and evidence-informed ways to manage it calmly.",
+    "body": "<p>Performance anxiety is one of the most common concerns men raise with doctors and therapists, yet it is rarely discussed openly. The silence makes many men feel isolated, when in reality this is a widespread and very manageable experience.</p>\n<h2>What performance anxiety actually is</h2>\n<p>Performance anxiety is worry about one's ability to meet a perceived expectation during intimacy. The key word is <em>perceived</em>. Often the pressure is self-generated, built from past experiences, comparison, or unrealistic standards absorbed from media.</p>\n<p>Importantly, in younger men especially, difficulty is far more often linked to psychological factors than to any physical problem. The body is usually working fine; anxiety simply interrupts the signals.</p>\n<h2>The anxiety cycle</h2>\n<p>Performance anxiety tends to feed itself in a predictable loop:</p>\n<ol><li>A single disappointing experience creates worry.</li><li>That worry becomes an expectation of future difficulty.</li><li>During intimacy, attention shifts to self-monitoring instead of connection.</li><li>Self-monitoring increases stress hormones, which interrupt the natural response.</li><li>The difficulty repeats, reinforcing the original worry.</li></ol>\n<blockquote>The goal is not to try harder. It is to reduce the pressure that interrupts what the body does naturally.</blockquote>\n<h2>Why stress physically interferes</h2>\n<p>When the mind perceives pressure, the body activates its stress response. Stress hormones such as adrenaline redirect blood flow and heighten vigilance — useful for escaping danger, unhelpful for relaxed intimacy. This is a normal physiological reaction, not a personal failing.</p>\n<h2>Practical, evidence-informed strategies</h2>\n<p>These approaches are widely recommended by therapists and are worth trying, ideally with a partner's understanding:</p>\n<ul><li><strong>Shift focus from outcome to connection.</strong> Redefining intimacy as shared closeness rather than a test lowers pressure immediately.</li><li><strong>Practice slow breathing.</strong> Calming the nervous system before and during intimacy counteracts the stress response.</li><li><strong>Reduce comparison.</strong> Media portrayals are not realistic benchmarks. Letting go of them relieves a great deal of pressure.</li><li><strong>Communicate openly.</strong> A supportive partner who understands the situation removes the fear of judgment, which is often the core issue.</li><li><strong>Limit alcohol.</strong> While it may feel relaxing, it can worsen physical response and reinforce reliance.</li></ul>\n<h2>Lifestyle foundations that help</h2>\n<p>General wellbeing has a direct effect on confidence and physical response. Regular physical activity, adequate sleep, balanced nutrition, and stress management all support healthy function. These are not quick fixes, but they build a stronger foundation over time.</p>\n<h2>When to speak to a professional</h2>\n<p>Consider seeing a doctor or a qualified therapist if the difficulty is persistent, causes significant distress, or affects your relationship. A doctor can rule out any physical contributors, and a therapist can help address the anxiety cycle directly through proven techniques such as cognitive behavioural approaches.</p>\n<p>Seeking help is a sign of strength, not weakness. This is a routine, treatable concern that professionals address every day.</p>\n<h2>The takeaway</h2>\n<p>Performance anxiety is common, understandable, and highly manageable. The most effective path is usually to lower pressure rather than add effort — through communication, calming techniques, realistic expectations, and, when needed, professional support. You are far from alone in this.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Performance Anxiety in Men: Why It Happens and How to Manage It",
+    "author": 2,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.624Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Performance Anxiety in Men: Causes and Calm, Practical Solutions",
+    "meta_description": "Performance anxiety in men is common and treatable. Learn the causes, the anxiety cycle, and practical, judgment-free ways to manage it.",
+    "canonical_url": "",
+    "focus_keyword": "performance anxiety in men",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:29:36.294Z",
+    "updated_at": "2026-09-01T09:49:00.662Z",
+    "tags": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Understanding Testosterone: What It Does and What Affects It",
+    "slug": "understanding-testosterone",
+    "excerpt": "Testosterone influences energy, mood, and wellbeing. Here's a clear, balanced look at what it does, what lowers it, and when to get tested.",
+    "body": "<p>Testosterone is often discussed but frequently misunderstood. It plays an important role in men's health, but it is not the single explanation for energy, mood, or confidence that popular culture sometimes suggests.</p>\n<h2>What testosterone does</h2>\n<p>Testosterone is the primary male hormone. It contributes to muscle mass, bone density, red blood cell production, mood regulation, and healthy physical function. Levels are naturally highest in early adulthood.</p>\n<h2>Natural decline with age</h2>\n<p>From roughly the age of 30, testosterone tends to decline gradually — often around one percent per year. This is a normal part of aging and does not automatically require treatment. Many men remain healthy and active with naturally lower levels.</p>\n<h2>What can lower testosterone</h2>\n<p>Several everyday factors can affect levels, many of them within your control:</p>\n<ul><li><strong>Poor sleep</strong> — much testosterone is produced during deep sleep.</li><li><strong>Chronic stress</strong> — sustained stress hormones can suppress it.</li><li><strong>Excess body fat</strong> — particularly around the abdomen.</li><li><strong>Physical inactivity</strong> — regular exercise supports healthy levels.</li><li><strong>Excess alcohol</strong> — heavy use can reduce production.</li><li><strong>Certain medical conditions and medications</strong> — worth reviewing with a doctor.</li></ul>\n<blockquote>Before considering treatment, it is worth optimising the everyday factors that influence hormone health.</blockquote>\n<h2>Signs some men notice with low levels</h2>\n<p>Symptoms are non-specific, meaning they overlap with many other conditions. They may include persistent fatigue, low mood, reduced motivation, changes in body composition, or reduced interest in intimacy. Because these symptoms have many possible causes, self-diagnosis is unreliable.</p>\n<h2>Natural ways to support healthy levels</h2>\n<ul><li>Prioritise seven to nine hours of quality sleep.</li><li>Engage in regular strength and cardiovascular exercise.</li><li>Maintain a healthy body weight.</li><li>Eat a balanced diet with adequate protein and healthy fats.</li><li>Manage stress through activities that genuinely relax you.</li><li>Moderate alcohol intake.</li></ul>\n<h2>When and how to get tested</h2>\n<p>If you have persistent symptoms that concern you, see a doctor. Testing involves a simple blood test, usually taken in the morning when levels are highest, and often repeated to confirm. A doctor interprets the result alongside your symptoms and overall health rather than in isolation.</p>\n<h2>A note on supplements and treatments</h2>\n<p>Many products marketed as testosterone boosters have limited evidence behind them. Hormone therapy is a legitimate medical treatment for diagnosed deficiency, but it carries considerations and should only be started and monitored by a qualified doctor. Avoid self-medicating.</p>\n<h2>The takeaway</h2>\n<p>Testosterone matters, but it is one part of a bigger picture. For most men, the foundations of sleep, movement, healthy weight, and stress management do more for wellbeing than any single intervention. If symptoms persist, a doctor can test and advise appropriately.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Understanding Testosterone: What It Does and What Affects It",
+    "author": 2,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.682Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Understanding Testosterone: Function, Decline, and Healthy Habits",
+    "meta_description": "A clear, balanced guide to testosterone in men — what it does, what affects it, natural ways to support it, and when to see a doctor.",
+    "canonical_url": "",
+    "focus_keyword": "testosterone levels in men",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:29:36.328Z",
+    "updated_at": "2026-09-01T09:49:00.683Z",
+    "tags": [
+      5,
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "The Link Between Stress and Men's Physical Wellbeing",
+    "slug": "stress-and-mens-physical-wellbeing",
+    "excerpt": "Chronic stress quietly affects sleep, mood, energy, and intimacy. Learn how it works in the body and practical ways to bring it back down.",
+    "body": "<p>Stress is often treated as a purely mental experience, but it has real, measurable effects on the body. For many men, unmanaged stress quietly undermines sleep, energy, mood, and intimate wellbeing long before they connect the dots.</p>\n<h2>How stress works in the body</h2>\n<p>When you perceive pressure, your body releases stress hormones including cortisol and adrenaline. In short bursts this is helpful. The problem is chronic activation — when the stress response never fully switches off.</p>\n<p>Sustained high cortisol can disrupt sleep, affect hormone balance, increase blood pressure, and dampen interest in intimacy. None of this reflects a character flaw; it is simply physiology under strain.</p>\n<h2>The signs men often overlook</h2>\n<ul><li>Difficulty falling or staying asleep.</li><li>Persistent irritability or a short fuse.</li><li>Low energy despite adequate rest.</li><li>Reduced interest in activities, including intimacy.</li><li>Muscle tension, headaches, or digestive changes.</li></ul>\n<blockquote>Men are often socialised to push through stress silently. Naming it is the first step to managing it.</blockquote>\n<h2>Why intimacy is affected</h2>\n<p>Relaxation and safety are prerequisites for healthy intimate response. When the nervous system is locked in a stress state, it prioritises alertness over connection. This is why reducing overall stress often improves intimate wellbeing more effectively than focusing on the symptom directly.</p>\n<h2>Practical ways to reduce stress</h2>\n<ol><li><strong>Protect your sleep.</strong> Consistent sleep is the single most restorative habit for a stressed system.</li><li><strong>Move your body regularly.</strong> Exercise metabolises stress hormones and improves mood.</li><li><strong>Build genuine downtime.</strong> Not just collapsing in front of a screen, but activities that actually calm you.</li><li><strong>Talk to someone.</strong> Sharing pressure with a partner, friend, or professional reduces its weight.</li><li><strong>Limit stimulants late in the day.</strong> Caffeine and alcohol both disrupt recovery.</li></ol>\n<h2>When to seek support</h2>\n<p>If stress feels constant, interferes with daily life, or is accompanied by persistent low mood or anxiety, speak to a doctor or mental health professional. These are common, treatable concerns, and early support prevents them from compounding.</p>\n<h2>The takeaway</h2>\n<p>Stress is not just in your head — it shapes your body, sleep, and relationships. The encouraging news is that the same habits that reduce stress also improve energy, mood, and intimacy. Small, consistent changes make a genuine difference over time.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Link Between Stress and Men's Physical Wellbeing",
+    "author": 1,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.687Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "How Stress Affects Men's Physical Wellbeing (and What Helps)",
+    "meta_description": "Chronic stress affects men's sleep, mood, energy, and intimacy. Understand the mechanism and practical, realistic ways to reduce it.",
+    "canonical_url": "",
+    "focus_keyword": "stress and mens health",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:29:36.340Z",
+    "updated_at": "2026-09-01T09:49:00.688Z",
+    "tags": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "Confidence and Body Image: How Men Can Build a Healthier Self-View",
+    "slug": "men-confidence-and-body-image",
+    "excerpt": "Body image struggles are not only a women's issue. Here's how self-view shapes confidence in men, and practical ways to build a healthier one.",
+    "body": "<p>Conversations about body image tend to focus on women, but men experience it too — often silently. How a man sees his own body can quietly shape his confidence, his relationships, and his comfort with intimacy.</p>\n<h2>Where male body image pressure comes from</h2>\n<p>Idealised images in advertising, film, and social media set standards that are narrow and often unrealistic. Constant exposure can make ordinary bodies feel inadequate, even when they are perfectly healthy.</p>\n<h2>How self-view affects intimacy</h2>\n<p>When someone feels self-conscious about their body, they may become distracted during intimate moments, monitoring themselves instead of being present. This self-focus can reduce both enjoyment and connection — a reminder that confidence is as much mental as physical.</p>\n<blockquote>A healthier body image rarely comes from changing the body. It comes from changing the relationship you have with it.</blockquote>\n<h2>Practical steps toward a healthier self-view</h2>\n<ul><li><strong>Curate your inputs.</strong> Reduce exposure to accounts and media that leave you feeling inadequate.</li><li><strong>Focus on function, not just appearance.</strong> Appreciating what your body can do shifts attention away from comparison.</li><li><strong>Move for wellbeing.</strong> Exercise improves mood and confidence regardless of visible change.</li><li><strong>Challenge the inner critic.</strong> Notice harsh self-talk and ask whether you would speak that way to a friend.</li><li><strong>Talk about it.</strong> Naming these feelings with a partner or professional reduces their power.</li></ul>\n<h2>When to seek support</h2>\n<p>If negative feelings about your body become persistent, distressing, or start driving extreme behaviours around food or exercise, speak to a doctor or mental health professional. Body image concerns are common and very treatable.</p>\n<h2>The takeaway</h2>\n<p>A healthier self-view is built gradually through kinder self-talk, mindful media habits, and presence rather than perfection. Confidence grows from acceptance, and that confidence naturally supports better relationships and intimacy.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Confidence and Body Image: How Men Can Build a Healthier Self-View",
+    "author": 1,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.693Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Men, Body Image and Confidence: Building a Healthier Self-View",
+    "meta_description": "Body image affects men's confidence and relationships too. Learn the psychology and practical steps to build a healthier self-view.",
+    "canonical_url": "",
+    "focus_keyword": "male body image confidence",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.695Z",
+    "updated_at": "2026-09-01T09:49:00.695Z",
+    "tags": [
+      1,
+      6,
+      2
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Sleep, Energy and Vitality: The Overlooked Foundations of Men's Health",
+    "slug": "sleep-energy-vitality-mens-health",
+    "excerpt": "Sleep quietly powers energy, mood, hormones, and intimacy. Here's why it matters so much for men, and how to protect it.",
+    "body": "<p>When men feel low on energy or notice changes in mood or intimacy, sleep is often the overlooked culprit. It is one of the most powerful and most underrated levers for overall wellbeing.</p>\n<h2>Why sleep matters so much</h2>\n<p>During deep sleep, the body repairs tissue, regulates hormones, and consolidates mood. A significant portion of daily hormone production, including testosterone, happens during sleep. Shortchange it, and nearly every system feels the effect.</p>\n<h2>Signs you may not be sleeping well enough</h2>\n<ul><li>Waking unrefreshed despite enough hours in bed.</li><li>Afternoon energy crashes and reliance on caffeine.</li><li>Irritability, low motivation, or brain fog.</li><li>Reduced interest in activities, including intimacy.</li></ul>\n<blockquote>Sleep is not lost time. It is the foundation the rest of your health is built on.</blockquote>\n<h2>How to protect your sleep</h2>\n<ol><li><strong>Keep a consistent schedule</strong> — the body thrives on rhythm.</li><li><strong>Wind down before bed</strong> — dim lights and step away from screens.</li><li><strong>Watch caffeine and alcohol</strong> — both disrupt deep sleep.</li><li><strong>Keep the bedroom cool, dark, and quiet.</strong></li><li><strong>Get daylight and movement</strong> during the day to support your natural sleep cycle.</li></ol>\n<h2>When to see a doctor</h2>\n<p>Persistent insomnia, loud snoring with pauses in breathing, or constant daytime exhaustion deserve medical attention. Conditions such as sleep apnoea are common, treatable, and have wide-reaching effects on health.</p>\n<h2>The takeaway</h2>\n<p>Protecting your sleep is one of the simplest, highest-impact things you can do for energy, mood, hormones, and intimacy. Treat it as essential maintenance, not a luxury.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Sleep, Energy and Vitality: The Overlooked Foundations of Men's Health",
+    "author": 2,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.707Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Sleep, Energy and Vitality: Foundations of Men's Health",
+    "meta_description": "Quality sleep underpins men's energy, mood, hormones and intimacy. Learn why it matters and practical ways to improve it.",
+    "canonical_url": "",
+    "focus_keyword": "sleep and mens vitality",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.709Z",
+    "updated_at": "2026-09-01T09:49:00.709Z",
+    "tags": [
+      2,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "Talking to Your Partner About Health Concerns Without Embarrassment",
+    "slug": "men-talking-to-partner-about-health",
+    "excerpt": "Many men stay silent about intimate health worries. Here's how to open that conversation with a partner calmly and without shame.",
+    "body": "<p>One of the biggest barriers to men's health is not medical — it is silence. Embarrassment keeps many men from discussing intimate concerns with the person best placed to support them: their partner.</p>\n<h2>Why silence makes things harder</h2>\n<p>Keeping a worry private tends to magnify it. The concern grows in the imagination, anxiety builds, and the very act of hiding it can create distance in the relationship. Sharing, by contrast, almost always brings relief.</p>\n<h2>Reframing the conversation</h2>\n<p>A health concern is not a confession of failure. It is simply information you are choosing to share with someone who cares about you. Most partners respond with support and relief that you trusted them.</p>\n<blockquote>Vulnerability, shared with the right person, tends to bring couples closer rather than pushing them apart.</blockquote>\n<h2>Practical ways to open the conversation</h2>\n<ul><li><strong>Choose a calm, private moment</strong> — not during intimacy or an argument.</li><li><strong>Lead with honesty.</strong> A simple 'there's something I've been worried about and I want to share it with you' works well.</li><li><strong>Focus on how you feel</strong>, not just the physical detail.</li><li><strong>Invite them in as a teammate</strong> — 'I'd like us to figure this out together.'</li><li><strong>Consider seeing a doctor together</strong> if that feels supportive.</li></ul>\n<h2>If it still feels too difficult</h2>\n<p>If shame or anxiety makes the conversation feel impossible, a therapist or counsellor can help you find the words and work through the underlying feelings. There is no weakness in asking for that help.</p>\n<h2>The takeaway</h2>\n<p>Opening up about a health concern takes courage, but it almost always lightens the load and strengthens the relationship. The right partner wants to support you — giving them the chance to do so is a gift to both of you.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Talking to Your Partner About Health Concerns Without Embarrassment",
+    "author": 1,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.718Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "How Men Can Talk to a Partner About Health Concerns",
+    "meta_description": "A practical, judgment-free guide for men on discussing intimate health concerns with a partner — without embarrassment.",
+    "canonical_url": "",
+    "focus_keyword": "talking to partner about health",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.719Z",
+    "updated_at": "2026-09-01T09:49:00.719Z",
+    "tags": [
+      7,
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Exercise and Intimacy: How Physical Fitness Supports Men's Wellbeing",
+    "slug": "exercise-and-intimacy-men",
+    "excerpt": "Regular exercise improves circulation, mood, confidence, and energy — all of which support intimate wellbeing. Here's the practical connection.",
+    "body": "<p>The benefits of exercise reach further than muscle and weight. Regular physical activity supports circulation, mood, hormones, and confidence — each of which plays a role in intimate wellbeing.</p>\n<h2>The circulation connection</h2>\n<p>Healthy blood flow is central to physical intimate response. Cardiovascular exercise strengthens the heart and blood vessels, supporting circulation throughout the body. This is one reason general fitness and intimate health are closely linked.</p>\n<h2>Mood, stress, and confidence</h2>\n<p>Exercise releases endorphins, reduces stress hormones, and improves sleep. It also tends to improve how people feel about their bodies. Together these effects support the relaxed, confident state that intimacy depends on.</p>\n<blockquote>You do not need to become an athlete. Consistency matters far more than intensity.</blockquote>\n<h2>A balanced, realistic approach</h2>\n<ul><li><strong>Cardiovascular activity</strong> — brisk walking, cycling, or swimming a few times a week.</li><li><strong>Strength training</strong> — supports hormones, bone health, and confidence.</li><li><strong>Flexibility and recovery</strong> — stretching and rest days prevent burnout and injury.</li><li><strong>Something you enjoy</strong> — the best exercise is the one you will actually keep doing.</li></ul>\n<h2>A note on overtraining</h2>\n<p>More is not always better. Excessive training without recovery can raise stress hormones and leave you depleted. Balance effort with rest, and listen to your body.</p>\n<h2>The takeaway</h2>\n<p>Regular, enjoyable exercise is one of the most reliable ways to support energy, mood, confidence, and intimate wellbeing. Start small, stay consistent, and let the benefits build.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Exercise and Intimacy: How Physical Fitness Supports Men's Wellbeing",
+    "author": 2,
+    "category": 1,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.731Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Exercise and Intimacy: How Fitness Supports Men's Wellbeing",
+    "meta_description": "Regular exercise supports men's circulation, mood, confidence and energy — all linked to intimate wellbeing. A practical guide.",
+    "canonical_url": "",
+    "focus_keyword": "exercise and intimacy",
+    "seo_score": 0,
+    "view_count": 1,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.732Z",
+    "updated_at": "2026-09-01T09:49:00.732Z",
+    "tags": [
+      2,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Understanding Changes in Desire Across a Woman's Life",
+    "slug": "changes-in-desire-womens-life",
+    "excerpt": "Desire naturally shifts through life stages and circumstances. Here's a reassuring, evidence-informed look at why — and when to seek support.",
+    "body": "<p>Desire is not a fixed setting. For most women it rises and falls across life stages, relationships, and circumstances. Understanding this can replace worry with reassurance.</p>\n<h2>Desire is responsive, not just spontaneous</h2>\n<p>Research suggests that for many women, desire is often <em>responsive</em> — it emerges in response to closeness, safety, and connection, rather than appearing spontaneously. This is completely normal and simply a different pattern, not a problem.</p>\n<h2>What influences desire</h2>\n<ul><li><strong>Hormonal changes</strong> — across the monthly cycle, pregnancy, postpartum, and menopause.</li><li><strong>Stress and fatigue</strong> — among the most common dampeners.</li><li><strong>Emotional connection</strong> — closeness and feeling valued matter greatly.</li><li><strong>Body image and self-esteem.</strong></li><li><strong>Certain medications and health conditions.</strong></li></ul>\n<blockquote>A change in desire is usually a signal about context — stress, connection, health — rather than a flaw in the person.</blockquote>\n<h2>Life stages and desire</h2>\n<p>Desire often shifts around major transitions: the demands of early parenthood, hormonal changes in perimenopause and menopause, or periods of high stress. These shifts are expected and, in most cases, respond well to addressing the underlying factors.</p>\n<h2>Supporting healthy desire</h2>\n<ul><li>Prioritise rest and stress reduction where possible.</li><li>Nurture emotional closeness with your partner.</li><li>Communicate openly about needs and expectations.</li><li>Address body image kindly rather than critically.</li><li>Review any medications with your doctor if you suspect an effect.</li></ul>\n<h2>When to seek support</h2>\n<p>If a change in desire is distressing, persistent, or affecting your relationship, speak with a doctor or a qualified therapist. They can check for medical contributors and offer guidance. This is a common, well-understood area of care.</p>\n<h2>The takeaway</h2>\n<p>Desire naturally ebbs and flows. Rather than measuring yourself against an imagined standard, focus on rest, connection, and open communication — and seek support if it troubles you. Change is normal; distress is worth addressing.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Understanding Changes in Desire Across a Woman's Life",
+    "author": 1,
+    "category": 2,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.737Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Understanding Changes in Desire Across a Woman's Life",
+    "meta_description": "Desire naturally changes across a woman's life. Understand the hormonal, emotional and lifestyle reasons — and when to seek support.",
+    "canonical_url": "",
+    "focus_keyword": "changes in womens desire",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.738Z",
+    "updated_at": "2026-09-01T09:49:00.738Z",
+    "tags": [
+      2,
+      9,
+      4
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Intimacy After Childbirth: A Realistic, Reassuring Timeline",
+    "slug": "intimacy-after-childbirth",
+    "excerpt": "Reconnecting after a baby takes time — physically and emotionally. Here's a realistic, judgment-free guide for new mothers and their partners.",
+    "body": "<p>After childbirth, many women feel pressure to 'return to normal' quickly — often from nobody but themselves. The reality is that recovery is physical, hormonal, and emotional, and it deserves patience.</p>\n<h2>What is happening in the body</h2>\n<p>The postpartum period involves significant hormonal shifts, physical healing, and, if breastfeeding, further hormonal effects that can lower desire temporarily. Sleep deprivation and the demands of caring for a newborn add to this. None of it reflects a loss of love or attraction.</p>\n<h2>There is no single 'right' timeline</h2>\n<p>Doctors often mention a general checkpoint for physical healing, but emotional readiness varies widely and is just as important. Some couples reconnect sooner, others take many months. Both are normal.</p>\n<blockquote>Readiness is not only about being physically healed. It is about feeling safe, rested, and emotionally present.</blockquote>\n<h2>Reconnecting gently</h2>\n<ul><li><strong>Start with non-pressured closeness</strong> — affection without expectation rebuilds comfort.</li><li><strong>Communicate honestly</strong> about how you feel physically and emotionally.</li><li><strong>Share the load</strong> — rest and support directly affect wellbeing and desire.</li><li><strong>Be patient with body-image feelings</strong>, which are common and usually ease with time.</li></ul>\n<h2>For partners</h2>\n<p>Patience and practical support matter enormously. Asking 'what do you need?' rather than assuming, and helping create rest and calm, does more to rebuild closeness than any pressure ever could.</p>\n<h2>When to seek support</h2>\n<p>Persistent low mood, anxiety, pain, or a sense of disconnection lasting beyond a couple of weeks deserves attention. Speak to your doctor — postpartum depression and anxiety are common and treatable, and pain during intimacy always warrants a medical check.</p>\n<h2>The takeaway</h2>\n<p>Reconnecting after a baby is a gradual, individual process. Rest, honest communication, gentleness, and shared support are the foundations. Give yourself grace — and seek help when something does not feel right.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Intimacy After Childbirth: A Realistic, Reassuring Timeline",
+    "author": 1,
+    "category": 2,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.745Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Intimacy After Childbirth: A Realistic, Reassuring Guide",
+    "meta_description": "Reconnecting physically and emotionally after childbirth takes time. A realistic, reassuring guide for new mothers and partners.",
+    "canonical_url": "",
+    "focus_keyword": "intimacy after childbirth",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.747Z",
+    "updated_at": "2026-09-01T09:49:00.747Z",
+    "tags": [
+      7,
+      2,
+      10
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Menopause and Intimacy: What Changes and How to Adapt",
+    "slug": "menopause-and-intimacy",
+    "excerpt": "Menopause brings real changes to comfort and desire — but intimacy can remain fulfilling. Here's what to expect and practical ways to adapt.",
+    "body": "<p>Menopause is a natural life stage, yet its effects on intimacy are rarely discussed openly. Understanding the changes — and the many ways to adapt — helps women approach this stage with confidence rather than anxiety.</p>\n<h2>What changes and why</h2>\n<p>As oestrogen levels decline, some women notice physical changes such as dryness and increased sensitivity, along with shifts in desire. These are physiological, not a reflection of attraction or love, and they are very common.</p>\n<h2>The emotional side</h2>\n<p>Menopause can also bring mood changes, sleep disruption, and evolving feelings about one's body and identity. Acknowledging the emotional dimension is as important as addressing the physical one.</p>\n<blockquote>Intimacy in this stage often becomes less about frequency and more about closeness, comfort, and communication.</blockquote>\n<h2>Practical ways to adapt</h2>\n<ul><li><strong>Speak to a doctor</strong> — effective, safe options exist for physical comfort, and they can discuss what suits you.</li><li><strong>Prioritise comfort</strong> — simple measures can make a significant difference.</li><li><strong>Allow more time for closeness</strong> and reduce pressure.</li><li><strong>Keep communicating</strong> with your partner about what feels good and what has changed.</li><li><strong>Support overall wellbeing</strong> — sleep, movement, and stress management all help.</li></ul>\n<h2>For partners</h2>\n<p>Understanding, patience, and willingness to adapt together make this transition far smoother. Many couples find that open communication during this stage actually deepens their connection.</p>\n<h2>When to seek support</h2>\n<p>If symptoms are affecting your quality of life or relationship, see a doctor. Menopause care has advanced considerably, and there is no need to simply endure discomfort.</p>\n<h2>The takeaway</h2>\n<p>Menopause changes some things, but a fulfilling intimate life remains entirely possible. With medical guidance, comfort measures, and open communication, many couples navigate this stage well — and grow closer in the process.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Menopause and Intimacy: What Changes and How to Adapt",
+    "author": 2,
+    "category": 2,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.755Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Menopause and Intimacy: What Changes and How to Adapt",
+    "meta_description": "Menopause changes comfort and desire, but intimacy can stay fulfilling. Understand the changes and practical ways to adapt.",
+    "canonical_url": "",
+    "focus_keyword": "menopause and intimacy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.756Z",
+    "updated_at": "2026-09-01T09:49:00.756Z",
+    "tags": [
+      5,
+      7,
+      4
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "The Menstrual Cycle and How It Can Influence Mood and Energy",
+    "slug": "menstrual-cycle-mood-and-energy",
+    "excerpt": "Hormonal shifts across the cycle can affect mood, energy, and desire. Understanding the pattern helps you work with your body, not against it.",
+    "body": "<p>The menstrual cycle is often thought of only in terms of periods, but the hormonal rhythm behind it influences mood, energy, and desire throughout the month. Recognising the pattern can be genuinely empowering.</p>\n<h2>A simple map of the cycle</h2>\n<p>While every woman is different, common patterns include higher energy and mood around the middle of the cycle, and lower energy or more sensitivity in the days before menstruation. These shifts are driven by natural hormonal changes.</p>\n<h2>Why this matters</h2>\n<p>Understanding your own pattern helps you plan and be kinder to yourself. A dip in mood or desire at a particular point is often simply hormonal rhythm — not a sign that something is wrong.</p>\n<blockquote>Tracking your cycle turns confusing ups and downs into a pattern you can anticipate and work with.</blockquote>\n<h2>Working with your cycle</h2>\n<ul><li><strong>Track it</strong> — a simple app or diary reveals your personal pattern over a few months.</li><li><strong>Plan gently around low-energy days</strong> where you can.</li><li><strong>Support your body</strong> with rest, nutrition, and movement.</li><li><strong>Communicate</strong> with your partner about how you feel at different times.</li></ul>\n<h2>When symptoms need attention</h2>\n<p>Severe mood changes, debilitating pain, or symptoms that seriously disrupt your life are not something to simply tolerate. Conditions such as severe premenstrual symptoms are recognised and treatable — speak to a doctor.</p>\n<h2>The takeaway</h2>\n<p>The cycle's hormonal rhythm shapes mood, energy, and desire in normal, predictable ways. Tracking and understanding your own pattern helps you work with your body — and know when a symptom deserves medical attention.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Menstrual Cycle and How It Can Influence Mood and Energy",
+    "author": 1,
+    "category": 2,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.766Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "How the Menstrual Cycle Influences Mood, Energy and Desire",
+    "meta_description": "Hormonal shifts across the menstrual cycle affect mood, energy and desire. Understand the phases and work with your body.",
+    "canonical_url": "",
+    "focus_keyword": "menstrual cycle mood energy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.767Z",
+    "updated_at": "2026-09-01T09:49:00.767Z",
+    "tags": [
+      2,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 12,
+  "fields": {
+    "title": "How to Communicate About Physical Intimacy With Your Partner",
+    "slug": "communicate-about-physical-intimacy",
+    "excerpt": "Talking openly about intimacy is a skill any couple can learn. Here's how to start the conversation with warmth, honesty, and zero judgment.",
+    "body": "<p>Many couples find it easier to be physically close than to talk about being physically close. Yet open communication is one of the strongest predictors of a satisfying, lasting intimate connection.</p>\n<h2>Why talking about it feels hard</h2>\n<p>Intimacy touches on vulnerability, self-image, and fear of hurting or being judged. These are natural barriers. Recognising them as normal — rather than a sign of a problem — makes it easier to move past them.</p>\n<h2>Choosing the right moment</h2>\n<p>The worst times to raise the topic are during intimacy itself or in the middle of a disagreement. A calm, private, unhurried moment — a walk, a quiet evening — creates the safety the conversation needs.</p>\n<blockquote>Approach it as teammates exploring together, not as one person delivering feedback to another.</blockquote>\n<h2>How to phrase it kindly</h2>\n<ul><li><strong>Use 'I' statements.</strong> 'I feel closest to you when…' lands better than 'You never…'.</li><li><strong>Lead with appreciation.</strong> Start with what you value before discussing what you'd like to explore.</li><li><strong>Ask open questions.</strong> 'What helps you feel most connected?' invites sharing.</li><li><strong>Stay curious, not critical.</strong> The goal is understanding, not winning.</li></ul>\n<h2>Listening well</h2>\n<p>Communication is as much about listening as speaking. Give your partner your full attention, avoid becoming defensive, and thank them for being open. Feeling heard is what makes people willing to share more.</p>\n<h2>When to get support</h2>\n<p>If conversations consistently end in hurt or conflict, or if there is a deeper disconnect, a couples therapist can provide a safe, structured space to talk. This is a common and constructive step, not a last resort.</p>\n<h2>The takeaway</h2>\n<p>Talking about intimacy openly and kindly deepens trust and closeness. Pick a calm moment, lead with warmth, listen generously, and treat it as a shared exploration. The conversation itself is an act of intimacy.</p>",
+    "featured_image": "",
+    "featured_image_alt": "How to Communicate About Physical Intimacy With Your Partner",
+    "author": 1,
+    "category": 3,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.773Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "How to Talk About Physical Intimacy With Your Partner",
+    "meta_description": "A practical, judgment-free guide to communicating about physical intimacy with your partner — building closeness through honesty.",
+    "canonical_url": "",
+    "focus_keyword": "communicate about intimacy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.774Z",
+    "updated_at": "2026-09-01T09:49:00.774Z",
+    "tags": [
+      7,
+      8,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 13,
+  "fields": {
+    "title": "Rebuilding Closeness When Life Gets Busy",
+    "slug": "rebuilding-closeness-when-life-gets-busy",
+    "excerpt": "Careers, children, and stress can quietly create distance. Here are realistic ways busy couples rebuild closeness without adding pressure.",
+    "body": "<p>Distance in a relationship rarely arrives dramatically. More often it creeps in through busy schedules, tiredness, and competing demands until one day a couple realises they have drifted.</p>\n<h2>How busyness creates distance</h2>\n<p>When energy is spent on work and responsibilities, the relationship can quietly become the lowest priority — not through lack of love, but through sheer exhaustion. Recognising this pattern is the first step to reversing it.</p>\n<h2>Small connections matter more than grand gestures</h2>\n<p>Rebuilding closeness does not require elaborate plans. Consistent small moments of connection often matter far more than occasional big ones.</p>\n<blockquote>Connection is built in the small, ordinary moments far more than the special occasions.</blockquote>\n<h2>Practical ways to reconnect</h2>\n<ul><li><strong>Protect a little time together</strong> — even short, regular moments without screens.</li><li><strong>Reintroduce non-pressured affection</strong> — a hug, holding hands, a genuine check-in.</li><li><strong>Ask real questions</strong> beyond logistics and to-do lists.</li><li><strong>Express appreciation</strong> often; feeling valued rebuilds warmth.</li><li><strong>Share the mental load</strong> so neither partner is running on empty.</li></ul>\n<h2>Being realistic</h2>\n<p>You will not undo months of distance in a single evening, and that is fine. Closeness rebuilds gradually through repeated small efforts. Consistency, not intensity, is what restores connection.</p>\n<h2>When to seek support</h2>\n<p>If distance has hardened into resentment or you feel unable to reconnect despite trying, a couples therapist can help. Reaching out early makes the work easier.</p>\n<h2>The takeaway</h2>\n<p>Busy seasons are normal, and so is the distance they can create. With consistent small moments of connection, appreciation, and shared effort, most couples can rebuild the closeness they value.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Rebuilding Closeness When Life Gets Busy",
+    "author": 1,
+    "category": 3,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.782Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Rebuilding Closeness in a Relationship When Life Gets Busy",
+    "meta_description": "Busy lives can create quiet distance between partners. Realistic, low-pressure ways to rebuild closeness and connection.",
+    "canonical_url": "",
+    "focus_keyword": "rebuilding closeness in relationship",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.783Z",
+    "updated_at": "2026-09-01T09:49:00.783Z",
+    "tags": [
+      8,
+      11,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 14,
+  "fields": {
+    "title": "The Role of Non-Sexual Touch in a Healthy Relationship",
+    "slug": "non-sexual-touch-in-relationships",
+    "excerpt": "Everyday affection — hugs, hand-holding, closeness — is a foundation of intimacy that many couples overlook. Here's why it matters so much.",
+    "body": "<p>When couples think about physical intimacy, they often jump straight to its most obvious form. But everyday affectionate touch — hugs, hand-holding, a hand on the shoulder — is a quiet, powerful foundation that many relationships neglect.</p>\n<h2>Why touch matters</h2>\n<p>Warm, affectionate touch supports emotional bonding and a sense of safety. It communicates care in a way words sometimes cannot, and it helps partners feel connected even during busy or stressful periods.</p>\n<h2>The 'touch gap'</h2>\n<p>Some couples gradually stop all casual physical contact, reserving touch only for intimacy. This can create pressure and distance. Restoring everyday, no-expectation affection often eases that pressure and rebuilds comfort.</p>\n<blockquote>Non-demanding touch says 'I care about you' without asking for anything in return — and that safety is the soil intimacy grows in.</blockquote>\n<h2>Simple ways to bring back everyday affection</h2>\n<ul><li>A genuine hug when greeting or parting.</li><li>Holding hands on a walk or while relaxing.</li><li>A hand on the back or shoulder in passing.</li><li>Sitting close together without an agenda.</li><li>A few moments of closeness before sleep.</li></ul>\n<h2>If touch feels difficult</h2>\n<p>For some, touch can feel complicated due to past experiences, stress, or feeling 'touched out' — common for new parents. Communicating about this gently, and rebuilding slowly, helps. A therapist can support couples where touch has become a source of tension.</p>\n<h2>The takeaway</h2>\n<p>Everyday affectionate touch is a cornerstone of closeness. Reintroducing small, no-pressure moments of contact strengthens the emotional bond and creates the safety that all intimacy depends on.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Role of Non-Sexual Touch in a Healthy Relationship",
+    "author": 1,
+    "category": 3,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.788Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Why Non-Sexual Touch Matters in a Healthy Relationship",
+    "meta_description": "Everyday affection like hugs and hand-holding builds trust and closeness. Why non-sexual touch is a foundation of intimacy.",
+    "canonical_url": "",
+    "focus_keyword": "non sexual touch relationship",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.790Z",
+    "updated_at": "2026-09-01T09:49:00.790Z",
+    "tags": [
+      7,
+      8,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 15,
+  "fields": {
+    "title": "Reconnecting After Conflict: Repairing Intimacy After an Argument",
+    "slug": "reconnecting-after-conflict",
+    "excerpt": "Every couple argues. What matters is how you repair afterward. Here's how to reconnect emotionally and physically after conflict.",
+    "body": "<p>Conflict is a normal part of every relationship. Research on couples consistently finds that it is not the presence of arguments that predicts problems, but how partners repair afterward.</p>\n<h2>Why repair matters more than avoiding conflict</h2>\n<p>No couple avoids disagreement entirely. What distinguishes strong relationships is the ability to reconnect — to move from tension back to warmth without lingering resentment.</p>\n<h2>Cooling down first</h2>\n<p>Attempting to reconnect while still emotionally flooded rarely works. Taking time to calm the nervous system — a short break, some space, a few deep breaths — allows a more genuine repair afterward.</p>\n<blockquote>Repair is not about deciding who was right. It is about choosing the relationship over the argument.</blockquote>\n<h2>Steps toward repair</h2>\n<ol><li><strong>Acknowledge your part.</strong> Even a small 'I'm sorry I raised my voice' softens things.</li><li><strong>Listen to their experience</strong> without immediately defending yourself.</li><li><strong>Reaffirm the relationship.</strong> Remind each other that the bond matters more than the disagreement.</li><li><strong>Reconnect gently</strong> — warmth and affection often return before full resolution.</li></ol>\n<h2>Intimacy after conflict</h2>\n<p>Physical closeness can be a natural part of reconnecting, but only when both partners genuinely feel ready. Forcing it to 'prove' things are fine can backfire. Emotional repair usually comes first; physical closeness follows naturally.</p>\n<h2>When conflict becomes a pattern</h2>\n<p>If arguments are frequent, escalate, or never fully resolve, a couples therapist can help you build healthier patterns. If conflict ever involves fear or intimidation, please reach out to a professional or support service.</p>\n<h2>The takeaway</h2>\n<p>Arguments are inevitable; skilful repair is what keeps a relationship strong. Cool down, acknowledge your part, listen, and reconnect gently — and let emotional repair lead the way back to closeness.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Reconnecting After Conflict: Repairing Intimacy After an Argument",
+    "author": 1,
+    "category": 3,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.796Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Reconnecting After Conflict: Repairing Intimacy After an Argument",
+    "meta_description": "Every couple argues — repair is what matters. How to reconnect emotionally and physically after an argument.",
+    "canonical_url": "",
+    "focus_keyword": "reconnecting after an argument",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.797Z",
+    "updated_at": "2026-09-01T09:49:00.797Z",
+    "tags": [
+      7,
+      8,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 16,
+  "fields": {
+    "title": "Keeping Intimacy Alive in a Long-Distance Relationship",
+    "slug": "intimacy-in-long-distance-relationship",
+    "excerpt": "Distance tests a relationship but doesn't have to weaken intimacy. Here are practical ways to stay emotionally close across the miles.",
+    "body": "<p>Long-distance relationships come with a unique challenge: maintaining closeness without physical presence. It takes intention, but many couples not only survive distance — they build unusually strong communication because of it.</p>\n<h2>Emotional intimacy is the anchor</h2>\n<p>When physical closeness is limited, emotional intimacy carries more weight. The good news is that emotional connection can be deliberately nurtured from any distance.</p>\n<h2>Quality over quantity</h2>\n<p>Constant messaging is not the same as meaningful connection. A shorter, focused, undistracted conversation often builds more closeness than being half-present all day.</p>\n<blockquote>Presence matters more than frequency. Ten fully-present minutes beat an hour of divided attention.</blockquote>\n<h2>Ways to stay close across distance</h2>\n<ul><li><strong>Schedule real conversations</strong> where you are both present and unhurried.</li><li><strong>Share everyday details</strong> — small moments keep you woven into each other's lives.</li><li><strong>Create shared experiences</strong> — watching something together, planning future visits.</li><li><strong>Express appreciation and affection</strong> openly and often.</li><li><strong>Have something to look forward to</strong> — a planned reunion gives the relationship momentum.</li></ul>\n<h2>Handling the hard parts</h2>\n<p>Loneliness and misunderstandings are common. Talking openly about expectations, insecurities, and needs prevents small issues from growing. Trust is built through consistency and honesty.</p>\n<h2>The takeaway</h2>\n<p>Distance changes how intimacy is expressed, not whether it can thrive. With intentional, present communication, shared experiences, and something to look forward to, long-distance couples can stay deeply connected.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Keeping Intimacy Alive in a Long-Distance Relationship",
+    "author": 1,
+    "category": 3,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.803Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Keeping Intimacy Alive in a Long-Distance Relationship",
+    "meta_description": "Distance tests but need not weaken a relationship. Practical ways to keep emotional intimacy strong across the miles.",
+    "canonical_url": "",
+    "focus_keyword": "long distance relationship intimacy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.805Z",
+    "updated_at": "2026-09-01T09:49:00.805Z",
+    "tags": [
+      7,
+      8,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 17,
+  "fields": {
+    "title": "Understanding Desire: The Difference Between Arousal and Interest",
+    "slug": "understanding-desire-arousal-and-interest",
+    "excerpt": "Desire and arousal are often confused, yet understanding the difference can transform how couples relate. Here's a clear, science-informed guide.",
+    "body": "<p>Many misunderstandings about intimacy come from confusing two different things: desire and arousal. Understanding the distinction can bring relief and clarity to individuals and couples alike.</p>\n<h2>Two different processes</h2>\n<p>Desire is the psychological interest in intimacy — the wanting. Arousal is the body's physical response. While they often occur together, they can also happen independently, and that is entirely normal.</p>\n<h2>Spontaneous vs responsive desire</h2>\n<p>Some people experience spontaneous desire that seems to arise on its own. Others experience responsive desire, which emerges after closeness or physical connection has already begun. Neither is better; they are simply different, and they can vary within the same person over time.</p>\n<blockquote>For many people, willingness comes first and desire follows once connection begins — not the other way around.</blockquote>\n<h2>Why this matters for couples</h2>\n<p>Partners often assume desire should always come first and spontaneously. When it does not, they may worry something is wrong. Understanding responsive desire helps couples create the conditions — relaxation, closeness, safety — in which interest can grow naturally.</p>\n<h2>Supporting healthy desire and arousal</h2>\n<ul><li>Reduce stress and prioritise rest, both of which strongly affect both.</li><li>Build emotional closeness and feeling valued.</li><li>Allow time and remove pressure to 'perform'.</li><li>Communicate openly about what helps each of you feel connected.</li></ul>\n<h2>When to seek guidance</h2>\n<p>If a lasting mismatch or a persistent change is causing distress, a doctor or qualified therapist can help identify contributors and offer support. These are common, well-understood concerns.</p>\n<h2>The takeaway</h2>\n<p>Desire and arousal are related but distinct. Recognising that desire is often responsive — emerging from connection rather than preceding it — relieves pressure and helps couples nurture intimacy more naturally.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Understanding Desire: The Difference Between Arousal and Interest",
+    "author": 1,
+    "category": 4,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.812Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Understanding Desire: Arousal vs Interest Explained",
+    "meta_description": "Desire and arousal are different things. Understanding the distinction can transform intimacy — a clear, science-informed guide.",
+    "canonical_url": "",
+    "focus_keyword": "difference between arousal and desire",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.813Z",
+    "updated_at": "2026-09-01T09:49:00.813Z",
+    "tags": [
+      7,
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 18,
+  "fields": {
+    "title": "Sexual Wellness and Overall Health: Why They're Connected",
+    "slug": "sexual-wellness-and-overall-health",
+    "excerpt": "Intimate wellbeing is closely tied to general health — heart, mood, sleep, and stress all play a part. Here's how the pieces connect.",
+    "body": "<p>Sexual wellness is not separate from the rest of your health — it is deeply connected to it. Understanding these links helps explain why looking after your overall wellbeing supports intimate wellbeing too.</p>\n<h2>The cardiovascular connection</h2>\n<p>Healthy circulation is central to physical intimate response. Because of this, heart health and intimate health are closely linked — and the same habits that protect your heart tend to support intimacy.</p>\n<h2>Mental health and mood</h2>\n<p>Anxiety, depression, and chronic stress all influence desire and response. The mind and body work together; caring for mental wellbeing is a genuine part of caring for intimate wellbeing.</p>\n<blockquote>What is good for your heart and mind is, more often than not, good for your intimate life as well.</blockquote>\n<h2>Sleep, hormones, and energy</h2>\n<p>Quality sleep supports hormone balance, mood, and energy — all of which affect intimacy. Consistently poor sleep tends to show up in this area before people connect the two.</p>\n<h2>Habits that support intimate wellbeing</h2>\n<ul><li>Regular physical activity for circulation and mood.</li><li>Balanced nutrition supporting heart and hormone health.</li><li>Consistent, quality sleep.</li><li>Stress management that genuinely relaxes you.</li><li>Moderating alcohol and avoiding smoking.</li></ul>\n<h2>When to see a doctor</h2>\n<p>Because intimate difficulties can sometimes be an early signal of an underlying health issue, persistent changes are worth discussing with a doctor. Far from being awkward, this can be a valuable prompt to check on overall health.</p>\n<h2>The takeaway</h2>\n<p>Intimate wellbeing reflects overall wellbeing. Caring for your heart, mind, sleep, and stress levels supports a healthier intimate life — and persistent changes deserve a medical check, not silence.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Sexual Wellness and Overall Health: Why They're Connected",
+    "author": 2,
+    "category": 4,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.820Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Sexual Wellness and Overall Health: Why They're Connected",
+    "meta_description": "Intimate wellbeing is tied to heart health, mood, sleep and stress. Understand how general health and sexual wellness connect.",
+    "canonical_url": "",
+    "focus_keyword": "sexual wellness and health",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.821Z",
+    "updated_at": "2026-09-01T09:49:00.821Z",
+    "tags": [
+      2,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 19,
+  "fields": {
+    "title": "Myths About Intimacy That Cause Unnecessary Worry",
+    "slug": "myths-about-intimacy",
+    "excerpt": "Common myths about frequency, desire, and 'normal' create needless anxiety. Here are widespread misconceptions, gently corrected.",
+    "body": "<p>A surprising amount of anxiety about intimacy comes from believing myths that were never true. Clearing them up can bring real relief.</p>\n<h2>Myth 1: There is a 'normal' frequency everyone should meet</h2>\n<p>There is no universal correct amount. What matters is whether both partners feel content, not how a couple compares to an imagined average. Healthy couples vary enormously.</p>\n<h2>Myth 2: Desire should always be spontaneous</h2>\n<p>For many people, desire is responsive — it grows from closeness rather than appearing out of nowhere. Waiting for spontaneous desire that never comes can cause needless worry.</p>\n<h2>Myth 3: A dip in desire means something is wrong with the relationship</h2>\n<p>Desire naturally fluctuates with stress, health, hormones, and life stage. A temporary dip is usually about circumstances, not the strength of the bond.</p>\n<blockquote>Most 'problems' people worry about are simply normal variation they were never told to expect.</blockquote>\n<h2>Myth 4: Long-term couples inevitably lose their spark</h2>\n<p>Intimacy changes over time, but many long-term couples report deep, satisfying connection. It often takes intention rather than luck — and it is entirely achievable.</p>\n<h2>Myth 5: Talking about intimacy ruins the romance</h2>\n<p>The opposite is usually true. Couples who communicate openly tend to report greater satisfaction and closeness. Honesty builds intimacy rather than diminishing it.</p>\n<h2>The takeaway</h2>\n<p>Many intimacy worries dissolve once the underlying myth is corrected. There is no single 'normal', desire is often responsive, natural fluctuation is expected, and open communication helps. If a concern persists and troubles you, a professional can offer reassurance and guidance.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Myths About Intimacy That Cause Unnecessary Worry",
+    "author": 1,
+    "category": 4,
+    "post_type": "listicle",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.827Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Common Myths About Intimacy That Cause Unnecessary Worry",
+    "meta_description": "Myths about frequency, desire and what's 'normal' cause needless anxiety. Common misconceptions about intimacy, gently corrected.",
+    "canonical_url": "",
+    "focus_keyword": "myths about intimacy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.829Z",
+    "updated_at": "2026-09-01T09:49:00.829Z",
+    "tags": [
+      7,
+      2,
+      12
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 20,
+  "fields": {
+    "title": "Attachment Styles and How They Shape Relationships",
+    "slug": "attachment-styles-and-relationships",
+    "excerpt": "Attachment styles quietly shape how we connect, argue, and seek closeness. Understanding yours can transform your relationships.",
+    "body": "<p>Why do some people crave constant closeness while others pull away when things get intense? Attachment theory, one of the most studied ideas in relationship psychology, offers a helpful lens.</p>\n<h2>What attachment styles are</h2>\n<p>Attachment styles are patterns, formed early in life, that shape how we relate to closeness and security in adult relationships. They are not fixed labels — awareness can help them shift over time.</p>\n<h2>The four broad styles</h2>\n<ul><li><strong>Secure:</strong> comfortable with closeness and independence; communicates needs directly.</li><li><strong>Anxious:</strong> craves closeness, may fear abandonment, sensitive to signs of distance.</li><li><strong>Avoidant:</strong> values independence, may feel crowded by too much closeness.</li><li><strong>Disorganised:</strong> a mix, often linked to difficult early experiences, wanting closeness yet fearing it.</li></ul>\n<blockquote>Understanding your pattern is not about blame. It is about understanding your reactions so you can respond rather than react.</blockquote>\n<h2>How styles interact</h2>\n<p>Common dynamics arise when styles meet — for example, an anxious partner seeking reassurance from an avoidant partner who withdraws under pressure. Recognising the pattern helps couples step out of it instead of repeating it.</p>\n<h2>Moving toward security</h2>\n<ul><li>Notice your own patterns without judgment.</li><li>Communicate needs directly rather than through protest or withdrawal.</li><li>Offer reassurance and respect for space where each is needed.</li><li>Consider therapy, which can genuinely help shift patterns over time.</li></ul>\n<h2>The takeaway</h2>\n<p>Attachment styles quietly shape how we love and argue, but they are not destiny. With awareness, communication, and sometimes professional support, people can move toward more secure, satisfying ways of connecting.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Attachment Styles and How They Shape Relationships",
+    "author": 1,
+    "category": 5,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.834Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Attachment Styles and How They Shape Your Relationships",
+    "meta_description": "Attachment styles shape how we connect, argue and seek closeness. Understand the four styles and how they affect relationships.",
+    "canonical_url": "",
+    "focus_keyword": "attachment styles relationships",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.835Z",
+    "updated_at": "2026-09-01T09:49:00.835Z",
+    "tags": [
+      13,
+      7,
+      12
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 21,
+  "fields": {
+    "title": "The Psychology of Long-Term Attraction",
+    "slug": "psychology-of-long-term-attraction",
+    "excerpt": "Why does attraction change over years together — and how do some couples keep it alive? A look at the psychology of lasting attraction.",
+    "body": "<p>Early attraction can feel effortless and intense. Years later, many couples wonder where that spark went. Psychology offers reassuring insight — and practical direction.</p>\n<h2>Why early intensity fades</h2>\n<p>The heightened excitement of a new relationship is partly driven by novelty and brain chemistry that naturally settles over time. This settling is not a loss of love; it is a normal transition into a more stable, secure bond.</p>\n<h2>From passion to companionate love</h2>\n<p>Long-term relationships often move from intense early passion toward a deeper companionate love built on trust, friendship, and security. Many couples come to value this as richer, even as it feels different.</p>\n<blockquote>Lasting attraction is less about recapturing the beginning and more about continuing to discover each other.</blockquote>\n<h2>What keeps attraction alive</h2>\n<ul><li><strong>Novelty and shared experiences</strong> — trying new things together re-creates a sense of excitement.</li><li><strong>Maintaining some independence</strong> — a little space keeps partners interesting to each other.</li><li><strong>Emotional responsiveness</strong> — feeling seen and valued fuels attraction.</li><li><strong>Appreciation and affection</strong> — expressed regularly, not assumed.</li><li><strong>Continued curiosity</strong> — people keep changing; staying curious keeps connection alive.</li></ul>\n<h2>When attraction genuinely troubles you</h2>\n<p>If a lasting loss of attraction is causing distress or distance, it is worth exploring — sometimes on your own, sometimes with a couples therapist. Underlying issues such as resentment or stress often play a role and can be addressed.</p>\n<h2>The takeaway</h2>\n<p>Attraction naturally evolves rather than simply disappearing. By nurturing novelty, independence, appreciation, and curiosity, many couples sustain a deep and satisfying attraction for the long term.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Psychology of Long-Term Attraction",
+    "author": 1,
+    "category": 5,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.844Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "The Psychology of Long-Term Attraction",
+    "meta_description": "Why attraction changes over years together, and how couples keep it alive. A look at the psychology of lasting attraction.",
+    "canonical_url": "",
+    "focus_keyword": "psychology of long term attraction",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.845Z",
+    "updated_at": "2026-09-01T09:49:00.845Z",
+    "tags": [
+      13,
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 22,
+  "fields": {
+    "title": "Keeping Intimacy Alive in a Long Marriage",
+    "slug": "keeping-intimacy-alive-in-marriage",
+    "excerpt": "Intimacy in a long marriage evolves rather than fades. Here are realistic, research-informed ways couples keep their connection strong over the years.",
+    "body": "<p>One of the most common worries in long marriages is that intimacy will inevitably fade. The reassuring truth is that it tends to <em>change</em> rather than disappear — and couples have real influence over how it evolves.</p>\n<h2>Redefining intimacy over time</h2>\n<p>In a long marriage, intimacy becomes less about novelty and more about depth: trust, shared history, and feeling deeply known. Recognising this shift as growth rather than loss changes everything.</p>\n<h2>Why connection sometimes dips</h2>\n<p>Routine, stress, parenting, and simply taking each other for granted can all create distance. These are ordinary challenges, not signs of a failing marriage — and they are reversible with attention.</p>\n<blockquote>In a long marriage, intimacy is less something you find and more something you keep choosing to build.</blockquote>\n<h2>Practical ways to keep intimacy strong</h2>\n<ul><li><strong>Protect time together</strong> amid responsibilities.</li><li><strong>Keep everyday affection alive</strong> — small touches and warmth.</li><li><strong>Try new things together</strong> to reintroduce novelty and fun.</li><li><strong>Express appreciation</strong> rather than assuming it is understood.</li><li><strong>Keep communicating</strong> honestly about needs and changes.</li></ul>\n<h2>Navigating change together</h2>\n<p>Bodies, health, and desire change over decades. Couples who adapt together — with patience, humour, and open communication — usually navigate these changes well and stay close through them.</p>\n<h2>When to seek support</h2>\n<p>If distance has become entrenched or one or both partners feel persistently unhappy, a couples therapist can help. Seeking support is a sign of commitment to the marriage, not a signal of its failure.</p>\n<h2>The takeaway</h2>\n<p>Intimacy in a long marriage deepens and evolves. With protected time, everyday affection, shared novelty, appreciation, and honest communication, many couples enjoy a rich connection that grows stronger with the years.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Keeping Intimacy Alive in a Long Marriage",
+    "author": 1,
+    "category": 6,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.851Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Keeping Intimacy Alive in a Long Marriage",
+    "meta_description": "Intimacy in a long marriage evolves rather than fades. Realistic, research-informed ways to keep connection strong over the years.",
+    "canonical_url": "",
+    "focus_keyword": "keeping intimacy alive in marriage",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.853Z",
+    "updated_at": "2026-09-01T09:49:00.853Z",
+    "tags": [
+      7,
+      8,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 23,
+  "fields": {
+    "title": "When Desire Levels Differ: Navigating Mismatch in Marriage",
+    "slug": "navigating-desire-mismatch-in-marriage",
+    "excerpt": "One partner wants more closeness than the other — one of the most common and solvable challenges in marriage. Here's how to navigate it kindly.",
+    "body": "<p>Few couples share identical levels of desire at all times. A mismatch — where one partner wants more closeness than the other — is among the most common challenges couples face, and one of the most workable.</p>\n<h2>It is normal, not a defect</h2>\n<p>Differences in desire are expected. They can stem from stress, health, hormones, life stage, or simply differing natural levels. Framing it as a shared puzzle rather than one person's 'problem' is the essential first step.</p>\n<h2>The pursue–withdraw trap</h2>\n<p>A common pattern sees one partner initiating more and feeling rejected, while the other feels pressured and withdraws further. Recognising this cycle helps couples step out of it, because the pattern itself often makes things worse than the underlying difference.</p>\n<blockquote>The goal is not for one partner to 'win', but for both to feel understood and cared for.</blockquote>\n<h2>Working through it together</h2>\n<ul><li><strong>Talk without blame</strong>, at a calm time, about how each of you feels.</li><li><strong>Separate affection from expectation</strong> so closeness stops feeling like pressure.</li><li><strong>Look for underlying factors</strong> — stress, tiredness, health, resentment.</li><li><strong>Find compromise</strong> that respects both partners' feelings.</li><li><strong>Focus on connection broadly</strong>, not just its physical form.</li></ul>\n<h2>When to seek support</h2>\n<p>If the mismatch causes ongoing distress or conflict, a couples or sex therapist can help enormously. This is one of the most common reasons couples seek support — and one where guidance is often very effective.</p>\n<h2>The takeaway</h2>\n<p>Differing desire is normal and manageable. By avoiding the pursue–withdraw trap, communicating with kindness, and addressing underlying factors together, most couples find a balance that leaves both partners feeling valued.</p>",
+    "featured_image": "",
+    "featured_image_alt": "When Desire Levels Differ: Navigating Mismatch in Marriage",
+    "author": 1,
+    "category": 6,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.857Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Navigating Different Desire Levels in Marriage",
+    "meta_description": "Differing desire levels are common and solvable. A kind, practical guide to navigating desire mismatch in marriage.",
+    "canonical_url": "",
+    "focus_keyword": "desire mismatch in marriage",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.859Z",
+    "updated_at": "2026-09-01T09:49:00.859Z",
+    "tags": [
+      7,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 24,
+  "fields": {
+    "title": "Rekindling Connection After Years Together",
+    "slug": "rekindling-connection-after-years",
+    "excerpt": "If a long relationship has settled into routine, connection can be rekindled. Here are practical, realistic ways to bring back closeness.",
+    "body": "<p>It is easy for a long relationship to settle into comfortable routine — and then for couples to wonder where their closeness went. The encouraging news is that connection can almost always be rekindled with intention.</p>\n<h2>Routine is the quiet culprit</h2>\n<p>Predictability brings security but can dull excitement. Much of what feels like fading connection is simply the effect of routine, which can be gently disrupted in positive ways.</p>\n<h2>Start with friendship</h2>\n<p>Underneath romantic connection is friendship — curiosity, fun, and goodwill. Rebuilding these often reignites warmth more effectively than focusing narrowly on the romantic or physical side.</p>\n<blockquote>Reconnection usually starts not in the bedroom, but in shared laughter, curiosity, and kindness.</blockquote>\n<h2>Practical ways to rekindle</h2>\n<ol><li><strong>Reintroduce novelty</strong> — a new shared activity, place, or experience.</li><li><strong>Bring back curiosity</strong> — ask questions as if still getting to know each other.</li><li><strong>Prioritise time together</strong> without distractions.</li><li><strong>Revisit what first connected you</strong> and recreate a little of it.</li><li><strong>Rebuild affection gradually</strong>, without pressure or expectation.</li></ol>\n<h2>Patience and realism</h2>\n<p>Reconnection is a process, not a single evening. Small, consistent efforts compound over time. Approaching it with patience and warmth — rather than pressure — is what makes it work.</p>\n<h2>When to seek support</h2>\n<p>If efforts to reconnect keep stalling, or resentment runs deep, a couples therapist can help you understand what is in the way. Many couples rekindle connection successfully with this support.</p>\n<h2>The takeaway</h2>\n<p>Routine dulls connection, but it does not destroy it. Through renewed friendship, curiosity, novelty, and patient affection, couples can rekindle a warm, satisfying connection even after many years together.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Rekindling Connection After Years Together",
+    "author": 1,
+    "category": 6,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.866Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Rekindling Connection After Years Together",
+    "meta_description": "If a long relationship has settled into routine, connection can be rekindled. Practical, realistic ways to bring back closeness.",
+    "canonical_url": "",
+    "focus_keyword": "rekindling connection in marriage",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.867Z",
+    "updated_at": "2026-09-01T09:49:00.867Z",
+    "tags": [
+      8,
+      9,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 25,
+  "fields": {
+    "title": "How Emotional Safety Builds Deeper Intimacy",
+    "slug": "emotional-safety-and-intimacy",
+    "excerpt": "Emotional safety — feeling accepted and unjudged — is the foundation of real intimacy. Here's how couples build it.",
+    "body": "<p>Beneath every deeply connected couple is something quieter than passion: emotional safety. It is the sense that you can be fully yourself with someone without fear of ridicule, rejection, or judgment.</p>\n<h2>What emotional safety means</h2>\n<p>Emotional safety is the confidence that your partner will treat your vulnerability with care. When it is present, people open up; when it is absent, they guard themselves — and guarded people struggle to be truly intimate.</p>\n<h2>Why it underpins intimacy</h2>\n<p>Genuine intimacy, emotional or physical, requires letting down defenses. That only happens when it feels safe. This is why emotional safety is the soil in which closeness grows.</p>\n<blockquote>People can only be as close as they feel safe to be.</blockquote>\n<h2>How to build emotional safety</h2>\n<ul><li><strong>Respond with care</strong> when your partner is vulnerable, rather than dismissing or criticising.</li><li><strong>Keep confidences</strong> and honour trust.</li><li><strong>Manage conflict respectfully</strong>, without contempt or humiliation.</li><li><strong>Be reliable</strong> — consistency builds trust over time.</li><li><strong>Show acceptance</strong> of who your partner is, not just what they do.</li></ul>\n<h2>Repairing when safety is damaged</h2>\n<p>Trust can be bruised by harsh words or broken promises. Repair involves acknowledgment, changed behaviour over time, and patience. Where damage is significant, a therapist can help rebuild safety carefully.</p>\n<h2>The takeaway</h2>\n<p>Emotional safety is the foundation everything else rests on. By responding to each other with care, respect, and reliability, couples create the safety that allows deep, lasting intimacy to flourish.</p>",
+    "featured_image": "",
+    "featured_image_alt": "How Emotional Safety Builds Deeper Intimacy",
+    "author": 1,
+    "category": 5,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.872Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "How Emotional Safety Builds Deeper Intimacy",
+    "meta_description": "Emotional safety — feeling accepted and unjudged — is the foundation of real intimacy. How couples build it.",
+    "canonical_url": "",
+    "focus_keyword": "emotional safety intimacy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.874Z",
+    "updated_at": "2026-09-01T09:49:00.874Z",
+    "tags": [
+      13,
+      7,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 26,
+  "fields": {
+    "title": "Understanding and Managing Jealousy in Relationships",
+    "slug": "understanding-managing-jealousy",
+    "excerpt": "Jealousy is human, but left unmanaged it erodes trust. Here's how to understand its roots and handle it in a healthy way.",
+    "body": "<p>Almost everyone experiences jealousy at some point. In small doses it is a normal human emotion; left unexamined, it can quietly erode trust and closeness. Understanding it is the key to managing it well.</p>\n<h2>Where jealousy comes from</h2>\n<p>Jealousy often grows from insecurity, fear of loss, past experiences, or attachment patterns rather than from a partner's actual behaviour. Recognising this helps separate the feeling from the facts.</p>\n<h2>Healthy vs unhealthy jealousy</h2>\n<p>Occasional, mild jealousy that prompts honest conversation can be manageable. Jealousy becomes unhealthy when it drives controlling behaviour, constant suspicion, or monitoring — which damage trust and wellbeing for both partners.</p>\n<blockquote>The task is not to never feel jealous, but to handle the feeling in a way that protects trust rather than corroding it.</blockquote>\n<h2>Managing jealousy constructively</h2>\n<ul><li><strong>Pause before reacting</strong> — notice the feeling without acting on it immediately.</li><li><strong>Examine the root</strong> — is this about a real event or an old insecurity?</li><li><strong>Communicate openly</strong> about feelings without accusation.</li><li><strong>Build self-worth</strong> outside the relationship.</li><li><strong>Respect boundaries</strong> — trust cannot coexist with control.</li></ul>\n<h2>When jealousy needs more help</h2>\n<p>If jealousy feels overwhelming, leads to controlling behaviour, or is damaging the relationship, support from a therapist can help address the underlying insecurity. If a relationship ever involves control, intimidation, or fear, please reach out to a professional or support service.</p>\n<h2>The takeaway</h2>\n<p>Jealousy is a normal emotion that becomes harmful only when it drives control or suspicion. By pausing, examining its roots, communicating honestly, and building self-worth, most people can manage it in ways that protect trust and closeness.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Understanding and Managing Jealousy in Relationships",
+    "author": 1,
+    "category": 5,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-09-01T09:49:00.880Z",
+    "medical_reviewer": 1,
+    "reviewed_at": "2026-09-01",
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.ncbi.nlm.nih.gov/",
+      "https://www.mayoclinic.org/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article is educational and discusses adult health and relationship topics.",
+    "meta_title": "Understanding and Managing Jealousy in Relationships",
+    "meta_description": "Jealousy is human but can erode trust. Understand its roots and learn healthy ways to manage it in relationships.",
+    "canonical_url": "",
+    "focus_keyword": "managing jealousy in relationships",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-09-01T09:49:00.881Z",
+    "updated_at": "2026-09-01T09:49:00.881Z",
+    "tags": [
+      13,
+      7,
+      12
+    ]
+  }
+}
+]

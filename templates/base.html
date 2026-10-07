@@ -1,0 +1,107 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Elevate Life{% endblock %}</title>
+
+    {# --- SEO meta (overridable per page) --- #}
+    <meta name="description" content="{% block meta_description %}Elevate Life — science-backed, judgment-free guidance on relationships, intimacy, and emotional wellbeing.{% endblock %}">
+    {% block meta_robots %}<meta name="robots" content="index, follow">{% endblock %}
+    {% block canonical %}{% endblock %}
+
+    {# --- Open Graph / social --- #}
+    <meta property="og:site_name" content="Elevate Life">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}Elevate Life{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Science-backed guidance on relationships, intimacy, and emotional wellbeing.{% endblock %}">
+    {% block og_image %}{% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% if adsense_client_id %}
+    {# Google AdSense loader — only rendered once an AdSense client id is set. #}
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_client_id }}"
+        crossorigin="anonymous"></script>
+    {% endif %}
+
+    {% block extrahead %}{% endblock %}
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    {% block reading_progress %}{% endblock %}
+
+    <header class="site-header">
+        <div class="container site-header-inner">
+            <a class="site-logo" href="{% url 'blog:home' %}" aria-label="Elevate Life home">
+                <span class="logo-mark" aria-hidden="true">EL</span>
+                <span class="logo-text">
+                    <span class="logo-name">Elevate&nbsp;Life</span>
+                    <span class="logo-tagline">Relationships &middot; Intimacy &middot; Wellbeing</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+
+            <nav class="site-nav" aria-label="Primary">
+                <a href="{% url 'blog:home' %}">Home</a>
+                <a href="{% url 'blog:category_index' %}">Categories</a>
+                <a href="{% url 'blog:about' %}">About</a>
+                <a href="{% url 'blog:contact' %}">Contact</a>
+                <form class="nav-search" action="{% url 'blog:search' %}" method="get" role="search">
+                    <input type="search" name="q" placeholder="Search…" value="{{ query|default:'' }}" aria-label="Search articles">
+                    <button type="submit" aria-label="Submit search">&#128269;</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    {% if messages %}
+    <div class="container">
+        <ul class="messages">
+            {% for message in messages %}
+            <li class="message message-{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <main id="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block newsletter %}
+    <div class="container">
+        {% include "blog/partials/newsletter.html" %}
+    </div>
+    {% endblock %}
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-links">
+                <a href="{% url 'blog:about' %}">About</a>
+                <a href="{% url 'blog:contact' %}">Contact</a>
+                <a href="{% url 'blog:privacy' %}">Privacy</a>
+                <a href="{% url 'blog:terms' %}">Terms</a>
+                <a href="{% url 'blog:disclaimer' %}">Medical Disclaimer</a>
+                <a href="{% url 'blog:affiliate_disclosure' %}">Affiliate Disclosure</a>
+            </p>
+            <p class="footer-note">&copy; {% now "Y" %} Elevate Life. Educational content only —
+                not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-consent" role="dialog" aria-label="Cookie notice">
+        <p>We use cookies to improve your experience and to show relevant ads.
+            By using this site you agree to our
+            <a href="{% url 'blog:privacy' %}" style="color:#93c5fd;">Privacy Policy</a>.</p>
+        <button type="button" class="cookie-accept">Got it</button>
+    </div>
+
+    <script src="{% static 'js/main.js' %}" defer></script>
+    {% block extrajs %}{% endblock %}
+</body>
+</html>

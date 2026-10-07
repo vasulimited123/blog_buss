@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About Dr. R.S. Agrawal & Contact — Elevate Life{% endblock %}
+{% block meta_description %}Meet Dr. R.S. Agrawal — Homoeopathic physician with 25+ years of experience and Principal of Narayan Shree Homoeopathy College. Founder of Elevate Life. Get in touch.{% endblock %}
+
+{% block content %}
+<article class="page profile-page">
+
+    {# ---------------- Doctor profile ---------------- #}
+    <section class="doctor-profile">
+        <div class="doctor-portrait">
+            {# Replace this with Dr. Agrawal's photo via the media folder when ready. #}
+            <div class="doctor-portrait-placeholder" aria-hidden="true">RS</div>
+        </div>
+        <div class="doctor-intro">
+            <p class="doctor-eyebrow">Founder, Elevate Life</p>
+            <h1 class="doctor-name">Dr. R.S. Agrawal</h1>
+            <p class="doctor-title">Homoeopathic Physician &middot; 25+ Years of Experience</p>
+            <p class="doctor-title">Principal, Narayan Shree Homoeopathy College</p>
+            <div class="doctor-contact-quick">
+                <a class="btn-primary" href="mailto:dragrawalrs@gmail.com">Email Dr. Agrawal</a>
+                <a class="btn-outline" href="tel:+919039758178">Call +91 90397 58178</a>
+            </div>
+        </div>
+    </section>
+
+    {# ---------------- Biography ---------------- #}
+    <section class="doctor-bio">
+        <h2>About Dr. Agrawal</h2>
+        <p>Dr. R.S. Agrawal is a respected Homoeopathic physician with more than
+        <strong>25 years of clinical experience</strong> in caring for patients and
+        guiding them toward lasting wellbeing. As <strong>Principal of Narayan Shree
+        Homoeopathy College</strong>, he has dedicated much of his career not only to
+        healing, but to teaching and shaping the next generation of homoeopathic
+        doctors.</p>
+
+        <p>Over the decades, Dr. Agrawal has treated a wide spectrum of patients, earning
+        a reputation for patience, careful listening, and a deeply human approach to care.
+        He believes that healing is never only physical — that true wellbeing includes the
+        mind, the emotions, and the relationships that give life meaning.</p>
+
+        <p>It is this philosophy that led him to found <strong>Elevate Life</strong>: a
+        space where honest, compassionate, judgment-free guidance on health, relationships,
+        and emotional wellbeing is made available to everyone.</p>
+    </section>
+
+    {# ---------------- Credentials / highlights ---------------- #}
+    <section class="doctor-highlights">
+        <h2>Experience &amp; Expertise</h2>
+        <ul class="highlight-grid">
+            <li><span class="highlight-num">25+</span><span class="highlight-label">Years of clinical experience</span></li>
+            <li><span class="highlight-num">Principal</span><span class="highlight-label">Narayan Shree Homoeopathy College</span></li>
+            <li><span class="highlight-num">Homoeopathy</span><span class="highlight-label">Specialisation &amp; practice</span></li>
+            <li><span class="highlight-num">Founder</span><span class="highlight-label">Elevate Life</span></li>
+        </ul>
+    </section>
+
+    {# ---------------- Image gallery (for Google Business Profile) ---------------- #}
+    <section class="doctor-gallery">
+        <h2>Gallery</h2>
+        <p class="gallery-note">Photographs of Dr. Agrawal, the clinic, and the college.
+        Replace these placeholders with real images via the media folder.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item" aria-hidden="true"><span>Photo 1</span></div>
+            <div class="gallery-item" aria-hidden="true"><span>Photo 2</span></div>
+            <div class="gallery-item" aria-hidden="true"><span>Photo 3</span></div>
+            <div class="gallery-item" aria-hidden="true"><span>Photo 4</span></div>
+            <div class="gallery-item" aria-hidden="true"><span>Photo 5</span></div>
+            <div class="gallery-item" aria-hidden="true"><span>Photo 6</span></div>
+        </div>
+    </section>
+
+    {# ---------------- Contact ---------------- #}
+    <section class="doctor-contact">
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you — whether you have a question, feedback, or a
+        partnership enquiry.</p>
+        <ul class="contact-list">
+            <li><strong>Email:</strong>
+                <a href="mailto:dragrawalrs@gmail.com">dragrawalrs@gmail.com</a></li>
+            <li><strong>Phone:</strong>
+                <a href="tel:+919039758178">+91 90397 58178</a></li>
+        </ul>
+        <p class="contact-note">Please note that Elevate Life is an educational resource.
+        For personal medical concerns, kindly consult a qualified professional directly.
+        See our <a href="{% url 'blog:disclaimer' %}">Medical Disclaimer</a>.</p>
+    </section>
+
+</article>
+{% endblock %}

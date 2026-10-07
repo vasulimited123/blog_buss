@@ -1,0 +1,9 @@
+{% extends "blog/post_types/standard.html" %}
+{# Personal story: same layout as standard, flagged with a body class hook
+   via extra styling. Story posts read as narrative first-person accounts. #}
+
+{% block content %}
+<div class="post-type-story">
+    {{ block.super }}
+</div>
+{% endblock %}
