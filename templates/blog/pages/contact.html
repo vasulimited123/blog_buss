@@ -9,8 +9,10 @@
     {# ---------------- Doctor profile ---------------- #}
     <section class="doctor-profile">
         <div class="doctor-portrait">
-            {# Dr. Agrawal's profile photo. Add static/images/dr-agrawal.png to the repo.
-               If the image is missing, the "RS" placeholder shows automatically. #}
+            {% comment %}
+            Dr. Agrawal's profile photo (static/images/dr-agrawal.png).
+            If the image is missing, the "RS" placeholder shows automatically.
+            {% endcomment %}
             <img src="{% static 'images/dr-agrawal.png' %}"
                  alt="Dr. R.S. Agrawal"
                  class="doctor-portrait-img"
