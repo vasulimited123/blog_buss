@@ -13,11 +13,10 @@ whitenoise>=6.7
 # PostgreSQL driver (dev + production; configured via DJANGO_DB_* env vars)
 psycopg[binary]>=3.2
 
-# --- Production deployment (install on the server) ---
-# gunicorn>=23.0            # Production WSGI server (Linux hosts)
+# Production WSGI server (used by Railway/Render/VPS; NOT by PythonAnywhere)
+gunicorn>=23.0
 
 # --- Added later as the project scales ---
 # celery>=5.4               # Background tasks (image processing, emails)
 # redis>=5.0                # Cache + Celery broker
 # django-redis>=5.4         # Redis cache backend
-psycopg2-binary==2.9.12
