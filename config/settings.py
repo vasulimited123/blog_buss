@@ -138,7 +138,40 @@ WSGI_APPLICATION = "config.wsgi.application"
 #   DJANGO_DB_ENGINE=django.db.backends.postgresql
 #   DJANGO_DB_NAME, DJANGO_DB_USER, DJANGO_DB_PASSWORD, DJANGO_DB_HOST, DJANGO_DB_PORT
 # ---------------------------------------------------------------------------
-if os.environ.get("DJANGO_DB_ENGINE"):
+def _database_from_url(url):
+    """Parse a PostgreSQL connection URL (e.g. a Neon URL) into Django config.
+
+    Handles the ?sslmode=require&channel_binding=require query that Neon adds.
+    """
+    from urllib.parse import urlparse, parse_qs
+
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+
+    options = {}
+    sslmode = query.get("sslmode", ["require"])[0]
+    if sslmode:
+        options["sslmode"] = sslmode
+    # NOTE: we deliberately ignore `channel_binding` from the URL. Neon's
+    # pooled endpoint can drop the connection when channel_binding=require is
+    # passed through psycopg. sslmode=require already secures the connection.
+
+    return {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": (parsed.path or "/").lstrip("/"),
+        "USER": parsed.username or "",
+        "PASSWORD": parsed.password or "",
+        "HOST": parsed.hostname or "localhost",
+        "PORT": str(parsed.port or "5432"),
+        "CONN_MAX_AGE": 600,
+        "OPTIONS": options,
+    }
+
+
+# Priority: DATABASE_URL (Neon / production) > individual DJANGO_DB_* vars > SQLite.
+if os.environ.get("DATABASE_URL"):
+    DATABASES = {"default": _database_from_url(os.environ["DATABASE_URL"])}
+elif os.environ.get("DJANGO_DB_ENGINE"):
     DATABASES = {
         "default": {
             "ENGINE": os.environ["DJANGO_DB_ENGINE"],

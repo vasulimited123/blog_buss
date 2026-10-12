@@ -660,6 +660,7 @@ section > h2 {
 }
 .doctor-portrait { flex-shrink: 0; }
 .doctor-portrait img,
+.doctor-portrait-img,
 .doctor-portrait-placeholder {
     width: 150px;
     height: 150px;
@@ -733,6 +734,9 @@ section > h2 {
     gap: 12px;
     margin-top: 14px;
 }
+/* 3 equal photos (Dr. Agrawal gallery) */
+.gallery-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 600px) { .gallery-grid-3 { grid-template-columns: 1fr; } }
 .gallery-item {
     aspect-ratio: 4 / 3;
     background: repeating-linear-gradient(45deg, #f8fafc, #f8fafc 10px, #f1f5f9 10px, #f1f5f9 20px);

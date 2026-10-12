@@ -13,7 +13,7 @@ from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
 
 from blog.sitemaps import sitemaps
-from blog.views import robots_txt
+from blog.views import robots_txt, ads_txt
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -22,6 +22,7 @@ urlpatterns = [
     # SEO endpoints
     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
     path("robots.txt", robots_txt, name="robots_txt"),
+    path("ads.txt", ads_txt, name="ads_txt"),
 
     # Public site URLs (blog app).
     path("", include("blog.urls")),

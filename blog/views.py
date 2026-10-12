@@ -232,3 +232,20 @@ def robots_txt(request):
         f"Sitemap: {sitemap_url}",
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
+
+
+# ---------------------------------------------------------------------------
+# ads.txt — declares authorized ad sellers (Google AdSense requirement).
+# Serves a valid line only once your AdSense publisher ID is configured.
+# ---------------------------------------------------------------------------
+def ads_txt(request):
+    from django.conf import settings
+
+    client_id = settings.ADSENSE_CLIENT_ID  # e.g. "ca-pub-1234567890123456"
+    if client_id:
+        # Strip the "ca-" prefix for the ads.txt publisher id, per Google's format.
+        pub_id = client_id.replace("ca-", "", 1)
+        content = f"google.com, {pub_id}, DIRECT, f08c47fec0942fa0\n"
+    else:
+        content = "# ads.txt — add your AdSense publisher line after approval.\n"
+    return HttpResponse(content, content_type="text/plain")

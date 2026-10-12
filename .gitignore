@@ -25,3 +25,6 @@ db.sqlite3-journal
 .idea/
 .DS_Store
 Thumbs.db
+
+# One-off data push script — contains DB credentials, keep out of Git
+push_to_neon.py

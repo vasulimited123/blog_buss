@@ -9,8 +9,13 @@
     {# ---------------- Doctor profile ---------------- #}
     <section class="doctor-profile">
         <div class="doctor-portrait">
-            {# Replace this with Dr. Agrawal's photo via the media folder when ready. #}
-            <div class="doctor-portrait-placeholder" aria-hidden="true">RS</div>
+            {# Dr. Agrawal's profile photo. Add static/images/dr-agrawal.png to the repo.
+               If the image is missing, the "RS" placeholder shows automatically. #}
+            <img src="{% static 'images/dr-agrawal.png' %}"
+                 alt="Dr. R.S. Agrawal"
+                 class="doctor-portrait-img"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="doctor-portrait-placeholder" aria-hidden="true" style="display:none;">RS</div>
         </div>
         <div class="doctor-intro">
             <p class="doctor-eyebrow">Founder, Elevate Life</p>
@@ -58,15 +63,23 @@
     {# ---------------- Image gallery (for Google Business Profile) ---------------- #}
     <section class="doctor-gallery">
         <h2>Gallery</h2>
-        <p class="gallery-note">Photographs of Dr. Agrawal, the clinic, and the college.
-        Replace these placeholders with real images via the media folder.</p>
-        <div class="gallery-grid">
-            <div class="gallery-item" aria-hidden="true"><span>Photo 1</span></div>
-            <div class="gallery-item" aria-hidden="true"><span>Photo 2</span></div>
-            <div class="gallery-item" aria-hidden="true"><span>Photo 3</span></div>
-            <div class="gallery-item" aria-hidden="true"><span>Photo 4</span></div>
-            <div class="gallery-item" aria-hidden="true"><span>Photo 5</span></div>
-            <div class="gallery-item" aria-hidden="true"><span>Photo 6</span></div>
+        <p class="gallery-note">Photographs of Dr. Agrawal, the clinic, and the college.</p>
+        <div class="gallery-grid gallery-grid-3">
+            <div class="gallery-item">
+                <img src="{% static 'images/gallery-1.png' %}" alt="Elevate Life — photo 1" loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span style="display:none;">Photo 1</span>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/gallery-2.png' %}" alt="Elevate Life — photo 2" loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span style="display:none;">Photo 2</span>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/gallery-3.png' %}" alt="Elevate Life — photo 3" loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span style="display:none;">Photo 3</span>
+            </div>
         </div>
     </section>
 

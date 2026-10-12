@@ -1,0 +1,759 @@
+[
+{
+  "model": "blog.author",
+  "pk": 1,
+  "fields": {
+    "user": null,
+    "name": "Dr. R.S. Agrawal",
+    "slug": "dr-rs-agrawal",
+    "credentials": "",
+    "bio": "Dr. R.S. Agrawal is the founder of Elevate Life. He writes to make honest, compassionate guidance on relationships, intimacy, and emotional wellbeing accessible to everyone — without shame or judgment.",
+    "photo": "",
+    "website": "",
+    "twitter": "",
+    "linkedin": "",
+    "created_at": "2026-10-12T06:51:10.626Z",
+    "updated_at": "2026-10-12T06:54:26.328Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Men's Health",
+    "slug": "mens-health",
+    "description": "Physical and mental wellbeing topics relevant to men.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:00.501Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Women's Health",
+    "slug": "womens-health",
+    "description": "Physical and mental wellbeing topics relevant to women.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:02.105Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Relationship & Intimacy",
+    "slug": "relationship-intimacy",
+    "description": "Building and maintaining closeness in relationships.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:03.502Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Sexual Wellness",
+    "slug": "sexual-wellness",
+    "description": "Evidence-based education on sexual health and wellbeing.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:04.930Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 5,
+  "fields": {
+    "name": "Relationship Psychology",
+    "slug": "relationship-psychology",
+    "description": "The psychology behind attraction, desire, and connection.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:06.573Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 6,
+  "fields": {
+    "name": "Marriage & Long-term",
+    "slug": "marriage-long-term",
+    "description": "Navigating intimacy and connection in long-term partnerships.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:07.932Z"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 7,
+  "fields": {
+    "name": "Chronic Health",
+    "slug": "chronic-health",
+    "description": "Living well with long-term health conditions like diabetes and arthritis.",
+    "parent": null,
+    "meta_title": "",
+    "meta_description": "",
+    "created_at": "2026-10-12T06:51:09.280Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 1,
+  "fields": {
+    "name": "intimacy",
+    "slug": "intimacy",
+    "created_at": "2026-10-12T06:51:14.215Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 2,
+  "fields": {
+    "name": "couples",
+    "slug": "couples",
+    "created_at": "2026-10-12T06:51:16.372Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 3,
+  "fields": {
+    "name": "communication",
+    "slug": "communication",
+    "created_at": "2026-10-12T06:51:18.691Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 4,
+  "fields": {
+    "name": "attachment",
+    "slug": "attachment",
+    "created_at": "2026-10-12T06:51:22.825Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 5,
+  "fields": {
+    "name": "psychology",
+    "slug": "psychology",
+    "created_at": "2026-10-12T06:51:26.319Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 6,
+  "fields": {
+    "name": "desire",
+    "slug": "desire",
+    "created_at": "2026-10-12T06:51:30.301Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 7,
+  "fields": {
+    "name": "hormones",
+    "slug": "hormones",
+    "created_at": "2026-10-12T06:51:32.746Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 8,
+  "fields": {
+    "name": "confidence",
+    "slug": "confidence",
+    "created_at": "2026-10-12T06:51:35.231Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 9,
+  "fields": {
+    "name": "anxiety",
+    "slug": "anxiety",
+    "created_at": "2026-10-12T06:51:39.003Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 10,
+  "fields": {
+    "name": "stress",
+    "slug": "stress",
+    "created_at": "2026-10-12T06:51:42.768Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 11,
+  "fields": {
+    "name": "postpartum",
+    "slug": "postpartum",
+    "created_at": "2026-10-12T06:51:47.788Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 12,
+  "fields": {
+    "name": "body image",
+    "slug": "body-image",
+    "created_at": "2026-10-12T06:51:49.997Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 13,
+  "fields": {
+    "name": "diabetes",
+    "slug": "diabetes",
+    "created_at": "2026-10-12T06:52:29.242Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 14,
+  "fields": {
+    "name": "wellbeing",
+    "slug": "wellbeing",
+    "created_at": "2026-10-12T06:52:31.415Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 15,
+  "fields": {
+    "name": "lifestyle",
+    "slug": "lifestyle",
+    "created_at": "2026-10-12T06:52:33.789Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 16,
+  "fields": {
+    "name": "arthritis",
+    "slug": "arthritis",
+    "created_at": "2026-10-12T06:52:38.136Z"
+  }
+},
+{
+  "model": "blog.tag",
+  "pk": 17,
+  "fields": {
+    "name": "joint pain",
+    "slug": "joint-pain",
+    "created_at": "2026-10-12T06:52:40.328Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "The Night We Realized We'd Become Roommates",
+    "slug": "the-night-we-became-roommates",
+    "excerpt": "It rarely ends in a fight. More often it fades into logistics, tiredness, and two people sleeping back to back. If your marriage has quietly become a partnership of tasks, this is for you — and there is a way back.",
+    "editor_note": "If you have read this far, chances are something here already touched a nerve. Please know this: drifting into 'roommates' is not a sign that your marriage has failed — it is one of the most ordinary things in the world, and it is quietly reversible. We wrote this for the couples who still care, but have forgotten how to reach across the quiet. You are not too late.",
+    "body": "<p>There is a particular kind of quiet that settles into a long relationship. Not the comfortable quiet of two people at ease — the other kind. The one where you discuss the electricity bill, who is picking up the children, whether the car needs servicing, and then turn off the light and sleep with your backs to each other.</p>\n<p>Nobody shouted. Nobody did anything wrong. And that is exactly what makes it so confusing. How do two people who love each other end up feeling like polite roommates sharing an address?</p>\n<h2>It happens by accumulation, not decision</h2>\n<p>This drift almost never arrives as a dramatic event. It builds slowly, one tired evening at a time. Careers demand more. Children arrive and absorb everything. Stress piles up. Somewhere in there, the relationship quietly moves to the bottom of the list — not because it stopped mattering, but because everything else started shouting louder.</p>\n<p>Psychologists sometimes describe this as the erosion of a couple's friendship: the small daily moments of turning toward each other get replaced by the machinery of running a life together.</p>\n<blockquote>Most couples do not fall out of love dramatically. They drift, one unnoticed evening at a time — and drift can be reversed.</blockquote>\n<h2>The signs you may recognise</h2>\n<ul><li>Conversations are almost entirely about logistics and responsibilities.</li><li>Physical affection has quietly disappeared, not just intimacy.</li><li>You feel more like teammates managing a household than partners.</li><li>You cannot remember the last time you were genuinely curious about each other.</li><li>There is no conflict — but there is no spark either.</li></ul>\n<h2>Why the absence of fighting can be misleading</h2>\n<p>Many couples take comfort in 'at least we don't argue.' But the opposite of love is not conflict — it is indifference. A couple who still argue are still engaged with each other. The roommate stage is quieter and, in its own way, more concerning, precisely because it feels like nothing is wrong.</p>\n<h2>The way back is smaller than you think</h2>\n<p>Here is the reassuring part. Because the distance was built from small moments, it is rebuilt from small moments too. You do not need a dramatic gesture, an expensive holiday, or a complete reinvention. You need a series of tiny turns toward each other, repeated.</p>\n<ol><li><strong>Bring back a daily point of real contact.</strong> Even ten minutes of undistracted conversation — no phones, no logistics — begins to rebuild the friendship underneath the marriage.</li><li><strong>Restore non-demanding affection.</strong> A hug that expects nothing. Holding hands. Sitting close. Touch that simply says 'I'm still here.'</li><li><strong>Get curious again.</strong> Ask your partner something you would ask a friend: what is on their mind, what they are looking forward to, what has been hard lately.</li><li><strong>Protect a small pocket of time</strong> that belongs to the two of you, and defend it the way you defend any other important commitment.</li></ol>\n<h2>For couples in the Indian context</h2>\n<p>In many households, especially joint families, a couple's relationship can quietly become invisible beneath duties to parents, children, and the wider family. Carving out private time can feel almost selfish. It is not. A strong couple is the foundation the whole family rests on — protecting your bond is a responsibility, not an indulgence.</p>\n<h2>When to seek support</h2>\n<p>If you have tried to reconnect and keep hitting a wall, or if the distance has hardened into resentment, a couples therapist can help you find your way back. Seeking that support is a sign of how much the relationship matters to you, not a sign of failure.</p>\n<h2>A gentle closing thought</h2>\n<p>If tonight you find yourselves lying back to back in the dark, remember that the person beside you is very likely feeling the same quiet ache. Sometimes the bravest thing is to roll over, and simply say: 'I miss us.' It is often the first small turn that begins the whole journey back.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Night We Realized We'd Become Roommates",
+    "author": 1,
+    "category": 6,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:26.604Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.gottman.com/",
+      "https://www.apa.org/topics/marriage-divorce"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "When Marriage Feels Like Being Roommates — and How to Come Back",
+    "meta_description": "If your marriage has quietly become a partnership of chores and logistics, you're not alone. A gentle, practical path back to closeness.",
+    "canonical_url": "",
+    "focus_keyword": "feeling like roommates in marriage",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:51:12.334Z",
+    "updated_at": "2026-10-12T06:54:27.159Z",
+    "tags": [
+      3,
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Why He Pulls Away When You Get Closer",
+    "slug": "why-he-pulls-away-when-you-get-closer",
+    "excerpt": "You move toward him and he steps back. You reassure, he withdraws further. This exhausting dance has a name — and understanding it can change everything about how you love each other.",
+    "editor_note": "Few things hurt as quietly as reaching for someone and feeling them step back. If you have lived this exhausting dance — reaching harder, watching them retreat — we want you to leave this page with one certainty: the distance is almost never about not being loved. It is about two people protecting themselves in opposite directions. Once you see the pattern clearly, you can finally stop dancing it.",
+    "body": "<p>It is one of the most painful and confusing patterns in a relationship. You sense distance, so you reach out. You ask what is wrong, you seek reassurance, you try to close the gap. And the more you reach, the more the other person seems to retreat — going quiet, needing space, feeling crowded. The harder you pursue, the further they distance.</p>\n<p>If this sounds achingly familiar, please know two things: you are not doing anything wrong by wanting closeness, and this pattern is so common that psychologists have a name for it.</p>\n<h2>The pursuer-distancer dance</h2>\n<p>In this dynamic, one partner is the 'pursuer' — they respond to stress or distance by seeking connection, talking, and reassurance. The other is the 'distancer' — they respond to the same stress by withdrawing, going quiet, and needing space to feel safe.</p>\n<p>Here is the cruel twist: each person's coping style triggers the other's fear. The pursuer's reaching feels like pressure to the distancer, so they pull back. The distancer's pulling back feels like abandonment to the pursuer, so they reach harder. Round and round it goes.</p>\n<blockquote>It is not that one of you wants closeness and the other doesn't. You both do. You simply reach for safety in opposite directions.</blockquote>\n<h2>Where these styles come from</h2>\n<p>Often, these patterns trace back to how each of you learned about closeness early in life — what psychologists call attachment styles. Someone who learned that needs might not be met may become anxious and pursue. Someone who learned that independence was safest may become avoidant and distance. Neither is a flaw. They are old survival strategies showing up in a new relationship.</p>\n<h2>Why 'just communicate more' often backfires</h2>\n<p>Well-meaning advice to 'talk it out' can worsen the cycle if it means the pursuer pursues harder. The distancer does not need more pressure to open up; they need to feel that opening up is safe and will not lead to being overwhelmed. And the pursuer does not need to simply 'back off'; they need to feel that the connection is secure.</p>\n<h2>How to step out of the dance</h2>\n<ol><li><strong>Name the pattern together, gently.</strong> Recognising 'we're doing the pursue-and-withdraw thing again' turns it from a personal attack into a shared problem you both face.</li><li><strong>If you tend to pursue:</strong> practise self-soothing before reaching. Give your partner a little room, and trust that space is not rejection.</li><li><strong>If you tend to withdraw:</strong> offer a small signal instead of vanishing — 'I need twenty minutes, then I want to talk.' A short reassurance prevents your partner's panic.</li><li><strong>Meet in the middle.</strong> The distancer moves slightly toward connection; the pursuer allows slightly more space. Both feel safer.</li></ol>\n<h2>A note on patience</h2>\n<p>These patterns took years to form and will not dissolve overnight. What matters is that you begin to recognise the dance as it starts, and choose a different step. Every time one of you breaks the cycle — the pursuer pausing, the distancer reassuring — you teach each other that closeness is safe.</p>\n<h2>When to seek support</h2>\n<p>If the cycle feels entrenched and painful, a couples therapist trained in attachment or emotionally focused approaches can help enormously. This is one of the most well-understood dynamics in relationship psychology, and it responds well to guidance.</p>\n<h2>The heart of it</h2>\n<p>The person who pulls away is usually not rejecting you. They are protecting themselves in the only way they learned how. And the person who pursues is not needy or too much — they are simply fighting for the connection. When you both understand that you are on the same side, reaching for the same thing, the dance can finally begin to change.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Why He Pulls Away When You Get Closer",
+    "author": 1,
+    "category": 5,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:31.280Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.apa.org/topics/relationships",
+      "https://www.gottman.com/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Why He Pulls Away When You Get Closer: The Pursuer-Distancer Pattern",
+    "meta_description": "One partner reaches for closeness, the other withdraws. Understand the pursuer-distancer pattern and how to break the exhausting cycle.",
+    "canonical_url": "",
+    "focus_keyword": "why partner pulls away when you get close",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:51:21.214Z",
+    "updated_at": "2026-10-12T06:54:32.026Z",
+    "tags": [
+      4,
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "I Thought Something Was Wrong With Me: Understanding Low Desire in Women",
+    "slug": "understanding-low-desire-in-women",
+    "excerpt": "For many women, a fading of desire brings a quiet, private fear that something is broken inside them. Almost always, nothing is. Here is a compassionate, honest look at why desire changes — and what genuinely helps.",
+    "editor_note": "This is one of the loneliest worries a woman can carry — and one of the most misunderstood. If you have lain awake wondering whether something inside you is broken, we wrote this to sit beside you in that moment and say, gently and clearly: you are not broken. What you are feeling has a reason, and it has a way forward. Be as kind to yourself as you would be to someone you love.",
+    "body": "<p>There is a particular loneliness in lying awake and wondering whether something inside you has quietly broken. Many women carry this worry in complete silence — convinced that their fading desire means they are somehow defective, unloving, or no longer normal.</p>\n<p>So let us begin with the most important sentence in this article: in the vast majority of cases, nothing is wrong with you. What you are experiencing is common, understandable, and almost always connected to circumstances rather than to some flaw in who you are.</p>\n<h2>Desire is not a switch — and it was never meant to be</h2>\n<p>One of the most freeing pieces of understanding is this: for many women, desire does not arrive spontaneously, out of nowhere. It is often <em>responsive</em> — it emerges after closeness, warmth, and safety are already present, rather than appearing first and leading the way.</p>\n<p>If you have been waiting to suddenly 'feel like it' the way you might have in the early days of a relationship, and worrying because that feeling no longer comes, this may be the missing piece. It is not that your desire is gone. It is that it now works differently — and that is entirely normal.</p>\n<blockquote>You are not broken. For many women, desire is a response to connection, not a spark that must come before it.</blockquote>\n<h2>What quietly drains desire</h2>\n<p>Desire is sensitive to the whole of your life, not just your relationship. The most common influences include:</p>\n<ul><li><strong>Exhaustion.</strong> A tired body and an overloaded mind have little left over for desire. This is physiology, not indifference.</li><li><strong>Stress.</strong> When the nervous system is in a state of pressure, it prioritises alertness over intimacy.</li><li><strong>Being 'touched out'</strong> — especially for mothers of young children, whose bodies are constantly in demand.</li><li><strong>Hormonal changes</strong> — across the cycle, after childbirth, and through perimenopause and menopause.</li><li><strong>Feeling unseen or unappreciated</strong> in the relationship.</li><li><strong>Certain medications and health conditions.</strong></li></ul>\n<h2>The mental load nobody counts</h2>\n<p>For many women, the invisible work of remembering, planning, and managing a household and family sits constantly in the background of the mind. It is very hard for desire to surface when part of you is always running a checklist. Naming this — and sharing the load — is often more powerful for intimacy than any technique.</p>\n<h2>What genuinely helps</h2>\n<ol><li><strong>Reduce pressure.</strong> Desire rarely returns when it is being demanded. Removing the sense of obligation often lets it breathe again.</li><li><strong>Prioritise rest and lighten the load</strong> wherever it is possible. This is not indulgence; it is a genuine intervention.</li><li><strong>Build closeness first.</strong> Since desire is often responsive, warmth, affection, and feeling valued can come before, and lead to, interest.</li><li><strong>Communicate honestly</strong> with your partner about what you are experiencing, so they understand it is not about them.</li></ol>\n<h2>When to speak to a professional</h2>\n<p>If a change in desire is distressing you, is persistent, or is accompanied by pain, low mood, or other symptoms, please speak to a doctor or a qualified therapist. They can check for any medical contributors — such as hormonal or medication effects — and offer support. This is a recognised, well-understood area of women's health, and you deserve care, not silence.</p>\n<h2>A closing reassurance</h2>\n<p>If you take only one thing from this article, let it be this: a quieter desire is not evidence that you are broken, unloving, or abnormal. It is, far more often, your body and mind responding honestly to stress, tiredness, hormones, or the season of life you are in. Be as gentle with yourself as you would be with a dear friend telling you the same story.</p>",
+    "featured_image": "",
+    "featured_image_alt": "I Thought Something Was Wrong With Me: Understanding Low Desire in Women",
+    "author": 1,
+    "category": 2,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:36.281Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.acog.org/womens-health",
+      "https://www.mayoclinic.org/",
+      "https://www.ncbi.nlm.nih.gov/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Understanding Low Desire in Women: You Are Not Broken",
+    "meta_description": "A fading of desire often brings a private fear of being 'broken'. A compassionate, honest look at why it happens and what truly helps.",
+    "canonical_url": "",
+    "focus_keyword": "low desire in women",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:51:28.566Z",
+    "updated_at": "2026-10-12T06:54:36.926Z",
+    "tags": [
+      8,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "The Silent Weight Men Carry: Performance Anxiety No One Talks About",
+    "slug": "the-silent-weight-men-carry",
+    "excerpt": "Behind a calm face, many men carry a private fear they can't say out loud. It grows in silence, feeds on itself, and convinces them they're alone. Here is the honest truth about performance anxiety — and why it is so treatable.",
+    "editor_note": "Most men are never given permission to speak about this — so they carry it in silence, convinced they are the only one. If that is you, read the next few minutes as a private conversation, just between you and these words. There is no judgment here. Only the truth that this is common, it is not a measure of your worth, and it is genuinely solvable once the silence is broken.",
+    "body": "<p>He does not tell anyone. Not his friends, over whom he projects easy confidence. Not his doctor, because the words feel impossible to say out loud. Often not even his partner. He carries it alone — a quiet, gnawing worry that visits in the most intimate moments and refuses to leave.</p>\n<p>Performance anxiety is one of the most common experiences men have, and one of the least spoken about. The silence around it is not just sad; it is the very thing that keeps it alive.</p>\n<h2>How a single moment becomes a spiral</h2>\n<p>It often starts with one ordinary, forgettable moment — a night when the body simply did not respond the way he expected. It could have been stress, tiredness, a drink too many, or nothing at all. On its own, it means nothing. It happens to every man.</p>\n<p>But then the mind gets involved. He begins to worry it might happen again. The next time, part of his attention is no longer on his partner or the moment — it is watching himself, monitoring, bracing. And that watchful anxiety is exactly what interferes with the body's natural response. The fear creates the very outcome he dreads, which deepens the fear.</p>\n<blockquote>The problem is rarely the body. It is the pressure the mind places on the body — and pressure is something we know how to release.</blockquote>\n<h2>Why willpower makes it worse</h2>\n<p>The instinct is to 'try harder' — to force it, to concentrate, to will the body into cooperating. But arousal is not something that responds to effort. It responds to the absence of pressure. Trying harder simply adds more of the very thing causing the difficulty.</p>\n<h2>The truth that changes everything</h2>\n<p>In younger and otherwise healthy men especially, this kind of difficulty is far more often about anxiety than about any physical problem. The body is usually working perfectly well. The signal is simply being drowned out by stress. Understanding this alone brings enormous relief to many men.</p>\n<h2>What actually helps</h2>\n<ol><li><strong>Take the pressure off completely.</strong> Agreeing with a partner to set aside any expectation for a while — focusing only on closeness — often lets the body relax and respond on its own.</li><li><strong>Come back into the moment.</strong> When the mind starts monitoring, gently returning attention to touch, breath, and your partner interrupts the anxiety loop.</li><li><strong>Address the stress underneath.</strong> Sleep, exercise, and managing life's pressures all directly support the body's response.</li><li><strong>Tell your partner.</strong> This is the hardest and most powerful step. A supportive partner removes the fear of judgment — which is usually the core of the anxiety.</li></ol>\n<h2>The conversation that lifts the weight</h2>\n<p>Many men are astonished to find that saying the words out loud — 'I've been anxious about this, and it's been weighing on me' — instantly makes the burden lighter. The secret was heavier than the problem. A caring partner almost always responds with relief and support, not the judgment he feared.</p>\n<h2>When to see a doctor</h2>\n<p>If the difficulty is persistent, it is worth seeing a doctor to rule out any physical contributors — a simple, routine check. And a therapist can help address the anxiety cycle directly through proven techniques. Reaching out is not weakness; it is how men resolve this every day.</p>\n<h2>You are not alone in this</h2>\n<p>If you are the man carrying this silent weight: it is more common than you could imagine, it is not a reflection of your worth or masculinity, and it is genuinely very treatable. The silence is the heaviest part. Setting it down is where relief begins.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Silent Weight Men Carry: Performance Anxiety No One Talks About",
+    "author": 1,
+    "category": 1,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:41.496Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.mayoclinic.org/",
+      "https://www.ncbi.nlm.nih.gov/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Male Performance Anxiety: The Silent Weight Men Carry",
+    "meta_description": "Many men carry a private fear they can't voice. An honest, reassuring look at male performance anxiety and why it's so treatable.",
+    "canonical_url": "",
+    "focus_keyword": "male performance anxiety",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:51:37.389Z",
+    "updated_at": "2026-10-12T06:54:42.091Z",
+    "tags": [
+      9,
+      8,
+      10
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "After the Baby, I Lost Myself: Reconnecting With Your Body and Your Partner",
+    "slug": "after-the-baby-i-lost-myself",
+    "excerpt": "Everyone asks about the baby. Almost no one asks about the mother. If you feel like a stranger in your own body and life after childbirth, this is for you — an honest, gentle guide back to yourself.",
+    "editor_note": "To the mother reading this while everyone around her asks only about the baby: we see you. Your recovery, your identity, and your feelings matter just as much as the tiny person you are caring for. If you feel like a stranger to yourself right now, you are not failing — you are in the middle of one of the biggest transitions a human can go through. This is written to help you find your way gently back to yourself.",
+    "body": "<p>The visitors come to see the baby. The phone calls ask how the baby is sleeping. The relatives comment on the baby's cheeks, the baby's eyes, the baby's tiny fingers. And somewhere in the middle of all that love, a new mother can sit quietly holding her child and think: <em>does anyone remember that I am here too?</em></p>\n<p>If you have felt like a stranger inside your own body and your own life since becoming a mother, you are not ungrateful, you are not failing, and you are certainly not alone. You are experiencing something profound that our culture barely makes room to talk about.</p>\n<h2>The recovery no one prepares you for</h2>\n<p>There is attention on the physical recovery after childbirth, and rightly so. But there is almost nothing said about the <em>identity</em> recovery — the disorienting experience of no longer recognising your body, your rhythms, your priorities, or even yourself. You can love your child with your whole heart and still grieve the person you were. Both are true at once, and holding both is not a contradiction.</p>\n<h2>Why your body can feel foreign</h2>\n<ul><li><strong>Hormones shift dramatically</strong> after birth, and again with breastfeeding, affecting mood, desire, and how touch feels.</li><li><strong>Sleep deprivation</strong> flattens everything — patience, mood, energy, and interest.</li><li><strong>You are constantly touched</strong> by a small human, until any additional touch can feel like too much. This is normal, not rejection.</li><li><strong>Your body has changed</strong> visibly, and making peace with that takes time and gentleness.</li></ul>\n<blockquote>You do not need to rush back to who you were. You need room to meet who you are becoming.</blockquote>\n<h2>Reconnecting with your partner, gently</h2>\n<p>Intimacy after a baby is rarely a simple switch that flips back on at a doctor's checkup. Emotional readiness matters as much as physical healing, and it deserves patience from both partners.</p>\n<ol><li><strong>Start with closeness that expects nothing.</strong> Affection without any pressure rebuilds comfort and safety first.</li><li><strong>Say the true thing.</strong> 'I feel like a stranger to myself right now' is honest and important for your partner to hear.</li><li><strong>Let your partner carry more.</strong> Rest and support are not luxuries; they directly affect how you feel and when desire returns.</li><li><strong>Lower the standards you are holding yourself to.</strong> There is no prize for 'bouncing back'. There is only your real, gradual healing.</li></ol>\n<h2>For partners reading this</h2>\n<p>The most helpful thing you can do is ask, rather than assume: 'What do you need from me?' Sometimes the answer is closeness. Sometimes it is twenty minutes alone and a hot meal. Both are acts of love. Patience now builds the closeness you are hoping for later.</p>\n<h2>When it is more than the 'baby blues'</h2>\n<p>Feeling low or tearful in the first couple of weeks is very common. But if low mood, anxiety, numbness, or hopelessness lasts longer, deepens, or interferes with caring for yourself or your baby, please reach out to your doctor. Postpartum depression and anxiety are common and treatable, and asking for help is one of the strongest, most loving things you can do. If you ever have thoughts of harming yourself, treat it as an emergency and contact your local services immediately.</p>\n<h2>You will find your way back</h2>\n<p>The woman you were is not gone. She is underneath the exhaustion, waiting for sleep, space, and a little grace. You may not return as exactly the same person — few of us do — but as someone who has carried a great deal and is still here, still tender, still capable of joy. Be patient with her. She is doing something extraordinary.</p>",
+    "featured_image": "",
+    "featured_image_alt": "After the Baby, I Lost Myself: Reconnecting With Your Body and Your Partner",
+    "author": 1,
+    "category": 2,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:45.951Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/maternal-mental-health",
+      "https://www.acog.org/womens-health/faqs/postpartum-depression"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "After the Baby, I Lost Myself: Finding Your Way Back",
+    "meta_description": "Feeling like a stranger in your own body after childbirth is real and common. A gentle, honest guide back to yourself and your partner.",
+    "canonical_url": "",
+    "focus_keyword": "losing yourself after having a baby",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:51:45.763Z",
+    "updated_at": "2026-10-12T06:54:46.513Z",
+    "tags": [
+      12,
+      3,
+      11
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "When \"Not Tonight\" Becomes Every Night: Navigating Different Desire Levels",
+    "slug": "when-not-tonight-becomes-every-night",
+    "excerpt": "When one partner wants closeness more often than the other, it can quietly wound both. One feels rejected; the other feels pressured. Here is how to step out of that painful cycle with kindness.",
+    "editor_note": "This is a topic full of quiet hurt — and here is the most important thing to hold onto before you read on: in this situation, there is no villain. The partner who wants more is not demanding, and the partner who wants less is not withholding. You are two people who love each other, currently out of step. We wrote this to help you find the rhythm again, together, without either of you feeling blamed.",
+    "body": "<p>It rarely announces itself. One 'not tonight' is nothing — everyone is tired sometimes. But when the noes quietly outnumber the yeses, month after month, something painful takes root on both sides of the bed.</p>\n<p>One partner begins to feel unwanted, rejected, and afraid to reach out at all. The other begins to feel constant pressure, guilt, and a dread of the very closeness they once enjoyed. Both are hurting. Neither is the villain. And the situation is far more common — and more workable — than either of them believes.</p>\n<h2>First: a mismatch is normal, not a defect</h2>\n<p>Almost no two people want intimacy at exactly the same frequency at every point in their lives. Differences in desire are the norm, not the exception. They can stem from stress, health, hormones, tiredness, life stage, or simply differing natural levels. Framing it as 'we have different needs to understand' rather than 'one of us has a problem' changes everything.</p>\n<h2>The trap that makes it worse</h2>\n<p>There is a cruel cycle that often forms. The higher-desire partner, feeling rejected, initiates more — sometimes anxiously. The lower-desire partner, feeling pressured, withdraws further. Each reaction deepens the other's pain. Very often, the pattern itself causes more damage than the underlying difference ever would.</p>\n<blockquote>The goal is not for one partner to 'win' and the other to comply. It is for both to feel understood, wanted, and safe.</blockquote>\n<h2>Understanding both sides with compassion</h2>\n<ul><li><strong>For the partner who wants more:</strong> the desire to be close is often about feeling loved and connected, not only physical. Being turned down repeatedly can feel like being unwanted as a person.</li><li><strong>For the partner who wants less:</strong> the reluctance is rarely about attraction. It is usually exhaustion, stress, or the weight of feeling pressured — and pressure is the fastest way to extinguish desire entirely.</li></ul>\n<h2>Working through it together</h2>\n<ol><li><strong>Talk when you are not in the moment.</strong> Choose a calm, neutral time — never during or right after a rejection — to share how each of you feels, without blame.</li><li><strong>Separate affection from expectation.</strong> When the lower-desire partner knows that a hug or a kiss will not automatically become an expectation, closeness stops feeling like a demand.</li><li><strong>Look underneath.</strong> Stress, tiredness, hormones, unaddressed resentment, and health all shape desire. Often the real work is there.</li><li><strong>Broaden your definition of intimacy.</strong> Emotional closeness, affection, and feeling valued are intimacy too — and they often rekindle the rest.</li></ol>\n<h2>When to seek support</h2>\n<p>Desire mismatch is one of the most common reasons couples see a therapist — and one where guidance is genuinely effective. If the issue is causing ongoing distress or conflict, a couples or relationship therapist can help you both feel heard and find a path forward.</p>\n<h2>The kindest reframe</h2>\n<p>You are not incompatible. You are two people who love each other and who currently express and experience desire differently. With honesty, patience, and a willingness to understand each other rather than keep score, most couples find a rhythm that leaves both of them feeling wanted and respected.</p>",
+    "featured_image": "",
+    "featured_image_alt": "When \"Not Tonight\" Becomes Every Night: Navigating Different Desire Levels",
+    "author": 1,
+    "category": 6,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:50.596Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.gottman.com/",
+      "https://www.apa.org/topics/relationships"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "When \"Not Tonight\" Becomes Every Night: Navigating Desire Differences",
+    "meta_description": "When partners want intimacy at different levels, both can end up hurting. A kind, practical guide to navigating desire differences.",
+    "canonical_url": "",
+    "focus_keyword": "different desire levels in marriage",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:51:53.369Z",
+    "updated_at": "2026-10-12T06:54:51.149Z",
+    "tags": [
+      3,
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "The Conversation Every Couple Avoids (and How to Finally Have It)",
+    "slug": "the-conversation-every-couple-avoids",
+    "excerpt": "Most couples can share a bed for years and never truly talk about what happens in it. The silence feels safer — until it quietly becomes distance. Here is how to finally open the conversation, with warmth instead of fear.",
+    "editor_note": "There is a conversation most couples carry for years but never quite have — and the not-having of it slowly becomes its own kind of distance. If you have been waiting for the 'right moment' that never seems to arrive, consider this your gentle nudge. The words are hard to find, but the closeness on the other side of them is worth every awkward second. We will help you begin.",
+    "body": "<p>A couple can share a home, a bed, and a decade of life together, and still have never once said out loud what they truly feel, want, or worry about when it comes to intimacy. They talk about money, in-laws, children, and holiday plans — but this one subject stays wrapped in silence.</p>\n<p>The silence feels safer. Bringing it up risks hurting feelings, sounding critical, or admitting vulnerability. So both partners quietly decide it is easier not to. And slowly, that unspoken space becomes a small distance, and the distance grows.</p>\n<h2>Why it feels so difficult</h2>\n<p>Intimacy sits at the intersection of our deepest vulnerabilities — our bodies, our sense of being desired, our fear of rejection. To talk about it is to expose all of that at once. It is no wonder we avoid it. The difficulty is not a sign that something is wrong with your relationship; it is simply human.</p>\n<h2>What the silence costs</h2>\n<p>The trouble is that assumptions grow in silence. One partner may believe the other is uninterested, when they are simply tired. One may think their own needs are unreasonable, when they are perfectly normal. Left unspoken, these guesses harden into a story each person tells themselves — usually a sadder story than the truth.</p>\n<blockquote>You cannot solve together what you have never said out loud. The conversation itself is the beginning of the repair.</blockquote>\n<h2>How to open the conversation</h2>\n<ol><li><strong>Pick the right moment.</strong> Never during intimacy, never after a rejection, never in an argument. Choose a calm, private, unhurried time — a walk, a quiet evening.</li><li><strong>Lead with warmth and 'I', not blame.</strong> 'I've been missing feeling close to you' opens a door. 'You never want me' slams it shut.</li><li><strong>Start with appreciation.</strong> Naming what you value in your partner and your relationship first makes it safe to explore what you'd like to change.</li><li><strong>Ask, and then truly listen.</strong> 'What helps you feel most connected to me?' invites your partner in. Then listen without defending.</li></ol>\n<h2>Handling the fear of hurting each other</h2>\n<p>Approach the conversation as teammates exploring a shared question, not as one person delivering feedback about the other. Frame it around connection and closeness rather than performance or criticism. When both people feel the conversation is <em>for</em> the relationship, defensiveness softens.</p>\n<h2>A gentle script to begin</h2>\n<p>If you do not know how to start, something as simple as this can open everything: 'Can we talk about us? Not because anything is wrong, but because I want us to feel as close as we can, and I'd love to understand you better.' It is honest, warm, and free of blame.</p>\n<h2>When to bring in help</h2>\n<p>If every attempt ends in hurt or conflict, or the distance feels too wide to cross alone, a couples therapist offers a safe, structured space to have the conversation with guidance. This is a common, constructive step — not a last resort.</p>\n<h2>The quiet truth</h2>\n<p>The conversation you have been avoiding is almost always less frightening than the silence you have been enduring. On the other side of it, most couples find not judgment, but relief — and a closeness they had forgotten was possible.</p>",
+    "featured_image": "",
+    "featured_image_alt": "The Conversation Every Couple Avoids (and How to Finally Have It)",
+    "author": 1,
+    "category": 3,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:55.484Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.gottman.com/",
+      "https://www.apa.org/topics/relationships"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "The Intimacy Conversation Every Couple Avoids — and How to Have It",
+    "meta_description": "Most couples never truly talk about intimacy. A warm, practical guide to finally opening the conversation without fear or blame.",
+    "canonical_url": "",
+    "focus_keyword": "talking to partner about intimacy",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:52:04.919Z",
+    "updated_at": "2026-10-12T06:54:56.121Z",
+    "tags": [
+      3,
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Why We Stopped Touching — and the Small Ritual That Brought Us Back",
+    "slug": "why-we-stopped-touching",
+    "excerpt": "It doesn't end with a decision to stop touching. It just slowly stops — the hugs, the hand on the back, the closeness. Here is how that distance forms, and the small, low-pressure ritual that gently rebuilds it.",
+    "editor_note": "We often underestimate how much an ordinary touch carries — a hug at the door, a hand held on the sofa, fingers brushing in passing. When that quiet language fades, couples can feel strangely far apart without knowing why. If that is where you are, take heart: this is one of the gentlest things to rebuild, and it starts with something as small as a hug held a few seconds longer.",
+    "body": "<p>No one ever sits down and decides to stop touching. There is no conversation, no argument, no moment you could point to. The hugs simply get shorter. The hand on the back in passing stops happening. The sitting close on the sofa becomes sitting at opposite ends. And one day you realise you cannot remember the last time you touched each other for no reason at all.</p>\n<h2>How the 'touch gap' forms</h2>\n<p>Life crowds it out. Stress, exhaustion, screens, small children, and the endless logistics of shared life gradually squeeze out the small, spontaneous moments of contact. And there is often a second, quieter reason: when touch has become associated only with the expectation of intimacy, some couples unconsciously avoid it altogether to avoid the pressure. So they stop touching at all.</p>\n<h2>Why this matters more than it seems</h2>\n<p>Warm, affectionate, non-demanding touch is one of the most powerful ways humans signal safety and care to each other. It calms the nervous system and maintains a sense of connection even during stressful seasons. When it disappears, couples can feel strangely distant without quite knowing why.</p>\n<blockquote>Non-demanding touch says 'I care about you' and asks for nothing in return. That safety is the soil everything else grows in.</blockquote>\n<h2>The small ritual that rebuilds it</h2>\n<p>The way back is almost always through low-pressure, expectation-free touch — rebuilt in tiny, manageable steps. One approach that many couples find gentle enough to actually do:</p>\n<ol><li><strong>Begin with a few seconds of daily closeness.</strong> A proper hug before leaving or sleeping — held for a slow count, not a quick pat — with a shared understanding that it leads nowhere and needs to lead nowhere.</li><li><strong>Add small moments back in.</strong> A hand held while watching something. Sitting close. A hand on the shoulder in passing.</li><li><strong>Keep it free of expectation.</strong> The entire point is that this touch is safe precisely because nothing is expected of it.</li><li><strong>Let it grow at its own pace.</strong> As safety returns, closeness tends to expand naturally, without being forced.</li></ol>\n<h2>If touch feels complicated</h2>\n<p>For some, touch carries weight from stress, past experiences, or feeling 'touched out' — very common for new parents. There is no shame in that. Talking about it gently, and rebuilding slowly, is the way through. A therapist can help where touch has become a genuine source of tension.</p>\n<h2>The tender truth</h2>\n<p>Most couples who feel they have 'lost' physical connection have simply lost the small, everyday touch that used to hold them together. It is often the easiest thing to rebuild — not with grand gestures, but with a hug that lasts a few seconds longer, offered with no agenda except 'I'm still here, and I still choose you.'</p>",
+    "featured_image": "",
+    "featured_image_alt": "Why We Stopped Touching — and the Small Ritual That Brought Us Back",
+    "author": 1,
+    "category": 3,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:54:59.994Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.apa.org/topics/relationships",
+      "https://www.gottman.com/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Why Couples Stop Touching — and the Small Ritual That Rebuilds Closene",
+    "meta_description": "Affection often fades without anyone deciding it should. How the 'touch gap' forms and a small, low-pressure ritual that rebuilds it.",
+    "canonical_url": "",
+    "focus_keyword": "couple stopped being affectionate",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:52:10.585Z",
+    "updated_at": "2026-10-12T06:55:00.602Z",
+    "tags": [
+      3,
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Is This Normal? The Questions About Intimacy You're Afraid to Ask",
+    "slug": "is-this-normal-questions-about-intimacy",
+    "excerpt": "So many worries about intimacy come down to two quiet words: 'Is this normal?' Here we answer, gently and honestly, the questions people are most afraid to ask out loud.",
+    "editor_note": "If you have ever typed a nervous question into a search bar late at night and then quickly cleared your history, this page is for you. Wondering 'is this normal?' is one of the most human things there is — and asking it does not mean something is wrong. Consider this a safe, judgment-free place to land, where the honest answer is very often a warm and reassuring yes.",
+    "body": "<p>There are questions people carry for years and never ask anyone. They type them into a search bar late at night, half-hoping and half-dreading the answer. Almost all of them begin with the same two quiet words: 'Is this normal?'</p>\n<p>So let us create a safe, judgment-free space and answer some of the most common ones honestly. If you have wondered any of these, you are in good, and very large, company.</p>\n<h2>'Is it normal for desire to change over time?'</h2>\n<p>Yes — completely. Desire naturally rises and falls with stress, health, hormones, life stage, and the season of a relationship. A change, especially a temporary one, is far more often about circumstances than about a problem with you or your relationship.</p>\n<h2>'Is it normal that we don't want the same amount?'</h2>\n<p>Yes. Almost no two people want intimacy at exactly the same frequency. Differences are the norm. What matters is not matching a number, but understanding each other with kindness and finding a rhythm that respects both partners.</p>\n<h2>'Is there a normal frequency we should be reaching?'</h2>\n<p>There is no universal 'correct' amount, despite what magazines and comparisons might suggest. Healthy couples vary enormously. The only meaningful measure is whether both partners feel content — not how you compare to an imagined average.</p>\n<blockquote>Most of the time, the honest answer to 'is this normal?' is a warm and resounding yes.</blockquote>\n<h2>'Is it normal for my body to respond differently than my mind?'</h2>\n<p>Yes. Desire (the wanting) and arousal (the body's response) are two different processes, and they do not always move together. This is normal and understood. Understanding the distinction often relieves a great deal of unnecessary worry.</p>\n<h2>'Is it normal to feel less confident about my body over time?'</h2>\n<p>It is very common — for people of all genders. Bodies change, and our feelings about them shift. This can affect how present and comfortable we feel during intimacy. Working gently on self-acceptance, rather than waiting for the body to change, tends to help most.</p>\n<h2>When 'is this normal?' deserves a professional answer</h2>\n<p>While most worries are answered with reassurance, some questions genuinely deserve a doctor's or therapist's input — particularly anything involving pain, a sudden or distressing change, or a concern that is causing you real anxiety. Seeking that answer is wise, not embarrassing. Professionals address these questions every single day.</p>\n<h2>The reassurance underneath it all</h2>\n<p>The very fact that you wonder 'is this normal?' is itself completely normal. It reflects care about your wellbeing and your relationship. More often than not, the truth is gentler than the fear — and where it is not, help is available and effective.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Is This Normal? The Questions About Intimacy You're Afraid to Ask",
+    "author": 1,
+    "category": 4,
+    "post_type": "standard",
+    "status": "published",
+    "published_at": "2026-10-12T06:55:04.927Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.who.int/health-topics/sexual-health",
+      "https://www.mayoclinic.org/",
+      "https://www.ncbi.nlm.nih.gov/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Is This Normal? The Intimacy Questions You're Afraid to Ask",
+    "meta_description": "So many intimacy worries come down to 'Is this normal?' Honest, reassuring answers to the questions people are afraid to ask aloud.",
+    "canonical_url": "",
+    "focus_keyword": "is this normal intimacy questions",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:52:15.578Z",
+    "updated_at": "2026-10-12T06:55:05.493Z",
+    "tags": [
+      3,
+      8,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Falling in Love Again With the Same Person",
+    "slug": "falling-in-love-again-with-the-same-person",
+    "excerpt": "The early rush fades for every couple — it is supposed to. But that is not the end of love; it is the beginning of a deeper kind. Here is how couples rediscover each other, again and again, over a lifetime.",
+    "editor_note": "If the early fireworks have faded and you have quietly feared it means the love is fading too — please read on with hope. What comes after the rush is not less; done with care, it is more. The deepest love is not the one that happens to you at the start, but the one you keep choosing, in a thousand small ways, for the rest of your life. That love is still available to you, starting today.",
+    "body": "<p>In the beginning, it felt effortless. You thought about them constantly. An ordinary text could light up your whole day. Being together felt electric, and being apart felt like waiting. And then, somewhere across the years, that particular intensity quietly faded — and many couples panic, believing it means the love is dying.</p>\n<p>Here is the truth that changes how you see your whole relationship: the fading of that early rush is not the end of love. It is the doorway to a deeper, steadier, and in many ways richer kind of love. And within it lies the possibility of falling for the same person again — not once, but many times over a lifetime.</p>\n<h2>Why the early intensity was never meant to last</h2>\n<p>That heady early phase is powered partly by novelty and the brain chemistry of new attachment. By its nature, it is temporary — it would be exhausting and unsustainable to live in permanently. As it settles, it makes room for something calmer and more secure: trust, safety, and a bond built on truly knowing each other.</p>\n<h2>From passion to a deeper love</h2>\n<p>Psychologists often describe a shift from the intense passion of early love toward a companionate love rooted in friendship, trust, and commitment. This is not a downgrade. Many couples come to treasure it as the most meaningful love of their lives — the kind that holds through hardship and grows more valuable with time.</p>\n<blockquote>Lasting love is less about recapturing the beginning, and more about never stopping the discovery of each other.</blockquote>\n<h2>How couples keep falling in love again</h2>\n<ol><li><strong>Stay curious.</strong> Your partner is not a finished book you have read. People keep changing across a lifetime. Asking, noticing, and staying genuinely interested keeps the connection alive.</li><li><strong>Keep sharing new experiences.</strong> Novelty — a new place, a new activity, a shared first — re-creates a spark of the excitement you felt early on.</li><li><strong>Protect your friendship.</strong> Laughter, kindness, and simple enjoyment of each other's company are the quiet engine of long-term love.</li><li><strong>Express appreciation out loud.</strong> Feeling seen and valued fuels attraction. Never assume your partner knows; tell them.</li><li><strong>Keep a little independence.</strong> Two people who continue to grow as individuals remain interesting to each other.</li></ol>\n<h2>Rediscovery after distance</h2>\n<p>If you have drifted — through stress, parenting, or simply years of routine — rediscovery is still entirely possible. It usually begins not with grand romance, but with small returns: a real conversation, a shared laugh, a moment of curiosity about who your partner is becoming now. From those small moments, warmth returns.</p>\n<h2>When you need a little help</h2>\n<p>Sometimes resentment, unresolved hurt, or long distance make reconnection feel out of reach alone. A couples therapist can help you clear what stands in the way. Many couples rediscover a deep, satisfying love with that support — it is never too late to try.</p>\n<h2>The love that chooses</h2>\n<p>The most enduring love is not the kind that simply happens to you in the beginning. It is the kind you keep choosing — day after ordinary day — in the small turnings toward each other, the curiosity that refuses to fade, and the quiet decision to keep discovering the person beside you. That is how you fall in love again with the same person: not by accident, but on purpose, for the rest of your lives.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Falling in Love Again With the Same Person",
+    "author": 1,
+    "category": 5,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:55:09.400Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.gottman.com/",
+      "https://www.apa.org/topics/relationships"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Falling in Love Again With the Same Person",
+    "meta_description": "The early rush fades for every couple. Here's how love deepens instead of ending — and how couples rediscover each other over a lifetime.",
+    "canonical_url": "",
+    "focus_keyword": "falling in love again with your partner",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:52:21.779Z",
+    "updated_at": "2026-10-12T06:55:09.957Z",
+    "tags": [
+      4,
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "Living With Diabetes: The Day Everything Changed, and How Life Went On",
+    "slug": "living-with-diabetes-how-life-went-on",
+    "excerpt": "A diabetes diagnosis can feel like the ground shifting beneath you. But it is not the end of a good life — it is the beginning of a more mindful one. Here is an honest, hopeful guide to living well with diabetes.",
+    "editor_note": "A diagnosis of diabetes can land like a quiet earthquake — fear, confusion, and a hundred questions all at once. If you or someone you love has just heard those words, take a breath. This is not the end of a full, joyful life. With understanding and small daily choices, millions live long and well with diabetes. We wrote this to walk beside you, not to lecture you.",
+    "body": "<p>There is often a single moment people remember with absolute clarity: the day the doctor said the word 'diabetes.' For many, time seems to pause. Thoughts race — about food, about family, about the future. It can feel, for a little while, as though life as you knew it has quietly ended.</p>\n<p>If you are standing in that moment now, here is the first and most important thing to know: life does not end here. It changes shape — and with the right understanding and support, it can be just as full, active, and happy as before.</p>\n<h2>The fear is normal — and it softens</h2>\n<p>The early days can be overwhelming. There is a great deal to learn, and the sense of a condition you will carry for life can feel heavy. Please be gentle with yourself. The fear almost always softens as understanding grows and the new routines become simply a part of ordinary life.</p>\n<h2>Understanding what is happening, simply</h2>\n<p>In diabetes, the body struggles to manage blood sugar — either because it does not produce enough insulin, or cannot use it effectively. Managing the condition is really about helping the body keep blood sugar in a healthy range, through a combination of food, movement, medication where needed, and regular monitoring, all guided by your doctor.</p>\n<blockquote>Diabetes is not a verdict on your future. It is an invitation to live a little more mindfully — and many people find they become healthier than they were before.</blockquote>\n<h2>The pillars of living well</h2>\n<ul><li><strong>Balanced eating.</strong> Not deprivation — simply more mindful, balanced meals. Many people discover they enjoy food just as much.</li><li><strong>Regular movement.</strong> Even daily walks help the body use sugar more effectively and lift mood.</li><li><strong>Medication as prescribed.</strong> Taken consistently and reviewed with your doctor, not adjusted alone.</li><li><strong>Monitoring.</strong> Keeping an eye on blood sugar turns an invisible condition into something you can understand and manage.</li><li><strong>Rest and stress care.</strong> Stress and poor sleep both affect blood sugar more than people expect.</li></ul>\n<h2>The emotional side nobody mentions</h2>\n<p>Living with a long-term condition can quietly affect mood and energy. Some days feel heavier than others, and that is completely human. You are not failing if you feel frustrated or tired of managing it. Sharing those feelings — with family, a support group, or a professional — lightens the load. You do not have to carry it silently.</p>\n<h2>The role of family</h2>\n<p>Diabetes is easier to live with when it is not faced alone. When family members understand the condition and share small changes — cooking balanced meals together, walking together — it stops feeling like one person's burden and becomes a shared, caring rhythm. In many Indian households, this collective support makes an enormous difference.</p>\n<h2>When to lean on your doctor</h2>\n<p>Your doctor is your partner in this. Reach out for regular reviews, if your readings change, if new symptoms appear, or simply if you feel uncertain. There is no such thing as a silly question when it comes to your health. Good management is a conversation, not a solo effort.</p>\n<h2>A hopeful closing</h2>\n<p>A diabetes diagnosis asks you to pay closer attention to your body — and many people find that this attention gives them more energy, better habits, and a deeper appreciation for their health than they had before. The day everything changed does not have to be the day life got smaller. For many, it becomes the day they started truly looking after themselves.</p>",
+    "featured_image": "",
+    "featured_image_alt": "Living With Diabetes: The Day Everything Changed, and How Life Went On",
+    "author": 1,
+    "category": 7,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:55:15.053Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.who.int/health-topics/diabetes",
+      "https://www.idf.org/",
+      "https://www.mayoclinic.org/diseases-conditions/diabetes"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Living With Diabetes: An Honest, Hopeful Guide to Life After Diagnosis",
+    "meta_description": "A diabetes diagnosis feels overwhelming, but life goes on — and can be rich and healthy. An honest, hopeful guide to living well.",
+    "canonical_url": "",
+    "focus_keyword": "living with diabetes",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:52:26.991Z",
+    "updated_at": "2026-10-12T06:55:15.977Z",
+    "tags": [
+      13,
+      15,
+      14
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 12,
+  "fields": {
+    "title": "When Your Joints Ache: Living With Arthritis Without Losing Yourself",
+    "slug": "living-with-arthritis-joint-pain",
+    "excerpt": "Arthritis changes how you move through the world — but it does not have to take away the life you love. Here is a compassionate, practical guide to living well despite aching joints.",
+    "editor_note": "Pain that visits every morning and lingers through the day wears on more than the body — it wears on the spirit. If arthritis has been quietly narrowing your world, we want you to know your experience is real, your frustration is valid, and there is genuinely a great deal that can help. This is written with care for anyone who has had to think twice before climbing the stairs.",
+    "body": "<p>It often begins small. A stiffness in the fingers in the morning. A knee that complains on the stairs. An ache that you blame on the weather or on sleeping awkwardly. And then, slowly, it becomes a daily companion — the quiet, wearing presence of arthritis.</p>\n<p>Living with joint pain is not only a physical experience. It changes how you move through your days, what you say yes to, and sometimes how you feel about yourself. If that is your reality, please know: you have not lost yourself, and there is much that can help you feel more like you again.</p>\n<h2>More than 'just getting older'</h2>\n<p>Arthritis is often dismissed — by others and even by those who have it — as an inevitable part of aging to simply be endured. While it becomes more common with age, that does not mean nothing can be done. Pain and stiffness can very often be reduced, and quality of life protected, with the right approach and support.</p>\n<h2>The invisible weight</h2>\n<p>Chronic pain is exhausting in a way that is hard to explain to those who have not lived it. It can affect sleep, mood, patience, and the simple joy of everyday activities. Feeling low or frustrated is not weakness; it is a natural response to carrying discomfort day after day.</p>\n<blockquote>Managing arthritis is not about pushing through pain in silence. It is about finding the gentle, steady changes that let you keep doing what you love.</blockquote>\n<h2>Gentle ways to live better with joint pain</h2>\n<ul><li><strong>Keep moving gently.</strong> It feels counterintuitive, but suitable gentle movement often eases stiffness and keeps joints working. Your doctor can advise what is right for you.</li><li><strong>Protect your joints.</strong> Small adjustments to how you sit, stand, lift, and rest can reduce strain considerably.</li><li><strong>Maintain a comfortable weight.</strong> Less load on weight-bearing joints can mean noticeably less pain.</li><li><strong>Warmth and rest.</strong> Many find warmth soothing, and balancing activity with rest prevents flare-ups.</li><li><strong>Follow your treatment plan.</strong> Taken consistently and reviewed with your doctor, it is the foundation of good management.</li></ul>\n<h2>Caring for your spirit, not just your joints</h2>\n<p>Because chronic pain affects mood, looking after your emotional wellbeing matters as much as the physical side. Staying connected to people, keeping hobbies alive in adapted forms, and talking honestly about hard days all help protect the person you are beyond the pain.</p>\n<h2>The support of those around you</h2>\n<p>Arthritis is lighter to carry when loved ones understand it. When family grasps that some days are harder than others, and offer patience and small practical help, it eases both the physical and emotional burden. Let the people who care about you share the load.</p>\n<h2>When to see your doctor</h2>\n<p>Speak to your doctor if pain is worsening, if stiffness or swelling is new or increasing, if it is affecting your sleep or daily life, or if your current plan is not giving relief. Arthritis care has many options, and you deserve to explore them rather than simply endure. Early, ongoing care makes a real difference.</p>\n<h2>You are still you</h2>\n<p>Arthritis may change how you do some things, but it does not erase who you are. With the right care, gentle movement, support, and attention to your spirit as well as your joints, it is entirely possible to keep living a life that feels like yours — warm, engaged, and full of the things and people you love.</p>",
+    "featured_image": "",
+    "featured_image_alt": "When Your Joints Ache: Living With Arthritis Without Losing Yourself",
+    "author": 1,
+    "category": 7,
+    "post_type": "story",
+    "status": "published",
+    "published_at": "2026-10-12T06:55:20.061Z",
+    "medical_reviewer": null,
+    "reviewed_at": null,
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/osteoarthritis",
+      "https://www.mayoclinic.org/diseases-conditions/arthritis",
+      "https://www.ncbi.nlm.nih.gov/"
+    ],
+    "sensitivity": "mature",
+    "content_warning": "This article discusses adult relationship and wellbeing topics.",
+    "meta_title": "Living With Arthritis: Managing Joint Pain Without Losing Yourself",
+    "meta_description": "Arthritis changes how you move, but need not take the life you love. A compassionate, practical guide to living well with joint pain.",
+    "canonical_url": "",
+    "focus_keyword": "living with arthritis joint pain",
+    "seo_score": 0,
+    "view_count": 0,
+    "allow_comments": true,
+    "notify_subscribers": false,
+    "created_at": "2026-10-12T06:52:36.276Z",
+    "updated_at": "2026-10-12T06:55:20.614Z",
+    "tags": [
+      16,
+      17,
+      14
+    ]
+  }
+}
+]
