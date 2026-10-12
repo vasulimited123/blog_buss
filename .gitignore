@@ -16,9 +16,12 @@ db.sqlite3-journal
 /staticfiles/
 *.log
 
-# Environment / secrets
-.env
+# Secrets
 *.pem
+
+# NOTE: .env is intentionally committed per owner's request (contains DB creds).
+# Reminder: rotate the Neon password and remove .env from the repo before the
+# site goes public, as public repos expose this file.
 
 # Editor / OS
 .vscode/
