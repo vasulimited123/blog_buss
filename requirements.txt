@@ -10,8 +10,11 @@ django-ckeditor-5>=0.2.18
 # Static file serving in production (also loaded in dev, harmless)
 whitenoise>=6.7
 
-# PostgreSQL driver (dev + production; configured via DJANGO_DB_* env vars)
+# PostgreSQL driver (Neon / production; configured via DATABASE_URL)
 psycopg[binary]>=3.2
+
+# MySQL driver (used on PythonAnywhere free tier, which provides MySQL)
+mysqlclient>=2.2
 
 # Production WSGI server (used by Railway/Render/VPS; NOT by PythonAnywhere)
 gunicorn>=23.0
