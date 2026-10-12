@@ -68,11 +68,18 @@ ALLOWED_HOSTS = (
     else ["localhost", "127.0.0.1", "[::1]"]
 )
 
+# Render provides the external hostname automatically — trust it so the site
+# works on first deploy without having to know the URL in advance.
+_render_host = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+if _render_host:
+    ALLOWED_HOSTS.append(_render_host)
+
 # When you serve over HTTPS behind a proxy/CDN, set DJANGO_CSRF_TRUSTED_ORIGINS
 # e.g. "https://example.com,https://www.example.com"
 _csrf = os.environ.get("DJANGO_CSRF_TRUSTED_ORIGINS", "")
-if _csrf:
-    CSRF_TRUSTED_ORIGINS = [o.strip() for o in _csrf.split(",") if o.strip()]
+CSRF_TRUSTED_ORIGINS = [o.strip() for o in _csrf.split(",") if o.strip()] if _csrf else []
+if _render_host:
+    CSRF_TRUSTED_ORIGINS.append(f"https://{_render_host}")
 
 
 # ---------------------------------------------------------------------------

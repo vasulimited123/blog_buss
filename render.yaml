@@ -1,0 +1,30 @@
+# Render deployment blueprint for Elevate Life.
+# Render reads this when you create a "Blueprint" from your GitHub repo.
+#
+# After the service is created, set the SECRET values (marked sync: false)
+# in the Render dashboard → your service → Environment.
+
+services:
+  - type: web
+    name: elevate-life
+    runtime: python
+    plan: free
+    region: oregon            # keep near your Neon region (US) for low latency
+    branch: main
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application -c deploy/gunicorn.conf.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.6"
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true        # Render generates a strong secret
+      - key: DJANGO_ALLOWED_HOSTS
+        sync: false                 # set to your onrender.com host after first deploy
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        sync: false                 # set to https://<your-host>.onrender.com
+      - key: DATABASE_URL
+        sync: false                 # paste your Neon URL in the dashboard (secret)
+      - key: WEB_CONCURRENCY
+        value: "2"
