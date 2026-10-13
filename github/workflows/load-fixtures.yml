@@ -1,0 +1,57 @@
+name: Run migrations & load fixtures
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type YES to run the job when manually dispatched.'
+        required: true
+
+jobs:
+  load-fixtures:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.confirm == 'YES' }}
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Verify DATABASE_URL secret
+        run: |
+          if [ -z "${DATABASE_URL:-}" ]; then
+            echo "ERROR: DATABASE_URL secret is not set. Add it to repository secrets and retry.";
+            exit 1;
+          fi
+          echo "DATABASE_URL is set (first 30 chars): ${DATABASE_URL:0:30}..."
+
+      - name: Run Django migrations
+        run: |
+          python manage.py migrate --noinput
+
+      - name: Load fixtures
+        run: |
+          python manage.py loaddata blog/fixtures/quit_smoking.json
+
+      - name: Verify inserted post
+        run: |
+          python - <<'PY'
+from blog.models import Post
+print('Post exists:', Post.objects.filter(slug='quit-smoking-psychology').exists())
+PY
+
+      - name: Success
+        run: echo "Migrations and fixture load completed successfully."
