@@ -1,0 +1,99 @@
+[
+  {
+    "model": "blog.author",
+    "pk": 3,
+    "fields": {
+      "user": null,
+      "name": "Dr. R S Agrawal",
+      "slug": "dr-r-s-agrawal",
+      "credentials": "MBBS, MD, Psychiatric & Addiction Medicine",
+      "bio": "Dr. R S Agrawal is a physician and mental health writer focused on practical, evidence-informed guidance for habit change, emotional wellbeing, and healthier living.",
+      "photo": "",
+      "website": "",
+      "twitter": "",
+      "linkedin": "",
+      "created_at": "2026-10-13T06:00:00Z",
+      "updated_at": "2026-10-13T06:00:00Z"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 20,
+    "fields": {
+      "name": "Addiction & Habits",
+      "slug": "addiction-habits",
+      "description": "Practical, evidence-informed help for changing habits and managing addictive behaviours.",
+      "parent": null,
+      "meta_title": "Addiction & Habits",
+      "meta_description": "Help and practical strategies for changing habits and managing addictive behaviours.",
+      "created_at": "2026-10-13T06:00:00Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 50,
+    "fields": {
+      "name": "smoking",
+      "slug": "smoking",
+      "created_at": "2026-10-13T06:00:00Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 51,
+    "fields": {
+      "name": "quit-smoking",
+      "slug": "quit-smoking",
+      "created_at": "2026-10-13T06:00:00Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 52,
+    "fields": {
+      "name": "addiction",
+      "slug": "addiction",
+      "created_at": "2026-10-13T06:00:00Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 200,
+    "fields": {
+      "title": "Quit Smoking: The Psychology Behind Craving and Practical Steps That Work",
+      "slug": "quit-smoking-psychology",
+      "excerpt": "Quitting smoking is as much psychological as it is physical. A compassionate, evidence-informed guide on why nicotine cravings happen, what makes them stronger, and how to quit for good.",
+      "editor_note": "When a patient says, 'I want to quit but I feel stuck,' the real issue is often not lack of motivation. It is the combination of habit, stress, reward, and routine. Quitting is not about willpower alone; it is about understanding the brain and changing the trigger patterns that keep the habit alive.",
+      "body": "<p>Smoking is not simply a habit. It is a powerful behavioural loop with a strong biological component. Nicotine quickly reaches the brain and triggers a brief sense of reward, alertness, and relief from withdrawal. At the same time, the brain learns to connect smoking with specific moments: after a meal, when someone feels stressed, during conversation, after coffee, or when the hands are idle.</p>\n\n<p>That is why quitting smoking can feel like fighting both the body and the mind. The withdrawal is real, but the deeper challenge is often the learned pattern: the place, the emotion, the people, the hand-to-mouth action, and the psychological reward we have attached to it.</p>\n\n<h2>Why smoking feels good in the short term</h2>\n<p>Nicotine stimulates reward pathways in the brain and can temporarily improve mood, attention, and stress relief. For someone who already feels tense, overwhelmed, or restless, the cigarette seems to solve a problem quickly. In the short term, it feels calming and rewarding. The problem is that the relief is temporary and it creates a cycle: stress increases, cigarette relieves stress, and the brain learns to depend on it again.</p>\n\n<p>This is why smoking often becomes a coping tool, not just a habit. It can act as a way to manage boredom, emotional discomfort, social anxiety, and daily stress. Over time, the person may not only crave nicotine but also the ritual itself.</p>\n\n<h2>The psychology of craving</h2>\n<p>Craving is not just 'wanting a cigarette.' It is the mind and body re-entering a learned pattern. A trigger can be internal or external:</p>\n\n<ul>\n<li><strong>Internal triggers:</strong> stress, irritability, anxiety, boredom, tiredness, sadness.</li>\n<li><strong>External triggers:</strong> seeing a cigarette pack, being with smokers, drinking alcohol, finishing a meal, having coffee, being in the car, being on a break at work.</li>\n<li><strong>Behavioural triggers:</strong> hand-to-mouth action, flicking ash, inhaling, holding the cigarette, the feeling of a pause or break.</li>\n</ul>\n\n<p>Craving often peaks in a few minutes and then falls. This is important to know. It means the powerful feeling is temporary. If you can delay and ride it out without acting on it, the urge often weakens.</p>\n\n<h2>Hand actions and rituals that increase craving</h2>\n<p>The physical action matters more than many smokers realise. Hands become trained to reach for a cigarette in specific moments. The following habits can intensify craving:</p>\n\n<ul>\n<li>Holding the cigarette or pack in the hand.</li>\n<li>Smoking after meals, during coffee or tea breaks, or while working.</li>\n<li>Smoking in the car or while speaking on the phone.</li>\n<li>Using smoking to calm anxiety, reward yourself, or create a pause during the day.</li>\n<li>Being around other smokers or in places strongly linked to smoking.</li>\n</ul>\n\n<p>This is why many people who successfully quit say that the first 2–4 weeks are not just about nicotine withdrawal — they are about removing cues and replacing rituals. The crisis of craving is often strongest when the habit loop is still intact.</p>\n\n<h2>Why quitting is hard — and why it can work</h2>\n<p>Smoking is not a sign of weakness. It is a habit with emotional and neurological reinforcement. Some people quit with little difficulty; others struggle for months or even years. That does not mean they are failing. It means the habit is deeply wired into the brain.</p>\n\n<p>What helps is not sheer willpower alone. The best outcomes come from a combination of:</p>\n\n<ul>\n<li>trigger awareness</li>\n<li>planned substitutions for the hand action</li>\n<li>medical support such as nicotine replacement</li>\n<li>strong emotional support</li>\n<li>small, practical routines that replace smoking time</li>\n</ul>\n\n<h2>Doctors' practical plan to quit</h2>\n<ol>\n<li><strong>Pick a quit date.</strong> Choose a day within 7–14 days. This gives enough time to prepare but not so much that the motivation fades.</li>\n<li><strong>Write down your triggers.</strong> For three days, note when you smoke, what you were doing, how you felt, and who you were with. This reveals the exact pattern you are trying to change.</li>\n<li><strong>Reduce the cue, not just the nicotine.</strong> Throw away leftover cigarettes, lighters, and ashtrays. Keep the pack out of sight. If you usually smoke in the car, avoid driving alone at first or keep the car smoke-free.</li>\n<li><strong>Replace the hand-to-mouth action.</strong> Many people need a physical replacement. Sugar-free gum, nicotine gum or lozenges, a water bottle, a fidget object, or even a healthy snack can break the motor habit.</li>\n<li><strong>Use nicotine replacement wisely.</strong> NRT products — patch, gum, lozenges, nasal spray, or inhaler — reduce withdrawal symptoms and can make quitting easier. Speak with a doctor or pharmacist to choose the best option for your pattern of smoking.</li>\n<li><strong>Build a recovery routine.</strong> When urge hits, do not debate for 30 minutes. Delay for 10 minutes, breathe slowly, sip water, walk, or call someone. The urge is real, but it usually passes.</li>\n<li><strong>Create a social support plan.</strong> Tell family or friends and ask them not to offer cigarettes. If you normally smoke socially, plan how you will handle those situations ahead of time.</li>\n</ol>\n\n<h2>Simple behavioural strategies that work</h2>\n<ul>\n<li><strong>Change the environment.</strong> The goal is to create less automatic smoking. Move your routine: sit in a different place, take a short walk after eating, switch the time of day you take your break.</li>\n<li><strong>Substitute the ritual.</strong> If you smoke while drinking coffee, replace it with a different ritual: tea, water, a 5-minute walk, or a quick breathing exercise.</li>\n<li><strong>Use urge surfing.</strong> Notice the urge, say to yourself, 'This craving will rise and fall,' and let it pass without reacting. Most cravings last only minutes.</li>\n<li><strong>Stress reduce before it escalates.</strong> Practice a brief breathing exercise, stretch, or mindfulness routine on stressful days. If stress is a trigger, you need to address both the urge and the emotion underneath it.</li>\n</ul>\n\n<h2>When cravings are strongest</h2>\n<p>Cravings are often strongest in the first few days and may return after stressful events or social outings. This is not failure; it is part of the process. The goal is not to be free from every craving forever, but to learn how to reduce the power of cues and respond differently.</p>\n\n<p>Many people also feel increased appetite, irritability, poor concentration, or low mood in the early days. This is withdrawal. It is temporary, but it can be uncomfortable. It is one reason medical support matters. If you are using nicotine replacement or other aids with a professional's guidance, the withdrawal symptoms may be much easier to manage.</p>\n\n<h2>What to do when you slip</h2>\n<p>A lapse does not mean the quit attempt has failed. It means the habit is still active, and you have a chance to learn from the trigger. The most useful question is: 'What happened before the cigarette? What was the trigger? What was the emotional state? What can I do differently next time?'</p>\n\n<p>The right response is to get back on track quickly. Remove the pack, re-engage with your support system, restart your plan, and keep going. Relapse does not equal defeat; it is often part of the recovery process.</p>\n\n<h2>When to consider professional help</h2>\n<p>If you have tried quitting on your own and failed repeatedly, or if smoking is heavily linked to anxiety, depression, or other mental health conditions, consider a doctor or psychologist. In many cases, smoking is a coping response to stress or emotional discomfort. Treating the root issue can make quitting much more manageable.</p>\n\n<p>Prescription medicines help some people who have a strong nicotine addiction. A doctor can also advise on medical safety, especially if you have heart disease, high blood pressure, or other conditions. In India, talk to your family physician, a smoking cessation clinic, or a psychiatrist if you need structured support. You can also check local tobacco cessation resources and, in many settings, the national quitline or local health authority helpline may guide you to a clinic or counselling program.</p>\n\n<p>In India, the national tobacco quitline is commonly listed as <strong>1800-11-2356</strong>, and availability may vary by state and provider. Even if the helpline is unavailable in your region, local government health centres or private addiction clinics can help with nicotine replacement and counselling options.</p>\n\n<h2>14-day starter plan</h2>\n<ol>\n<li><strong>Days 1–3:</strong> Choose the quit date, remove cigarette cues from the home and car, and tell at least one person who can support you.</li>\n<li><strong>Days 4–7:</strong> Begin your replacement plan: gum, lozenge, water, a fidget object, or a 10-minute walk after a trigger moment. Track your smoking triggers in a note.</li>\n<li><strong>Days 8–14:</strong> Strengthen new routines. Replace smoking after meals and coffee with a walk. Practice urge surfing. Reassess your need for extra support or medication.</li>\n</ol>\n\n<p>Success is not about never feeling the urge. It is about learning to let the urge pass without feeding it. The person who quits is not the one who never struggles — it is the one who keeps choosing a different response.</p>\n\n<p><em>Doctor's view:</em> Quitting smoking is one of the most beneficial things a person can do for long-term health. It improves heart health, blood pressure, breathing, sleep, mood, and reduces the risk of several serious diseases. For many people the hardest part is starting a plan that is realistic. A good plan is not perfect — it is practical, supported, and sustainable.</p>",
+      "featured_image": "quit-smoking-illustration.svg",
+      "featured_image_alt": "Breathe Free quit smoking illustration for wellness article",
+      "author": 3,
+      "category": 20,
+      "post_type": "standard",
+      "status": "published",
+      "published_at": "2026-10-13T06:00:00Z",
+      "medical_reviewer": 1,
+      "reviewed_at": "2026-10-13",
+      "sources": [
+        "https://www.who.int/news-room/fact-sheets/detail/tobacco",
+        "https://www.cdc.gov/tobacco/quit_smoking/index.htm",
+        "https://www.nhs.uk/better-health/quit-smoking/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731090/",
+        "https://www.mohfw.gov.in/"
+      ],
+      "sensitivity": "general",
+      "content_warning": "",
+      "meta_title": "Quit Smoking: Psychology, Craving and Practical Ways to Stop",
+      "meta_description": "A doctor-written guide to quit smoking: why cravings happen, what triggers them, and practical, evidence-based steps to help you stop for good.",
+      "canonical_url": "",
+      "focus_keyword": "quit smoking psychology",
+      "seo_score": 0,
+      "view_count": 0,
+      "allow_comments": true,
+      "notify_subscribers": false,
+      "created_at": "2026-10-13T06:00:00Z",
+      "updated_at": "2026-10-13T06:00:00Z",
+      "tags": [50, 51, 52]
+    }
+  }
+]
