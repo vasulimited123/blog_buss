@@ -57,6 +57,18 @@
     }
   },
   {
+    "model": "blog.medicalreviewer",
+    "pk": 9999,
+    "fields": {
+      "name": "Dr. Sunita Kapoor",
+      "credentials": "MD, Psychiatrist & Certified Sex Therapist",
+      "bio": "Experienced psychiatrist and medical reviewer providing evidence-based oversight for clinical content.",
+      "photo": "",
+      "verification_url": "",
+      "created_at": "2026-10-13T06:00:00Z"
+    }
+  },
+  {
     "model": "blog.post",
     "pk": 200,
     "fields": {
@@ -72,7 +84,7 @@
       "post_type": "standard",
       "status": "published",
       "published_at": "2026-10-13T06:00:00Z",
-      "medical_reviewer": 1,
+      "medical_reviewer": 9999,
       "reviewed_at": "2026-10-13",
       "sources": [
         "https://www.who.int/news-room/fact-sheets/detail/tobacco",
