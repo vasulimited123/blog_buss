@@ -49,6 +49,8 @@ jobs:
       - name: Verify inserted post
         run: |
           python - <<'PY'
+from blog.models import Post
+print('Post exists:', Post.objects.filter(slug='quit-smoking-psychology').exists())
 PY
 
       - name: Success
