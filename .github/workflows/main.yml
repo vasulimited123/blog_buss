@@ -15,9 +15,7 @@ jobs:
     if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.confirm == 'YES' }}
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      DJANGO_DEBUG: "false"
-      DJANGO_SECRET_KEY: "ci-only-dummy-key-not-used-in-production-123456789"
-      DJANGO_ALLOWED_HOSTS: "localhost"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -41,13 +39,19 @@ jobs:
           echo "DATABASE_URL is set (first 30 chars): ${DATABASE_URL:0:30}..."
 
       - name: Run Django migrations
-        run: python manage.py migrate --noinput
+        run: |
+          python manage.py migrate --noinput
 
       - name: Load fixtures
-        run: python manage.py loaddata blog/fixtures/quit_smoking.json
+        run: |
+          python manage.py loaddata blog/fixtures/quit_smoking.json
 
       - name: Verify inserted post
-        run: python manage.py shell -c "from blog.models import Post; print('Post exists:', Post.objects.filter(slug='quit-smoking-psychology').exists())"
-
-      - name: Success
-        run: echo "Migrations and fixture load completed successfully."
+        run: |
+          python - <<'PY'
+          from blog.models import Post
+          print('Post exists:', Post.objects.filter(slug='quit-smoking-psychology').exists())
+          PY
+          
+                - name: Success
+                  run: echo "Migrations and fixture load completed successfully."
